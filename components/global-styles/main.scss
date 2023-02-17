@@ -1,0 +1,38 @@
+@import "./reset.scss";
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0px;
+}
+
+#container > img {
+  width: 100%;
+}
+
+#text {
+  padding: 5vw;
+}
+
+#text > *, #text a {
+  filter: alpha(opacity=80);
+  opacity: .80;
+  color: #aaffff;
+  margin: 0px;
+}
+
+#text > h1 {
+  font-size: 17vw;
+  font-weight: bold;
+  margin-left: -0.9vw;
+}
+
+
+#text > h2 {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+#text > p {
+  font-size: 3.7vw;
+  padding-top: 2vw;
+}
