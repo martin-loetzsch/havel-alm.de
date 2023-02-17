@@ -6,7 +6,7 @@ import imageHavelAlm1 from '../public/photos/havel-alm-1.jpg'
 export default function Home() {
     return (
         <main className={styles.main}>
-            <Picture image={imageHavelAlm1} alt="Havel Alm Kratzeburg" priority={true}>
+            <Picture image={imageHavelAlm1} alt="Havel Alm Kratzeburg" priority={true} width={50}>
                 <h1 style={{top: '8vw'}}>Havel Alm</h1>
                 <h2 style={{top: '25vw'}}>68 meters above sea level</h2>
                 <div style={{top: '95vw'}}>
