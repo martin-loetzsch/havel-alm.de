@@ -1,0 +1,22 @@
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: yellow;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.children > * {
+  position: absolute;
+  padding-left: 5vw;
+}
+
+.children * {
+  filter: alpha(opacity=80);
+  opacity: .80;
+  color: #aaffff;
+}
