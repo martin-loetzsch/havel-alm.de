@@ -1,22 +1,29 @@
-import styles from './page.module.css'
 import Picture from '../components/picture/picture'
 
 import imageHavelAlm1 from '../public/photos/havel-alm-1.jpg'
 
 export default function Home() {
     return (
-        <main className={styles.main}>
+        <>
             <Picture image={imageHavelAlm1} alt="Havel Alm Kratzeburg" priority={true} width={50}>
-                <div style={{top: '8vw'}}>
+                <div style={{top: '5vw'}}>
                     <h1>Havel Alm</h1>
-                    <h2>68 meters above sea level</h2>
+                    <h3>68 meters above sea level</h3>
+                    <h3>At the source of the Havel river</h3>
+                    <h3>80 minutes by direct train from Berlin</h3>
                 </div>
-                <div style={{top: '95vw'}}>
-                    <p>At the source of the Havel river</p>
-                    <p>80 minutes by direct train from Berlin Gesundbrunnen</p>
+                <div style={{top: '85vw'}}>
+                    <h3>Your vacation home for</h3>
+                    <h3> - Holidays with bigger groups</h3>
+                    <h3> - Family reunions</h3>
+                    <h3> - Company off-sites and workshops</h3>
+                </div>
+                <div style={{top: '129vw'}}>
+                    <h2>Currently under construction</h2>
+                    <h2>Opening May 2023</h2>
                 </div>
 
-                <div style={{'top': '207vw'}}>
+                <div style={{'top': '210vw'}}>
                     <p>Havel Alm <a href="https://sabine-boettger.de">Sabine Boettger</a> und <a
                         href="https://martin-loetzsch.de">Martin Loetzsch</a> GbR
                     </p>
@@ -29,7 +36,7 @@ export default function Home() {
                     <p>+49 178 6803711</p>
                 </div>
             </Picture>
-
-        </main>
+            {/*<h2>The House</h2>*/}
+        </>
     )
 }

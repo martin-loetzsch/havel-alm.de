@@ -1,0 +1,23 @@
+:root {
+  --green: #0000FF;
+  --textMargin: 0.4vw;
+}
+
+@import "@fontsource/lexend-deca/latin-600.css";
+@import "@fontsource/lexend-deca/latin-300.css";
+
+@mixin text-margins {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+
+@mixin font-bold {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 600;
+}
+
+@mixin font-regular {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+}
