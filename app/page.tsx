@@ -8,15 +8,15 @@ export default function Home() {
             <Picture image={imageHavelAlm1} alt="Havel Alm Kratzeburg" priority={true} width={50}>
                 <div style={{top: '5vw'}}>
                     <h1>Havel Alm</h1>
-                    <h3>68 meters above sea level</h3>
-                    <h3>At the source of the Havel river</h3>
-                    <h3>80 minutes by direct train from Berlin</h3>
+                    <blockquote>68 meters above sea level</blockquote>
+                    <blockquote>At the source of the Havel river</blockquote>
+                    <blockquote>80 minutes by direct train from Berlin</blockquote>
                 </div>
                 <div style={{top: '85vw'}}>
-                    <h3>Your vacation home for</h3>
-                    <h3> - Holidays with bigger groups</h3>
-                    <h3> - Family reunions</h3>
-                    <h3> - Company off-sites and workshops</h3>
+                    <blockquote>Your vacation home for</blockquote>
+                    <blockquote> - Holidays with bigger groups</blockquote>
+                    <blockquote> - Family reunions</blockquote>
+                    <blockquote> - Company off-sites and workshops</blockquote>
                 </div>
                 <div style={{top: '129vw'}}>
                     <h2>Currently under construction</h2>
