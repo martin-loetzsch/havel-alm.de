@@ -12,7 +12,7 @@ type Props = {
     className?: string
 }
 
-const Picture: React.FC<Props> = ({photo, children, width = 100, priority = false, className}) => {
+const Picture: React.FC<Props> = ({photo, children, width = 60, priority = false, className}) => {
     return (
         <div className={styles.container}>
             <Image

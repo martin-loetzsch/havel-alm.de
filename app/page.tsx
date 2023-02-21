@@ -5,8 +5,9 @@ import * as photos from '../components/photos'
 export default function Home() {
     return (
         <>
-            <Picture photo={photos.house_views_Havel_Alm_Kratzeburg_aerial_view_1_jpg} priority={true} width={50} className='color-cyan'>
-                <div style={{top: '5vw'}} >
+            <Picture photo={photos.house_views_Havel_Alm_Kratzeburg_aerial_view_1_jpg} priority={true}
+                     className='color-cyan'>
+                <div style={{top: '5vw'}}>
                     <h1>Havel Alm</h1>
                     <blockquote>68 meters above sea level</blockquote>
                     <blockquote>At the source of the Havel river</blockquote>
@@ -36,9 +37,11 @@ export default function Home() {
                     <p>+49 178 6803711</p>
                 </div>
             </Picture>
-            <Picture photo={photos.house_views_House_view_from_street_winter_1_jpg} width={60}>
-                <h2 style={{top:'2vw'}}>The House</h2>
+            <Picture photo={photos.house_views_House_view_from_street_winter_1_jpg} priority={true}>
+                <h2 style={{top: '2vw'}}>The House</h2>
             </Picture>
+            <Picture photo={photos.house_views_View_from_street_February_2023_jpg}/>
+            <Picture photo={photos.house_views_View_from_North_February_2023_jpg}/>
         </>
     )
 }
