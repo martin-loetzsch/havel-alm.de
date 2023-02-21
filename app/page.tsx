@@ -1,29 +1,29 @@
 import Picture from '../components/picture/picture'
 
-import imageHavelAlm1 from '../public/photos/havel-alm-1.jpg'
+import * as photos from '../components/photos'
 
 export default function Home() {
     return (
         <>
-            <Picture image={imageHavelAlm1} alt="Havel Alm Kratzeburg" priority={true} width={50}>
-                <div style={{top: '5vw'}}>
+            <Picture photo={photos.house_views_Havel_Alm_Kratzeburg_aerial_view_1_jpg} priority={true} width={50} className='color-cyan'>
+                <div style={{top: '5vw'}} >
                     <h1>Havel Alm</h1>
                     <blockquote>68 meters above sea level</blockquote>
                     <blockquote>At the source of the Havel river</blockquote>
                     <blockquote>80 minutes by direct train from Berlin</blockquote>
                 </div>
-                <div style={{top: '85vw'}}>
+                <div style={{top: '90vw'}}>
                     <blockquote>Your vacation home for</blockquote>
                     <blockquote> - Holidays with bigger groups</blockquote>
                     <blockquote> - Family reunions</blockquote>
                     <blockquote> - Company off-sites and workshops</blockquote>
                 </div>
-                <div style={{top: '129vw'}}>
+                <div style={{top: '132vw'}}>
                     <h2>Currently under construction</h2>
                     <h2>Opening May 2023</h2>
                 </div>
 
-                <div style={{'top': '210vw'}}>
+                <div style={{'top': '213vw'}}>
                     <p>Havel Alm <a href="https://sabine-boettger.de">Sabine Boettger</a> und <a
                         href="https://martin-loetzsch.de">Martin Loetzsch</a> GbR
                     </p>
@@ -36,7 +36,9 @@ export default function Home() {
                     <p>+49 178 6803711</p>
                 </div>
             </Picture>
-            {/*<h2>The House</h2>*/}
+            <Picture photo={photos.house_views_House_view_from_street_winter_1_jpg} width={60}>
+                <h2 style={{top:'2vw'}}>The House</h2>
+            </Picture>
         </>
     )
 }

@@ -4,8 +4,12 @@
 body {
   @include font-regular;
   margin: 0px;
+  overflow: overlay;
 }
 
+.color-cyan, .color-cyan a {
+  color: #aaffff;
+}
 
 h1, h2, h3, p, blockquote {
   padding-left:3vw;

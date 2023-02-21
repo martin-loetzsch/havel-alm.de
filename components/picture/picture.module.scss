@@ -11,10 +11,10 @@
 
 .children > * {
   position: absolute;
+  top:0px;
 }
 
 .children * {
   filter: alpha(opacity=80);
   opacity: .90;
-  color: #aaffff;
 }
