@@ -18,8 +18,8 @@ export default function Home() {
                     <blockquote>80 minutes by direct train from Berlin</blockquote>
                 </div>
                 <div style={{top: '90vw'}}>
-                    <blockquote>Your vacation home for</blockquote>
-                    <blockquote> - Holidays with bigger groups</blockquote>
+                    <blockquote>Your holiday home for</blockquote>
+                    <blockquote> - Vacations with bigger groups</blockquote>
                     <blockquote> - Family reunions</blockquote>
                     <blockquote> - Company off-sites and workshops</blockquote>
                 </div>
