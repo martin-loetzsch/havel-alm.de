@@ -10,7 +10,7 @@ with open('./components/photos.tsx', 'w') as output:
     print('''
 
 export default class Photo{
-    constructor(public src: string, public alt: string, public width: number, public height: number) {}
+    constructor(public grid: string, public alt: string, public width: number, public height: number) {}
 }
 
 ''', file=output)

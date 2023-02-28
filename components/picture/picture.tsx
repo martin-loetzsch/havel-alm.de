@@ -1,10 +1,10 @@
 import styles from './picture.module.scss'
 
-import Image, {StaticImageData} from "next/image"
+import Image from "next/image"
 import * as React from 'react'
 import Photo from '../photos'
 
-type Props = {
+export type PictureProps = {
     photo: Photo,
     children?: any,
     width?: number,
@@ -12,9 +12,15 @@ type Props = {
     className?: string
 }
 
-const Picture: React.FC<Props> = ({photo, children, width = 60, priority = false, className}) => {
+export const Picture: React.FunctionComponent<PictureProps> = ({
+                                                                   photo,
+                                                                   children,
+                                                                   width = 60,
+                                                                   priority = false,
+                                                                   className
+                                                               }): JSX.Element => {
     return (
-        <div className={styles.container}>
+        <div data-width={photo.width} data-height={photo.height} className={styles.container}>
             <Image
                 className={styles.image}
                 src={photo.src}
@@ -24,7 +30,7 @@ const Picture: React.FC<Props> = ({photo, children, width = 60, priority = false
                 sizes={width + "vw"}
                 priority={priority}
             />
-            <div className={styles.children + ' ' + className} >
+            <div className={styles.children + ' ' + className}>
                 {children}
             </div>
         </div>

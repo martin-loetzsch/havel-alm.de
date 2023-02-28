@@ -1,0 +1,16 @@
+.container {
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+
+.item {
+  display: block;
+  box-sizing: content-box;
+}

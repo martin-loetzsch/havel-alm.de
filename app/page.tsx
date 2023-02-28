@@ -1,15 +1,10 @@
 import Picture from '../components/picture/picture'
 
 import * as photos from '../components/photos'
-import PhotoAlbum from "react-photo-album";
-import Photo from "../components/photos";
 
+import Grid from "../components/grid/grid"
+import Card from "../components/card/card"
 
-const ps = [
-    {src:'/photos/house views/View from North February 2023.jpg', width: 4896, height: 3061},
-    {src:'/photos/house views/Havel Alm Kratzeburg aerial view 1.jpg', width: 1107, height:2601},
-    {src: '/photos/house views/House view from street winter 1.jpg', width: 4624, height:2238}
-]
 
 export default function Home() {
     return (
@@ -46,12 +41,24 @@ export default function Home() {
                     <p>+49 178 6803711</p>
                 </div>
             </Picture>
-            <Picture photo={photos.house_views_House_view_from_street_winter_1_jpg} priority={true}>
-                <h2 style={{top: '2vw'}}>The House</h2>
-            </Picture>
-            <Picture photo={photos.house_views_View_from_street_February_2023_jpg}/>
-            <Picture photo={photos.house_views_View_from_North_February_2023_jpg}/>
-            <PhotoAlbum layout="rows" photos={ps} />
+            <Grid>
+                <Picture photo={photos.house_views_House_view_from_street_winter_1_jpg} priority={true}>
+                    <h2 style={{top: '2vw'}}>The House</h2>
+                </Picture>
+                <Picture photo={photos.house_views_View_from_street_February_2023_jpg}/>
+                <Picture photo={photos.house_views_View_from_North_February_2023_jpg}/>
+                {/*<Picture photo={photos.house_views_View_from_street_February_2023_jpg}/>*/}
+                {/*<Picture photo={photos.house_views_View_from_North_February_2023_jpg}/>*/}
+                {/*<Picture photo={photos.house_views_View_from_street_February_2023_jpg}/>*/}
+                {/*<Card width={1000} height={1000}>*/}
+                {/*    <h1>Hello World</h1>*/}
+                {/*</Card>*/}
+                {/*<Picture photo={photos.house_views_View_from_street_February_2023_jpg}/>*/}
+                {/*<Picture photo={photos.house_views_View_from_North_February_2023_jpg}/>*/}
+                {/*<Picture photo={photos.house_views_View_from_street_February_2023_jpg}/>*/}
+            </Grid>
+
         </>
     )
 }
+
