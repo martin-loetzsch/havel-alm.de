@@ -27,13 +27,13 @@ h1 {
 
 h2 {
   @include font-bold;
-  font-size: 9vw;
+  font-size: 7vw;
   padding-bottom: 4vw;
 }
 
 h3, blockquote {
   @include font-regular;
-  font-size: 5vw;
+  font-size: 4vw;
   padding-bottom: 1.5vw;
 }
 
