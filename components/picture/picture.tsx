@@ -31,7 +31,8 @@ export const Picture: React.FunctionComponent<PictureProps> = ({
                 sizes={width + "vw"}
                 priority={priority}
                 quality={100}
-               // placeholder={'blur'}
+                placeholder={'blur'}
+                blurDataURL={photo.blurDataUrl}
             />
             <div className={styles.children + ' ' + className}>
                 {children}
