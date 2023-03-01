@@ -41,7 +41,7 @@ export default function Home() {
                     <p>+49 178 6803711</p>
                 </div>
             </Picture>
-            <Grid>
+            <Grid spacing={0}>
                 <Picture photo={photos.house_views_House_view_from_street_winter_1_jpg} priority={true}>
                     <h2 style={{top: '2vw'}}>The House</h2>
                 </Picture>
