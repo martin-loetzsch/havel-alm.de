@@ -17,7 +17,7 @@ type GridProps = {
 
 const Grid: React.FunctionComponent<GridProps> = ({
                                                       children,
-                                                      spacing = 0,
+                                                      spacing = 10,
                                                   }): JSX.Element => {
     const windowWidth = useWindowWidth()
 

@@ -19,7 +19,6 @@ export const Picture: React.FunctionComponent<PictureProps> = ({
                                                                    priority = false,
                                                                    className
                                                                }): JSX.Element => {
-
     return (
         <div data-width={photo.width} data-height={photo.height} className={styles.container}>
             <Image
