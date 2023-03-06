@@ -50,7 +50,7 @@ export default class Photo{
             width = image.width
             height = image.height
 
-            image.thumbnail(size=(30, 30))
+            image.thumbnail(size=(50, 50))
             # image.show()
 
             # image = image.filter(filter=ImageFilter.BoxBlur(radius=5))

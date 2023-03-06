@@ -15,7 +15,7 @@ export type PictureProps = {
 export const Picture: React.FunctionComponent<PictureProps> = ({
                                                                    photo,
                                                                    children,
-                                                                   width = 40,
+                                                                   width = 35,
                                                                    priority = false,
                                                                    className
                                                                }): JSX.Element => {
