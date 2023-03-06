@@ -9,7 +9,7 @@ import Card from "../components/card/card"
 export default function Home() {
     return (
         <>
-            <Picture photo={photos.Haus_Ansichten__Das_Haus_von_oben_1} priority={true}
+            <Picture photo={photos.Haus_Ansichten__Das_Haus_von_oben_1} priority={true} width={70}
                      className='color-cyan'>
                 <div style={{top: '5vw'}}>
                     <h1>Havel Alm</h1>

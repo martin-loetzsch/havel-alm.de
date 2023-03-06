@@ -15,7 +15,7 @@ export type PictureProps = {
 export const Picture: React.FunctionComponent<PictureProps> = ({
                                                                    photo,
                                                                    children,
-                                                                   width = 60,
+                                                                   width = 40,
                                                                    priority = false,
                                                                    className
                                                                }): JSX.Element => {
@@ -29,7 +29,7 @@ export const Picture: React.FunctionComponent<PictureProps> = ({
                 height={photo.height}
                 sizes={width + "vw"}
                 priority={priority}
-                quality={100}
+                quality={75}
                 placeholder={'blur'}
                 blurDataURL={photo.blurDataUrl}
             />
