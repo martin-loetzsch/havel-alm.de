@@ -1,6 +1,6 @@
-import base64
-import io
 import pathlib
+import io
+import base64
 
 from PIL import Image
 
@@ -8,6 +8,7 @@ photos_dir = pathlib.Path('./public/photos')
 
 # output = sys.stdout
 with open('./components/photos.tsx', 'w') as output:
+
     print('''
 
 export default class Photo{
@@ -22,19 +23,35 @@ export default class Photo{
 
 ''', file=output)
 
-    for path in photos_dir.glob('**/*.jpg'):
+    for path in photos_dir.glob('**/*.[jJ][pP][gG]'):
         print(path)
         relative_file_name = str(path)[len(str(photos_dir)) + 1:]
-        variable_name = relative_file_name
-        for string in [' ', '.', '/', '-']:
-            variable_name = variable_name.replace(string, '_')
+        variable_name = relative_file_name[:-4].translate(''.maketrans({
+            ' ': '_',
+            '.': '_',
+            '-': '_',
+            ')': '_',
+            '(': '_',
+            '/': '__',
+            'ä': 'ae',
+            'Ä': 'Ae',
+            'ü': 'ue',
+            'Ü': 'Ue',
+            'ö': 'Oe',
+            'Ö': 'Oe'
+        }
+))
+
+
+        if variable_name[0].isdigit():
+            variable_name = '_' + variable_name
 
         with Image.open(path) as image:
             width = image.width
             height = image.height
 
             image.thumbnail(size=(30, 30))
-            image.show()
+            # image.show()
 
             # image = image.filter(filter=ImageFilter.BoxBlur(radius=5))
             # image.show()
@@ -46,3 +63,4 @@ export default class Photo{
             print(
                 f'''export const {variable_name} = new Photo('/photos/{relative_file_name}', '{path.stem}', {width}, {height}, '{blurDataUrl}')''',
                 file=output)
+
