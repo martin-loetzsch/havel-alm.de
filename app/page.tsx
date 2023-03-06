@@ -3,7 +3,6 @@ import Picture from '../components/picture/picture'
 import * as photos from '../components/photos'
 
 import Grid from "../components/grid/grid"
-import Card from "../components/card/card"
 
 
 export default function Home() {
@@ -43,14 +42,18 @@ export default function Home() {
             </Picture>
             <Grid>
                 <Picture photo={photos.Haus_Ansichten__Ansicht_von_der_Strasse_im_Winter} priority={true}>
-                    <h2 style={{top: '2vw'}}>Das Haus</h2>
+                    <h2>Das Haus</h2>
                 </Picture>
                 <Picture photo={photos.Haus_Ansichten__Blick_von_der_Strasse_February_2023}/>
                 <Picture photo={photos.Haus_Ansichten__Das_Haus_vom_Garten_aus_February_2023}/>
                 <Picture photo={photos.Haus_Ansichten__Wegweiser_vor_dem_Haus}/>
             </Grid>
-            <h2>Die Umgebung</h2>
-            <Grid >
+            <Grid>
+                <Picture photo={photos.Die_Umgebung__Badestelle_am_Kaebelicker_See}>
+
+                    <h2>Die Umgebung</h2>
+
+                </Picture>
                 <Picture photo={photos.Die_Umgebung__Weg_von_Dambeck_nach_Bornhof_3}/>
                 <Picture photo={photos.Die_Umgebung__Radweg_zwischen_Liepen_und_Klein_Vielen}/>
                 <Picture photo={photos.Die_Umgebung__Weg_von_Dambeck_nach_Bornhof_2}/>
@@ -60,7 +63,6 @@ export default function Home() {
                 <Picture photo={photos.Die_Umgebung__Radweg_in_Ricktung_Pieversdorf}/>
                 <Picture photo={photos.Die_Umgebung__Auf_der_Havel_bei_Granzin}/>
                 <Picture photo={photos.Die_Umgebung__Der_zugefrorene_Kaebelicksee}/>
-                <Picture photo={photos.Die_Umgebung__Badestelle_am_Kaebelicker_See}/>
                 <Picture photo={photos.Die_Umgebung__Kuehe_auf_der_Weide_in_Richtung_Pieversdorf_2}/>
                 <Picture photo={photos.Die_Umgebung__Langlauf_Ski_fahren_auf_dem_Kaebelicksee}/>
                 <Picture photo={photos.Die_Umgebung__Radweg_zwischen_Liepe_und_Klein_Vielen}/>
@@ -84,13 +86,13 @@ export default function Home() {
                 <Picture photo={photos.Die_Umgebung__Wanderweg_nach_Dambeck}/>
                 <Picture photo={photos.Die_Umgebung__Paddeln_auf_der_Havel_kurz_vor_Babke}/>
             </Grid>
-            <h2>Der Garten</h2>
             <Grid>
-                <Picture photo={photos.Garten__Blick_vom_Grundstueck_im_Winter}/>
-                <Picture photo={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4}/>
-                <Picture photo={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}/>
-                <Picture photo={photos.Garten__Blick_aus_dem_Garten_nach_Norden_3}/>
+                <Picture photo={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
+                    <h2>Der Garten</h2>
+                </Picture>
                 <Picture photo={photos.Garten__Blick_aus_dem_Garten_nach_Norden_1}/>
+                <Picture photo={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4}/>
+                <Picture photo={photos.Garten__Blick_vom_Grundstueck_im_Winter}/>
             </Grid>
 
         </>

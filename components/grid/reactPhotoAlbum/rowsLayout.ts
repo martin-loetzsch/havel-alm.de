@@ -119,7 +119,7 @@ export const computeRowsLayout = (gridItems: GridItem[],
             }))
         );
     }
-    console.log('layout ', layout)
+    // console.log('layout ', layout)
     return layout;
 };
 
