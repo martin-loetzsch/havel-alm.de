@@ -48,21 +48,21 @@ export default function Home() {
                 <Photo props={photos.Haus_Ansichten__Das_Haus_vom_Garten_aus_February_2023}/>
                 <Photo props={photos.Haus_Ansichten__Wegweiser_vor_dem_Haus}/>
             </Grid>
+            <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
+                <h2>Der Garten</h2>
+            </Photo>
             <Grid>
-                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
-                    <h2>Der Garten</h2>
-                </Photo>
                 <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_1}/>
                 <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4}/>
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter}/>
             </Grid>
+            <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee}>
+                <h2>Die Umgebung</h2>
+            </Photo>
             <Grid>
                 <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee_im_Winter}>
-                    <h2>Die Umgebung</h2>
 
                 </Photo>
-                <Photo props={photos.Die_Umgebung__Badestelle_am_Käbelicksee}/>
-                <Photo props={photos.Die_Umgebung__Badestelle_Käbelicksee_2}/>
 
                 <Photo props={photos.Die_Umgebung__Auf_dem_zugefrorenen_Kaebelicksee}/>
                 <Photo props={photos.Die_Umgebung__Langlauf_Ski_fahren_auf_dem_Kaebelicksee}/>
