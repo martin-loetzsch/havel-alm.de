@@ -4,18 +4,18 @@ import Image from "next/image"
 import * as React from 'react'
 import {PhotoProps} from '../photos'
 
-export type PictureProps = {
+export type PhotoComponentProps = {
     props: PhotoProps,
     children?: any,
-    width?: number,
+    scale?: number,
     priority?: boolean,
     className?: string
 }
 
-export const Photo: React.FunctionComponent<PictureProps> = ({
+export const Photo: React.FunctionComponent<PhotoComponentProps> = ({
                                                                    props,
                                                                    children,
-                                                                   width = 35,
+                                                                   scale = 35,
                                                                    priority = false,
                                                                    className
                                                                }): JSX.Element => {
@@ -27,7 +27,7 @@ export const Photo: React.FunctionComponent<PictureProps> = ({
                 alt={props.title}
                 width={props.width}
                 height={props.height}
-                sizes={width + "vw"}
+                sizes={scale + "vw"}
                 priority={priority}
                 quality={75}
                 placeholder={'blur'}
