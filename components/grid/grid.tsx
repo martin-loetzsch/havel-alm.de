@@ -3,11 +3,9 @@
 import styles from './grid.module.scss'
 
 import * as React from 'react'
-import {GridItem, computeRowsLayout, calcWidth} from './reactPhotoAlbum/rowsLayout'
+import {calcWidth, computeRowsLayout, GridItem} from './reactPhotoAlbum/rowsLayout'
 
 import useWindowWidth from '../useWindowWidth'
-
-
 
 
 type GridProps = {
@@ -39,8 +37,11 @@ const Grid: React.FunctionComponent<GridProps> = ({
             </div>)
     } else {
         const targetRowHeight = windowWidth / 5
-        const maxItems = windowWidth > 1400 ? 3 : (windowWidth > 1000 ? 2 : 1)
-        const rowsLayout = computeRowsLayout(gridItems, windowWidth,targetRowHeight, spacing, 1, maxItems)
+
+
+        const maxItems = Math.min(4, Math.max(1, 1 + Math.ceil((windowWidth - 800) / 400)))
+
+        const rowsLayout = computeRowsLayout(gridItems, windowWidth, targetRowHeight, spacing, 1, maxItems)
 
         return (
 
@@ -51,7 +52,7 @@ const Grid: React.FunctionComponent<GridProps> = ({
                          style={{
                              ...(rowIndex < rowsLayout.length - 1 ? {marginBottom: `${spacing}px`} : null)
                          }}>
-                        {row.map(({gridItem,height, width, index, itemIndex,itemsCount}) => (
+                        {row.map(({gridItem, height, width, index, itemIndex, itemsCount}) => (
                             <div key={itemIndex}
                                  className={styles.item}
                                  style={

@@ -49,50 +49,55 @@ export default function Home() {
                 <Picture photo={photos.Haus_Ansichten__Wegweiser_vor_dem_Haus}/>
             </Grid>
             <Grid>
-                <Picture photo={photos.Die_Umgebung__Badestelle_am_Kaebelicker_See}>
-
-                    <h2>Die Umgebung</h2>
-
-                </Picture>
-                <Picture photo={photos.Die_Umgebung__Weg_von_Dambeck_nach_Bornhof_3}/>
-                <Picture photo={photos.Die_Umgebung__Radweg_zwischen_Liepen_und_Klein_Vielen}/>
-                <Picture photo={photos.Die_Umgebung__Weg_von_Dambeck_nach_Bornhof_2}/>
-                <Picture photo={photos.Die_Umgebung__Weg_von_Dambeck_nach_Bornhof_1}/>
-                <Picture photo={photos.Die_Umgebung__Am_ROethsee_zwischen_Dambeck_und_Kratzeburg}/>
-                <Picture photo={photos.Die_Umgebung__Paddeln_auf_der_Havel}/>
-                <Picture photo={photos.Die_Umgebung__Radweg_in_Ricktung_Pieversdorf}/>
-                <Picture photo={photos.Die_Umgebung__Auf_der_Havel_bei_Granzin}/>
-                <Picture photo={photos.Die_Umgebung__Der_zugefrorene_Kaebelicksee}/>
-                <Picture photo={photos.Die_Umgebung__Kuehe_auf_der_Weide_in_Richtung_Pieversdorf_2}/>
-                <Picture photo={photos.Die_Umgebung__Langlauf_Ski_fahren_auf_dem_Kaebelicksee}/>
-                <Picture photo={photos.Die_Umgebung__Radweg_zwischen_Liepe_und_Klein_Vielen}/>
-                <Picture photo={photos.Die_Umgebung__Tiefsand_zwischen_Dambeck_und_Bornhof}/>
-                <Picture photo={photos.Die_Umgebung__Kuehe_auf_der_Weide_in_Richtung_Pieversdorf_1}/>
-                <Picture photo={photos.Die_Umgebung__Hochsitz_am_Glambecker_See}/>
-                <Picture photo={photos.Die_Umgebung__Weg_zwischen_Pieversdorf_und_Kratzeburg}/>
-                <Picture photo={photos.Die_Umgebung__Badestelle_am_Kaebelicker_See}/>
-                <Picture photo={photos.Die_Umgebung__Auf_dem_Schaeferberg__96m__zwischen_Pieversdorf_und_Hartwigsdorf}/>
-                <Picture photo={photos.Die_Umgebung__Pilze_suchen_bei_Pieversdorf_1}/>
-                <Picture photo={photos.Die_Umgebung__Pilze_suchen_bei_Pieversdorf_2}/>
-                <Picture photo={photos.Die_Umgebung__Der_Wald_hinter_dem_Haus}/>
-                <Picture photo={photos.Die_Umgebung__Auf_dem_zugefrorenen_Kaebelicksee}/>
-                <Picture photo={photos.Die_Umgebung__Wanderweg_am_Granziner_See}/>
-                <Picture photo={photos.Die_Umgebung__Badestelle_am_Muehlensee__an_der_Havelquelle_}/>
-                <Picture photo={photos.Die_Umgebung__Zwischen_Dambeck_und_Havelquelle}/>
-                <Picture photo={photos.Die_Umgebung__Wanderweg_Richtung_PieversdorfJPG}/>
-                <Picture photo={photos.Die_Umgebung__Weg_nach_Dambeck}/>
-                <Picture photo={photos.Die_Umgebung__Zwischen_Liepen_und_Klein_Vielen}/>
-                <Picture photo={photos.Die_Umgebung__Badestrand_mit_Steg_am_Dambecker_See}/>
-                <Picture photo={photos.Die_Umgebung__Wanderweg_nach_Dambeck}/>
-                <Picture photo={photos.Die_Umgebung__Paddeln_auf_der_Havel_kurz_vor_Babke}/>
-            </Grid>
-            <Grid>
                 <Picture photo={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
                     <h2>Der Garten</h2>
                 </Picture>
                 <Picture photo={photos.Garten__Blick_aus_dem_Garten_nach_Norden_1}/>
                 <Picture photo={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4}/>
                 <Picture photo={photos.Garten__Blick_vom_Grundstueck_im_Winter}/>
+            </Grid>
+            <Grid>
+                <Picture photo={photos.Die_Umgebung__Badestelle_am_Kaebelicksee_im_Winter}>
+                    <h2>Die Umgebung</h2>
+
+                </Picture>
+                <Picture photo={photos.Die_Umgebung__Badestelle_am_Käbelicksee}/>
+
+                <Picture photo={photos.Die_Umgebung__Auf_dem_zugefrorenen_Kaebelicksee}/>
+                <Picture photo={photos.Die_Umgebung__Langlauf_Ski_fahren_auf_dem_Kaebelicksee}/>
+                <Picture photo={photos.Die_Umgebung__Der_zugefrorene_Kaebelicksee}/>
+
+                <Picture photo={photos.Die_Umgebung__Paddeln_auf_der_Havel}/>
+                <Picture photo={photos.Die_Umgebung__Paddeln_auf_der_Havel_kurz_vor_Babke}/>
+                <Picture photo={photos.Die_Umgebung__Auf_der_Havel_bei_Granzin}/>
+
+                <Picture photo={photos.Die_Umgebung__Wanderweg_Richtung_PieversdorfJPG}/>
+                <Picture photo={photos.Die_Umgebung__Wanderweg_nach_Dambeck}/>
+                <Picture photo={photos.Die_Umgebung__Pilze_suchen_bei_Pieversdorf_1}/>
+                <Picture photo={photos.Die_Umgebung__Pilze_suchen_bei_Pieversdorf_2}/>
+
+                <Picture photo={photos.Die_Umgebung__Zwischen_Dambeck_und_Havelquelle}/>
+                <Picture photo={photos.Die_Umgebung__Weg_nach_Dambeck}/>
+                <Picture photo={photos.Die_Umgebung__Weg_von_Dambeck_nach_Bornhof_1}/>
+                <Picture photo={photos.Die_Umgebung__Weg_von_Dambeck_nach_Bornhof_2}/>
+                <Picture photo={photos.Die_Umgebung__Weg_von_Dambeck_nach_Bornhof_3}/>
+                <Picture photo={photos.Die_Umgebung__Badestelle_am_Muehlensee__an_der_Havelquelle_}/>
+                <Picture photo={photos.Die_Umgebung__Badestrand_mit_Steg_am_Dambecker_See}/>
+
+                <Picture photo={photos.Die_Umgebung__Radweg_zwischen_Liepen_und_Klein_Vielen}/>
+                <Picture photo={photos.Die_Umgebung__Radweg_zwischen_Liepe_und_Klein_Vielen}/>
+                <Picture photo={photos.Die_Umgebung__Zwischen_Liepen_und_Klein_Vielen}/>
+                <Picture photo={photos.Die_Umgebung__Auf_dem_Schaeferberg__96m__zwischen_Pieversdorf_und_Hartwigsdorf}/>
+
+                <Picture photo={photos.Die_Umgebung__Weg_zwischen_Pieversdorf_und_Kratzeburg}/>
+                <Picture photo={photos.Die_Umgebung__Hochsitz_am_Glambecker_See}/>
+
+                <Picture photo={photos.Die_Umgebung__Der_Wald_hinter_dem_Haus}/>
+                <Picture photo={photos.Die_Umgebung__Am_ROethsee_zwischen_Dambeck_und_Kratzeburg}/>
+                <Picture photo={photos.Die_Umgebung__Kuehe_auf_der_Weide_in_Richtung_Pieversdorf_1}/>
+
+                <Picture photo={photos.Die_Umgebung__Kuehe_auf_der_Weide_in_Richtung_Pieversdorf_2}/>
+                <Picture photo={photos.Die_Umgebung__Radweg_in_Ricktung_Pieversdorf}/>
             </Grid>
 
         </>
