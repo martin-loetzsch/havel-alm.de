@@ -1,37 +1,37 @@
-import styles from './picture.module.scss'
+import styles from './photo.module.scss'
 
 import Image from "next/image"
 import * as React from 'react'
-import Photo from '../photos'
+import {PhotoProps} from '../photos'
 
 export type PictureProps = {
-    photo: Photo,
+    props: PhotoProps,
     children?: any,
     width?: number,
     priority?: boolean,
     className?: string
 }
 
-export const Picture: React.FunctionComponent<PictureProps> = ({
-                                                                   photo,
+export const Photo: React.FunctionComponent<PictureProps> = ({
+                                                                   props,
                                                                    children,
                                                                    width = 35,
                                                                    priority = false,
                                                                    className
                                                                }): JSX.Element => {
     return (
-        <div data-width={photo.width} data-height={photo.height} className={styles.container}>
+        <div data-width={props.width} data-height={props.height} className={styles.container}>
             <Image
                 className={styles.image}
-                src={photo.src}
-                alt={photo.alt}
-                width={photo.width}
-                height={photo.height}
+                src={props.src}
+                alt={props.title}
+                width={props.width}
+                height={props.height}
                 sizes={width + "vw"}
                 priority={priority}
                 quality={75}
                 placeholder={'blur'}
-                blurDataURL={photo.blurDataUrl}
+                blurDataURL={props.blurDataUrl}
             />
             <div className={styles.children + ' ' + className}>
                 {children}
@@ -40,6 +40,6 @@ export const Picture: React.FunctionComponent<PictureProps> = ({
     )
 }
 
-export default Picture
+export default Photo
 
 
