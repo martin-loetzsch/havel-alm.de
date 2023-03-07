@@ -13,10 +13,7 @@ type GridProps = {
     spacing?: number
 }
 
-const Grid: React.FunctionComponent<GridProps> = ({
-                                                      children,
-                                                      spacing = 0,
-                                                  }): JSX.Element => {
+const Grid: React.FunctionComponent<GridProps> = ({ children}): JSX.Element => {
     const windowWidth = useWindowWidth()
 
     const gridItems: Array<GridItem> = children.map((child) => {
@@ -30,14 +27,15 @@ const Grid: React.FunctionComponent<GridProps> = ({
 
 
     if (!windowWidth) {
-        // return grid elements as they on the server side (so that images can be loaded as early as possible
+        // return grid elements as they are on the server side (so that images can be loaded as early as possible
         return (
             <div className={styles.container}>
                 {children}
             </div>)
     } else {
-        const targetRowHeight = windowWidth / 5
+        const targetRowHeight = windowWidth / 6
 
+        const spacing = Math.round(windowWidth / 200)
 
         const maxItems = Math.min(4, Math.max(1, 1 + Math.ceil((windowWidth - 800) / 400)))
 
