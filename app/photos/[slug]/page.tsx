@@ -36,7 +36,7 @@ export default function Page({params}: PageProps) {
                     {photo.slugNextPhoto &&
                         <>
                             &#160;&#160;&#160;
-                            <Link className={styles.right} href={'/photos/' + photo.slugNextPhoto}>⮕</Link>
+                            <Link scroll={false} href={'/photos/' + photo.slugNextPhoto}>⮕</Link>
                         </>
                     }
                 </h3>
