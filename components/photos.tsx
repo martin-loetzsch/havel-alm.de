@@ -63,7 +63,7 @@ export const photos = {
 
 export default photos
 
-export const photosBySlug = {
+export const photosBySlug: {[Key: string]: PhotoProps} = {
 
     'das-haus-von-oben-1': photos['Haus_Ansichten__Das_Haus_von_oben_1'],
     'blick-aus-dem-garten-nach-norden-1': photos['Garten__Blick_aus_dem_Garten_nach_Norden_1'],

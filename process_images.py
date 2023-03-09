@@ -89,7 +89,7 @@ export class PhotoProps{
 
 export default photos
 
-export const photosBySlug = {{
+export const photosBySlug: {{[Key: string]: PhotoProps}} = {{
 ''', file=output)
 
     for (variable_name, photo, _, slug) in photos:
