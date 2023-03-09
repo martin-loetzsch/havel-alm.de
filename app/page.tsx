@@ -10,8 +10,8 @@ export default function Home() {
         <>
             <Photo props={photos.Haus_Ansichten__Das_Haus_von_oben_1} priority={true} scale={70}
                    className='color-cyan'>
-                <div style={{top: '5vw'}}>
                     <h1>Havel Alm</h1>
+                    <div style={{top: '35vw'}}>
                     <blockquote>68 Meter über Normalhöhennull</blockquote>
                     <blockquote>An der Quelle der Havel</blockquote>
                     <blockquote>80 Minuten von Berlin per Regionalexpress</blockquote>
@@ -73,7 +73,7 @@ export default function Home() {
                 <Photo props={photos.Die_Umgebung__Auf_der_Havel_bei_Granzin}/>
 
                 <Photo props={photos.Die_Umgebung__Wanderweg_am_Granziner_See}/>
-                <Photo props={photos.Die_Umgebung__Wanderweg_Richtung_PieversdorfJPG}/>
+                <Photo props={photos.Die_Umgebung__Wanderweg_Richtung_Pieversdorf}/>
                 <Photo props={photos.Die_Umgebung__Wanderweg_nach_Dambeck}/>
                 <Photo props={photos.Die_Umgebung__Pilze_suchen_bei_Pieversdorf_1}/>
                 <Photo props={photos.Die_Umgebung__Pilze_suchen_bei_Pieversdorf_2}/>

@@ -20,11 +20,9 @@ h1 {
   @include font-bold;
   font-size: 17vw;
   margin-left: -0.9vw;
-  padding-top: 8vw;
-  padding-bottom: 8vw;
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
 }
-
-
 
 h2 {
   @include font-bold;
@@ -36,7 +34,7 @@ h2 {
 h3, blockquote {
   @include font-regular;
   font-size: 4vw;
-  padding-top: 1.5 vw;
+  padding-top: 1.5vw;
   padding-bottom: 1.5vw;
 }
 

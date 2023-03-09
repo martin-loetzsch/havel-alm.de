@@ -73,7 +73,8 @@ export class PhotoProps{
             photos.append(
                 (variable_name,
                  f'''new PhotoProps('/photos/{relative_file_name}', '{path.stem}', '{slug}', {width}, {height}, new Date('{timestamp}'), '{blurDataUrl}')''',
-                 timestamp)
+                 timestamp,
+                 slug)
             )
 
 
@@ -81,11 +82,19 @@ export class PhotoProps{
 
     print(f'''export const photos = {{''', file=output)
 
-    for (variable_name, photo, _) in photos:
+    for (variable_name, photo, _, _) in photos:
         print(f'''    {variable_name}: {photo},''', file=output)
 
     print(f'''}}
 
 export default photos
+
+export const photosBySlug = {{
 ''', file=output)
+
+    for (variable_name, photo, _, slug) in photos:
+        print(f'''    '{slug}': photos['{variable_name}'],''', file=output)
+
+    print(f'''}}''',file=output)
+
 
