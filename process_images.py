@@ -63,7 +63,7 @@ export class PhotoProps{
             width = image.width
             height = image.height
 
-            image.thumbnail(size=(50, 50))
+            image.thumbnail(size=(25, 25))
             # image.show()
 
             buffered = io.BytesIO()
