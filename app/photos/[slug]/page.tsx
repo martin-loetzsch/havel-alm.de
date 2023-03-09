@@ -2,6 +2,7 @@ import photos, {photosBySlug} from "@/components/photos";
 import Photo from "@/components/photo/photo";
 import Link from "next/link";
 import styles from './page.module.scss'
+
 type PageParams = {
     slug: string
 };
@@ -23,11 +24,27 @@ export default function Page({params}: PageProps) {
     return (
         <>
             <h1>Havel Alm</h1>
-            <h3>{photo.title}</h3>
-            <Photo props={photo} scale={150} quality={100}/>
-            <p className={styles.metadataContainer}>
+            <div className={styles.flexContainer}>
+                <h3>{photo.title}</h3>
+                <h3>
+                    {photo.slugPreviousPhoto &&
+                        <Link href={'/photos/' + photo.slugPreviousPhoto}
+                              scroll={false}>
+                            ⬅
+                        </Link>}
+
+                    {photo.slugNextPhoto &&
+                        <>
+                            &#160;&#160;&#160;
+                            <Link className={styles.right} href={'/photos/' + photo.slugNextPhoto}>⮕</Link>
+                        </>
+                    }
+                </h3>
+            </div>
+            <Photo props={photo} scale={150} quality={100} priority={true}/>
+            <p className={styles.flexContainer}>
                 {new Intl.DateTimeFormat("de").format(photo.createdAt)}
-                <Link  href={photo.src}>Originalgrösse ({photo.width} x {photo.height} px)</Link>
+                <Link href={photo.src}>Original ({photo.width} x {photo.height} px)</Link>
             </p>
         </>)
 }
