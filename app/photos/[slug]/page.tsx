@@ -44,7 +44,7 @@ export default function Page({params}: PageProps) {
             <Photo props={photo} scale={150} quality={100} priority={true}/>
             <p className={styles.flexContainer}>
                 {new Intl.DateTimeFormat("de").format(photo.createdAt)}
-                <Link href={photo.src}>Original ({photo.width} x {photo.height} px)</Link>
+                <Link href={photo.src} prefetch={false}>Original ({photo.width} x {photo.height} px)</Link>
             </p>
         </>)
 }
