@@ -2,6 +2,7 @@
 
 import {useRouter} from "next/navigation";
 import {useEffect} from "react";
+import useWindowWidth from "@/components/useWindowWidth"
 
 import * as React from "react";
 
@@ -17,7 +18,12 @@ export const KeyboardNavigation: React.FunctionComponent<KeyboardNavigationProps
     }): JSX.Element =>{
 
     const router = useRouter();
+    const windowWidth = useWindowWidth()
+
     useEffect(() => {
+        if (windowWidth) {
+            window.scrollTo({top: Math.round(windowWidth * 0.22), behavior: 'auto'})
+        }
         const keyDownHandler = (e:KeyboardEvent):any => {
             if (e.code == 'ArrowRight' && linkOnRightArrow) {
                 router.push(linkOnRightArrow);
@@ -32,7 +38,7 @@ export const KeyboardNavigation: React.FunctionComponent<KeyboardNavigationProps
         return () => {
             document.removeEventListener("keydown", keyDownHandler);
         };
-    }, [linkOnLeftArrow, linkOnRightArrow, router]);
+    }, [linkOnLeftArrow, linkOnRightArrow, router, windowWidth]);
 
     return <></>
 

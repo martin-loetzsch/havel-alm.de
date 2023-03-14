@@ -23,6 +23,8 @@ export async function generateStaticParams(): Promise<PageParams[]> {
 export default function Page({params}: PageProps) {
     const photo = photosBySlug[decodeURI(params.slug)]
 
+    const nextPhotoLink = photo.slugNextPhoto && `/photos/${photo.slugNextPhoto}`
+    const previousPhotoLink = photo.slugPreviousPhoto && `/photos/${photo.slugPreviousPhoto}`
     //console.log(params, photo)
 
     return (
@@ -31,16 +33,16 @@ export default function Page({params}: PageProps) {
             <div className={styles.flexContainer}>
                 <h3>{photo.title}</h3>
                 <h3>
-                    {photo.slugPreviousPhoto &&
-                        <Link href={`/photos/${photo.slugPreviousPhoto}`}
+                    {previousPhotoLink &&
+                        <Link href={previousPhotoLink as Route}
                               scroll={false}>
                             ⬅
                         </Link>}
 
-                    {photo.slugNextPhoto &&
+                    {nextPhotoLink &&
                         <>
                             &#160;&#160;&#160;
-                            <Link scroll={false} href={`/photos/${photo.slugNextPhoto}`}>⮕</Link>
+                            <Link scroll={false} href={nextPhotoLink as Route}>⮕</Link>
                         </>
                     }
                 </h3>
@@ -51,7 +53,7 @@ export default function Page({params}: PageProps) {
                 <Link href={photo.src as Route} prefetch={false}>Original ({photo.width} x {photo.height} px)</Link>
             </p>
             <KeyboardNavigation
-                linkOnLeftArrow={photo.slugPreviousPhoto && '/photos/' + photo.slugPreviousPhoto}
-                linkOnRightArrow={photo.slugNextPhoto && '/photos/' + photo.slugNextPhoto}/>
+                linkOnLeftArrow={previousPhotoLink}
+                linkOnRightArrow={nextPhotoLink}/>
         </>)
 }
