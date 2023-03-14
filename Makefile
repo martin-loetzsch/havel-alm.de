@@ -8,8 +8,8 @@ SHELL=./.makeshell $(or $@,-)
 
 
 build:
-	npm ci
-	npm run build
+	yarn install
+	yarn build
 
 clean:
-	rm -rvf .next
+	rm -rvf .next node_modules
