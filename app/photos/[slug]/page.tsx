@@ -49,7 +49,8 @@ export default function Page({params}: PageProps) {
                 {new Intl.DateTimeFormat("de").format(photo.createdAt)}
                 <Link href={photo.src} prefetch={false}>Original ({photo.width} x {photo.height} px)</Link>
             </p>
-            <KeyboardNavigation linkOnLeftArrow={'/photos/'+photo.slugPreviousPhoto}
-                                linkOnRightArrow={'/photos/'+photo.slugNextPhoto}/>
+            <KeyboardNavigation
+                linkOnLeftArrow={photo.slugPreviousPhoto && '/photos/' + photo.slugPreviousPhoto}
+                linkOnRightArrow={photo.slugNextPhoto && '/photos/' + photo.slugNextPhoto}/>
         </>)
 }
