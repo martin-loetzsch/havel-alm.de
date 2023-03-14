@@ -2,6 +2,7 @@ import photos, {photosBySlug} from "@/components/photos";
 import Photo from "@/components/photo/photo";
 import Link from "next/link";
 import styles from './page.module.scss'
+import KeyboardNavigation from "./keyboardNavigation";
 
 type PageParams = {
     slug: string
@@ -20,6 +21,8 @@ export async function generateStaticParams(): Promise<PageParams[]> {
 
 export default function Page({params}: PageProps) {
     const photo = photosBySlug[decodeURI(params.slug)]
+
+    //console.log(params, photo)
 
     return (
         <>
@@ -46,5 +49,7 @@ export default function Page({params}: PageProps) {
                 {new Intl.DateTimeFormat("de").format(photo.createdAt)}
                 <Link href={photo.src} prefetch={false}>Original ({photo.width} x {photo.height} px)</Link>
             </p>
+            <KeyboardNavigation linkOnLeftArrow={'/photos/'+photo.slugPreviousPhoto}
+                                linkOnRightArrow={'/photos/'+photo.slugNextPhoto}/>
         </>)
 }
