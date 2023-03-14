@@ -3,6 +3,7 @@ import Photo from "@/components/photo/photo";
 import Link from "next/link";
 import styles from './page.module.scss'
 import KeyboardNavigation from "./keyboardNavigation";
+import type {Route} from 'next';
 
 type PageParams = {
     slug: string
@@ -26,12 +27,12 @@ export default function Page({params}: PageProps) {
 
     return (
         <>
-            <h1>Havel Alm</h1>
+            <h1><Link href="/">Havel Alm</Link></h1>
             <div className={styles.flexContainer}>
                 <h3>{photo.title}</h3>
                 <h3>
                     {photo.slugPreviousPhoto &&
-                        <Link href={'/photos/' + photo.slugPreviousPhoto}
+                        <Link href={`/photos/${photo.slugPreviousPhoto}`}
                               scroll={false}>
                             ⬅
                         </Link>}
@@ -39,7 +40,7 @@ export default function Page({params}: PageProps) {
                     {photo.slugNextPhoto &&
                         <>
                             &#160;&#160;&#160;
-                            <Link scroll={false} href={'/photos/' + photo.slugNextPhoto}>⮕</Link>
+                            <Link scroll={false} href={`/photos/${photo.slugNextPhoto}`}>⮕</Link>
                         </>
                     }
                 </h3>
@@ -47,7 +48,7 @@ export default function Page({params}: PageProps) {
             <Photo props={photo} scale={150} quality={100} priority={true}/>
             <p className={styles.flexContainer}>
                 {new Intl.DateTimeFormat("de").format(photo.createdAt)}
-                <Link href={photo.src} prefetch={false}>Original ({photo.width} x {photo.height} px)</Link>
+                <Link href={photo.src as Route} prefetch={false}>Original ({photo.width} x {photo.height} px)</Link>
             </p>
             <KeyboardNavigation
                 linkOnLeftArrow={photo.slugPreviousPhoto && '/photos/' + photo.slugPreviousPhoto}
