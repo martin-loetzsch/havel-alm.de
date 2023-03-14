@@ -32,7 +32,7 @@ export const KeyboardNavigation: React.FunctionComponent<KeyboardNavigationProps
         return () => {
             document.removeEventListener("keydown", keyDownHandler);
         };
-    }, []);
+    }, [linkOnLeftArrow, linkOnRightArrow, router]);
 
     return <></>
 
