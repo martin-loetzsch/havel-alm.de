@@ -27,7 +27,7 @@ export default function Home() {
     return (
         <>
             <Photo props={photos.Haus_Ansichten__Das_Haus_von_oben_1} priority={true} scale={70}
-                   className='color-cyan'>
+                   className='color-cyan' linkToPhotoPage={false}>
                 <h1>Havel Alm</h1>
                 <div style={{top: '35vw'}}>
                     <blockquote>68 Meter über Normalhöhennull</blockquote>

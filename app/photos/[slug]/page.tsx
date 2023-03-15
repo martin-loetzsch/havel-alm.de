@@ -82,7 +82,7 @@ export default function Page({params}: PageProps) {
                     }
                 </h3>
             </div>
-            <Photo props={photo} scale={150} quality={100} priority={true}/>
+            <Photo props={photo} scale={150} quality={100} priority={true} linkToPhotoPage={false}/>
             <p className={styles.flexContainer}>
                 {new Intl.DateTimeFormat("de").format(photo.createdAt)}
                 <Link href={photo.src as Route} prefetch={false}
