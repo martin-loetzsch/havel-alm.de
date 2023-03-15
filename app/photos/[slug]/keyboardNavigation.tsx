@@ -22,7 +22,7 @@ export const KeyboardNavigation: React.FunctionComponent<KeyboardNavigationProps
 
     useEffect(() => {
         if (windowWidth) {
-            window.scrollTo({top: Math.round(windowWidth * 0.22), behavior: 'auto'})
+            window.scrollTo({top: Math.round(windowWidth * 0.22), behavior: 'smooth'})
         }
         const keyDownHandler = (e:KeyboardEvent):any => {
             if (e.code == 'ArrowRight' && linkOnRightArrow) {

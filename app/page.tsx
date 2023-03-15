@@ -1,17 +1,35 @@
 import Photo from '../components/photo/photo'
-
+import Grid from "../components/grid/grid"
+import type {Metadata} from 'next';
 import photos from '../components/photos'
 
-import Grid from "../components/grid/grid"
+const title = "Havel Alm Kratzeburg"
+const description = "68 Meter über Normalhöhennull, an der Quelle der Havel, 80 Minuten von Berlin per Regionalexpress"
 
+export const metadata: Metadata = {
+    title: title,
+    description: description,
+    authors: [{name: 'Havel Alm', url: 'https://havel-alm.de'}],
+    openGraph: {
+        title: title,
+        description: description,
+        url: 'https://havel-alm.de/',
+        siteName: 'havel-alm.de',
+        locale: 'de-DE',
+    },
+
+    icons: {
+        icon: '/favicon.ico',
+    }
+}
 
 export default function Home() {
     return (
         <>
             <Photo props={photos.Haus_Ansichten__Das_Haus_von_oben_1} priority={true} scale={70}
                    className='color-cyan'>
-                    <h1>Havel Alm</h1>
-                    <div style={{top: '35vw'}}>
+                <h1>Havel Alm</h1>
+                <div style={{top: '35vw'}}>
                     <blockquote>68 Meter über Normalhöhennull</blockquote>
                     <blockquote>An der Quelle der Havel</blockquote>
                     <blockquote>80 Minuten von Berlin per Regionalexpress</blockquote>
