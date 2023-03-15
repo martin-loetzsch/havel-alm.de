@@ -5,7 +5,6 @@ import {useEffect} from "react";
 import useWindowWidth from "@/components/useWindowWidth"
 
 import * as React from "react";
-import {Simulate} from "react-dom/test-utils";
 
 type KeyboardNavigationProps = {
     linkOnLeftArrow?: string ,
