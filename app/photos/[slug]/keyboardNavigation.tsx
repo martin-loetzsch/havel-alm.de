@@ -1,17 +1,16 @@
 'use client'
 
 import {useRouter} from "next/navigation";
-import {useEffect} from "react";
+import {useEffect, FunctionComponent} from "react";
 import useWindowWidth from "@/components/useWindowWidth"
 
-import * as React from "react";
 
 type KeyboardNavigationProps = {
     linkOnLeftArrow?: string ,
     linkOnRightArrow?:string
 }
 
-export const KeyboardNavigation: React.FunctionComponent<KeyboardNavigationProps> = (
+export const KeyboardNavigation: FunctionComponent<KeyboardNavigationProps> = (
     {
         linkOnLeftArrow,
         linkOnRightArrow

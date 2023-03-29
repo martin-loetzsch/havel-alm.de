@@ -1,7 +1,7 @@
 import styles from './photo.module.scss'
 
 import Image from "next/image"
-import * as React from 'react'
+import {FunctionComponent} from 'react'
 import {PhotoProps} from '../photos'
 import Link from "next/link";
 
@@ -15,7 +15,7 @@ export type PhotoComponentProps = {
     linkToPhotoPage?: boolean
 }
 
-export const Photo: React.FunctionComponent<PhotoComponentProps> = (
+export const Photo: FunctionComponent<PhotoComponentProps> = (
     {
         props,
         children,

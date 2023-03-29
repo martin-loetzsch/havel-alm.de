@@ -3,7 +3,7 @@
  */
 
 
-import * as React from 'react'
+import {ReactElement} from 'react'
 
 
 import findShortestPath from "./dijkstra";
@@ -14,7 +14,7 @@ import ratio from './ratio'
 export interface GridItem {
     width: number
     height: number
-    element: React.ReactElement
+    element: ReactElement
 }
 
 

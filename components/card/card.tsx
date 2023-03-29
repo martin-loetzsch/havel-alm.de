@@ -1,14 +1,14 @@
 import styles from './card.module.scss'
 
-import * as React from 'react'
+import {FunctionComponent, ReactNode} from 'react'
 
 type CardProps = {
     width: number,
     height: number,
-    children: React.ReactNode
+    children: ReactNode
 }
 
-const Card: React.FunctionComponent<CardProps> = ({
+const Card: FunctionComponent<CardProps> = ({
                                                       width,
                                                       height,
                                                       children

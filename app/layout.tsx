@@ -1,10 +1,11 @@
 import '../components/global-styles/main.scss'
 import styles from './layout.module.scss'
+import {ReactNode} from 'react'
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <html lang="en">

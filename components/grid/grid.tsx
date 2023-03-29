@@ -2,18 +2,18 @@
 
 import styles from './grid.module.scss'
 
-import * as React from 'react'
+import { ReactElement, FunctionComponent} from 'react'
 import {calcWidth, computeRowsLayout, GridItem} from './reactPhotoAlbum/rowsLayout'
 
 import useWindowWidth from '../useWindowWidth'
 
 
 type GridProps = {
-    children: Array<React.ReactElement>,
+    children: Array<ReactElement>,
     spacing?: number
 }
 
-const Grid: React.FunctionComponent<GridProps> = ({ children}): JSX.Element => {
+const Grid: FunctionComponent<GridProps> = ({ children}): JSX.Element => {
     const windowWidth = useWindowWidth()
 
     const gridItems: Array<GridItem> = children.map((child) => {
