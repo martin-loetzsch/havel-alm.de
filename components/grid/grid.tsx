@@ -40,7 +40,7 @@ const Grid: React.FunctionComponent<GridProps> = ({ children}): JSX.Element => {
         const maxItems = Math.min(4, Math.max(1, 1 + Math.ceil((windowWidth - 800) / 400)))
 
         const rowsLayout = computeRowsLayout(gridItems, windowWidth, targetRowHeight, spacing, 1, maxItems)
-
+        
         return (
 
             <div className={styles.container}>

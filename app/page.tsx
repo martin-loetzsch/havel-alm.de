@@ -1,7 +1,9 @@
 import Photo from '../components/photo/photo'
 import Grid from "../components/grid/grid"
 import type {Metadata} from 'next';
+import Image from "next/image"
 import photos from '../components/photos'
+import grundrissEG from '../public/grundrisse/Grundriss EG.svg'
 
 const title = "Havel Alm Kratzeburg"
 const description = "68 Meter über Normalhöhennull, an der Quelle der Havel, 80 Minuten von Berlin per Regionalexpress"
@@ -66,6 +68,9 @@ export default function Home() {
                 <Photo props={photos.Haus_Ansichten__Das_Haus_vom_Garten_aus_February_2023}/>
                 <Photo props={photos.Haus_Ansichten__Wegweiser_vor_dem_Haus}/>
             </Grid>
+            <Image src={grundrissEG} alt={'Havel Alm Kratzeburg Grundriss EG'}
+                   unoptimized style={{width: '100%', height: 'auto'}}
+            />
             <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
                 <h2>Der Garten</h2>
             </Photo>
