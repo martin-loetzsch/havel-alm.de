@@ -37,15 +37,16 @@ export default function Home() {
                     <blockquote>An der Quelle der Havel</blockquote>
                     <blockquote>80 Minuten von Berlin per Regionalexpress</blockquote>
                 </div>
-                <div style={{ top: '90vw' }}>
+                <div style={{ top: '80vw' }}>
                     <blockquote>Das Ferienhaus für</blockquote>
                     <blockquote> - Urlaube in grösseren Gruppen</blockquote>
                     <blockquote> - Familientreffen</blockquote>
                     <blockquote> - Workshops und Team Offsites</blockquote>
                 </div>
-                <div style={{ top: '142vw' }}>
-                    <h2>Aktuell im Umbau</h2>
-                    <h2>Eröffnung Juni 2023</h2>
+                <div style={{ top: '133vw' }}>
+                    <blockquote>200m², 6 Doppelzimmer, davon 5 mit zusätzlichem Hochbett</blockquote>
+                    <blockquote>Für bis zu 12 Erwachsene plus Kinder</blockquote>
+                    <blockquote>3 Bäder, grosszügiger Gastraum, 100m² Terasse, professionell eingerichtete Küche</blockquote>
                 </div>
 
                 <div style={{ 'top': '213vw' }}>
