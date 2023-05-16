@@ -24,21 +24,15 @@ h1 {
   padding-bottom: 2.5vw;
 }
 
-h2 {
+h2, blockquote {
   @include font-bold;
   font-size: 7vw;
   padding-top: 2vw;
   padding-bottom: 2vw;
 }
 
-h3, blockquote {
-  @include font-regular;
-  font-size: 4vw;
-  padding-top: 1.5vw;
-  padding-bottom: 1.5vw;
-}
-
 p {
+  @include font-regular;
   font-size: 3.5vw;
   padding-bottom: 1vw;
 }
