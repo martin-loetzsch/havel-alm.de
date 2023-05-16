@@ -82,10 +82,10 @@ export default function Home() {
                 <Photo props={photos.Haus__Gastraum__Sofa_1} />
                 <Photo props={photos.Haus__Gastraum__Sofa_2} />
                 <Photo props={photos.Haus__Gastraum__Eingang} />
-                <Photo props={photos.Haus__Küche__Küche_1}/>
-                <Photo props={photos.Haus__Küche__Küche_2}/>
-                <Photo props={photos.Haus__Küche__Küche_3}/>
-                <Photo props={photos.Haus__Küche__Küche_4}/>
+                <Photo props={photos.Haus__Kueche__Küche_1}/>
+                <Photo props={photos.Haus__Kueche__Küche_2}/>
+                <Photo props={photos.Haus__Kueche__Küche_3}/>
+                <Photo props={photos.Haus__Kueche__Küche_4}/>
 
                 <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_1}/>
                 <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_2}/>
