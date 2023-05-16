@@ -86,6 +86,10 @@ export default function Home() {
                 <Photo props={photos.Haus__Küche__Küche_2}/>
                 <Photo props={photos.Haus__Küche__Küche_3}/>
                 <Photo props={photos.Haus__Küche__Küche_4}/>
+
+                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_1}/>
+                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_2}/>
+                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_3}/>
             </Grid>
             <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
                 <h2>Der Garten</h2>
