@@ -61,7 +61,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default function Page({ params }: PageProps) {
     const photo = photosBySlug[decodeURI(params.slug)]
 
-    console.log('photo', photo)
     if (!photo) {
         notFound()
     }

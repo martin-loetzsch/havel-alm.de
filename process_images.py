@@ -56,7 +56,7 @@ for path in photos_dir.glob('**/*.[jJ][pP][gG]'):
             'ö': 'oe',
             'Ö': 'Oe'
         }
-        ))
+        )).replace('ü', 'ue').replace('Ü','Ue').replace('ä','ae').replace('Ä','Ae').replace('ö','oe').replace('Ö','Oe')
 
     if js_variable_name[0].isdigit():
         js_variable_name = '_' + js_variable_name
