@@ -59,7 +59,7 @@ for path in photos_dir.glob('**/*.[jJ][pP][gG]'):
         ))
 
     if js_variable_name[0].isdigit():
-        variable_name = '_' + variable_name
+        js_variable_name = '_' + js_variable_name
 
     slug = path.stem.replace(' ', '-').lower()
 
