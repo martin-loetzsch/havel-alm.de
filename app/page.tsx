@@ -84,26 +84,50 @@ export default function Home() {
                 <Photo props={photos.Haus__Gastraum__Eingang} />
             </Grid>
             <Grid>
-                <Photo props={photos.Haus__Kueche__Kueche_1}/>
-                <Photo props={photos.Haus__Kueche__Kueche_2}/>
-                <Photo props={photos.Haus__Kueche__Kueche_3}/>
-                <Photo props={photos.Haus__Kueche__Kueche_4}/>
-
-                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_1}/>
-                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_2}/>
-                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_3}/>
+                <Photo props={photos.Haus__Kitchen__Kueche_2} />
+                <Photo props={photos.Haus__Kitchen__Kueche_3} />
+                <Photo props={photos.Haus__Kitchen__Kueche_1} />
+                <Photo props={photos.Haus__Kitchen__Kueche_4} />
             </Grid>
             <Grid>
-                <Photo props={photos.Haus__Treppe__Treppe_1}/>
-                <Photo props={photos.Haus__Treppe__Treppe_2}/>
-                <Photo props={photos.Haus__Treppe__Treppe_3}/>
+                <Photo props={photos.Haus__Bad_2__Bad_2_I} />
+                <Photo props={photos.Haus__Bad_2__Bad_2_II} />
+                <Photo props={photos.Haus__Bad_2__Bad_2_III} />
+            </Grid>
+            <Grid>
 
-                <Photo props={photos.Haus__Flur_DG__Flur_DG_1}/>
-                <Photo props={photos.Haus__Flur_DG__Flur_DG_2}/>
-                <Photo props={photos.Haus__Flur_DG__Flur_DG_3}/>
-                <Photo props={photos.Haus__Flur_DG__Flur_DG_4}/>
+                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_1} />
+                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_2} />
+                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_3} />
+            </Grid>
+            <Grid>
+                <Photo props={photos.Haus__Treppe__Treppe_1} />
+                <Photo props={photos.Haus__Treppe__Treppe_2} />
+                <Photo props={photos.Haus__Treppe__Treppe_3} />
+
+                <Photo props={photos.Haus__Flur_DG__Flur_DG_1} />
+                <Photo props={photos.Haus__Flur_DG__Flur_DG_2} />
+                <Photo props={photos.Haus__Flur_DG__Flur_DG_3} />
+                <Photo props={photos.Haus__Flur_DG__Flur_DG_4} />
 
             </Grid>
+            <Grid>
+                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_I} />
+                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_II} />
+                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_III} />
+            </Grid>
+            <Grid>
+                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_I} />
+                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_II} />
+                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_III} />
+                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_IV} />
+            </Grid>
+            <Grid>
+                <Photo props={photos.Haus__Bad_3__Bad_3_I} />
+                <Photo props={photos.Haus__Bad_3__Bad_3_II} />
+                <Photo props={photos.Haus__Bad_3__Bad_3_III} />
+            </Grid>
+
             <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
                 <h2>Der Garten</h2>
             </Photo>
