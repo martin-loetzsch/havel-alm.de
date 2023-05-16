@@ -46,7 +46,7 @@ export default function Home() {
                 <div style={{ top: '133vw' }}>
                     <blockquote>200m², 6 Doppelzimmer, davon 5 mit zusätzlichem Hochbett</blockquote>
                     <blockquote>Für bis zu 12 Erwachsene plus Kinder</blockquote>
-                    <blockquote>3 Bäder, grosszügiger Gastraum, 100m² Terrasse, professionell eingerichtete Küche</blockquote>
+                    <blockquote>3 Bäder, grosszügiger Gastraum, 100m² Terrasse, hochwertig eingerichtete Küche</blockquote>
                 </div>
 
                 <div style={{ 'top': '213vw' }}>
@@ -85,6 +85,7 @@ export default function Home() {
                 <Photo props={photos.Haus__Gastraum__Eingang} />
             </Grid>
             <Grid>
+                <Photo props={photos.Haus__Gastraum__Kueche_I} />
                 <Photo props={photos.Haus__Kueche__Kueche_I} />
                 <Photo props={photos.Haus__Kueche__Kueche_II} />
                 <Photo props={photos.Haus__Kueche__Kueche_III} />
