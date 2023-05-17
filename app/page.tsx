@@ -6,6 +6,7 @@ import photos from '@/components/photos'
 import grundrissEG from '@/public/grundrisse/Grundriss EG.svg'
 import grundrissDG from '@/public/grundrisse/Grundriss DG.svg'
 import TextCard from '@/components/card/textCard';
+import Card from '@/components/card/textCard';
 
 const title = "Havel Alm Kratzeburg"
 const description = "68 Meter über Normalhöhennull, an der Quelle der Havel, 80 Minuten von Berlin per Regionalexpress"
@@ -70,62 +71,79 @@ export default function Home() {
                 <TextCard width={2000} height={1000} backgroundCyan={true}>
                     <p>Die Havel Alm wurde ca. 1900 als Stallgebäude am Ortseingang von Kratzeburg errichtet. 2021 übernahmen wir das bis dahin als Cafe genutzte Haus und bauten es bis Mai 2023 ökologisch zu einem Ferien- und Seminarhaus um.</p>
                 </TextCard>
-                <Photo props={photos.Haus__Blick_von_der_Strasse_February_2023}/>
+                <Photo props={photos.Haus__Blick_von_der_Strasse_February_2023} />
             </Grid>
             <Grid>
-            <Photo props={photos.Haus__Gastraum__Eingang} />
-            <Photo props={photos.Haus__Gastraum__Gastraum_I} />
-            </Grid>
+                <Photo props={photos.Haus__Gastraum__Eingang} />
+                <Photo props={photos.Haus__Gastraum__Gastraum_I} />
+            </Grid> 
 
-            <TextCard width={2000} height={1000} >
-                <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60 m² grosser Gastraum mit Blick auf den Garten, die Küche, ein Arbeitszimmer, zwei Bäder sowie ein 12m² grosses Doppelzimmer.</p>
-            </TextCard>
+            <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60m² grosser Gastraum mit Blick auf den Garten, die Küche, ein Arbeitszimmer, zwei Bäder sowie ein 12m² grosses Doppelzimmer.</p>
 
             <Image src={grundrissEG} alt={'Havel Alm Kratzeburg Grundriss Erdgeschoss'}
                 unoptimized style={{ width: '100%', height: 'auto' }}
             />
-            <Grid>
+             <Grid>
+                <Card width={650} height={1000} >
+                    <p>An drei Ess&shy;tischen finden bis zu 20 Personen Platz.</p>
+                </Card>
                 <Photo props={photos.Haus__Gastraum__Gastraum_II} />
                 <Photo props={photos.Haus__Gastraum__Gastraum_III} />
-                <Photo props={photos.Haus__Gastraum__Sofa_1} />
+                <Photo props={photos.Haus__Gastraum__Sofa_1} className='color-cyan'>
+                    <p>Das Sofa mit Blick auf den Garten</p>
+                </Photo>
                 <Photo props={photos.Haus__Gastraum__Sofa_2} />
             </Grid>
+
             <Grid>
+                <Card width={1500} height={1000} backgroundCyan={true}>
+                    <p>In der komplett ausgestat&shy;teten <b>Küche</b> kann für viele Personen gekocht werden.</p>
+                    <p>Es gibt einen grossen Induktionsherd, zwei Back&shy;öfen, einen Kühl&shy;schrank, eine Spülmaschine sowie eine Kaffemaschine.</p>
+                </Card>
                 <Photo props={photos.Haus__Kueche___Kueche___1} />
-                <Photo props={photos.Haus__Kueche___Kueche___2} />
                 <Photo props={photos.Haus__Kueche___Kueche___3} />
                 <Photo props={photos.Haus__Kueche___Kueche___4} />
             </Grid>
+            <Grid>
+                <Card width={700} height={1000}>
+                    <p>Neben dem Eingang liegt das 12m² grosse <b>Zimmer 1</b>.</p>
+                    <p>Vom 200x180 cm grossen Doppelbett hat man einen Blick auf die Weide hinter dem Grundstück.</p>
+                </Card>
+                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_I} />
+                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_II} />
+                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_III} />
+            </Grid>
+
+            <Grid>
+                <Card width={700} height={1000} backgroundCyan={true}>
+                    <p>In der hinteren Ecke des Hauses gibt es ein 8m² grosses <b>Arbeitszimmer</b> mit Sofa.</p>
+                </Card>
+                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_1} />
+                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_2} />
+                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_3} />
+            </Grid>
+            <p>Im Erdgeschoss gibt es zwei <b>Bäder</b>, eines davon mit Dusche und eins mit einer Badewanne.</p>
             <Grid>
                 <Photo props={photos.Haus__Bad_2__Bad_2_I} />
                 <Photo props={photos.Haus__Bad_2__Bad_2_II} />
                 <Photo props={photos.Haus__Bad_2__Bad_2_III} />
             </Grid>
             <Grid>
-
-                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_1} />
-                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_2} />
-                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_3} />
-            </Grid>
-            <Image src={grundrissDG} alt={'Havel Alm Kratzeburg Grundriss Dachgeschoss'}
-                unoptimized style={{ width: '100%', height: 'auto' }}
-            />
-            <Grid>
-                <Photo props={photos.Haus__Treppe__Treppe_1} />
+                <Card width={900} height={1000} backgroundCyan={true}>
+                    <p>Über eine breite Treppe glangt man in das <b>Dachge&shy;schoss</b>.</p>
+                </Card>
                 <Photo props={photos.Haus__Treppe__Treppe_2} />
+                <Photo props={photos.Haus__Treppe__Treppe_1} />
                 <Photo props={photos.Haus__Treppe__Treppe_3} />
 
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_1} />
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_2} />
-                <Photo props={photos.Haus__Flur_DG__Flur_DG_3} />
-                <Photo props={photos.Haus__Flur_DG__Flur_DG_4} />
 
             </Grid>
-            <Grid>
-                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_I} />
-                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_II} />
-                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_III} />
-            </Grid>
+            <Image src={grundrissDG} alt={'Havel Alm Kratzeburg Grundriss Dachgeschoss'}
+                unoptimized style={{ width: '100%', height: 'auto' }}
+            />
+
             <Grid>
                 <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_I} />
                 <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_II} />
@@ -137,7 +155,11 @@ export default function Home() {
                 <Photo props={photos.Haus__Bad_3__Bad_3_II} />
                 <Photo props={photos.Haus__Bad_3__Bad_3_III} />
             </Grid>
+            <Grid>
+                <Photo props={photos.Haus__Flur_DG__Flur_DG_3} />
+                <Photo props={photos.Haus__Flur_DG__Flur_DG_4} />
 
+            </Grid>
             <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
                 <h2>Der Garten</h2>
             </Photo>
