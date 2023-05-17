@@ -45,10 +45,11 @@ export default function Home() {
                     <blockquote> - Familientreffen</blockquote>
                     <blockquote> - Workshops und Team Offsites</blockquote>
                 </div>
-                <div style={{ top: '133vw' }}>
+                <div style={{ top: '130vw' }}>
                     <blockquote>200m², 6 Doppelzimmer, davon 5 mit zusätzlichem Hochbett</blockquote>
                     <blockquote>Für bis zu 12 Erwachsene plus Kinder</blockquote>
-                    <blockquote>3 Bäder, grosszügiger Gastraum, 100m² Terrasse, hochwertig eingerichtete Küche</blockquote>
+                    <blockquote>3 Bäder, grosser Gastraum, 100m² Terrasse, modern eingerichtete Küche</blockquote>
+                    <blockquote>90 Mbps Internet, WLAN im ganzen Haus</blockquote>
                 </div>
 
                 <div style={{ 'top': '213vw' }}>
@@ -78,7 +79,7 @@ export default function Home() {
                 <Photo props={photos.Haus__Gastraum__Gastraum_I} />
             </Grid> 
 
-            <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60m² grosser Gastraum mit Blick auf den Garten, die Küche, ein Arbeitszimmer, zwei Bäder sowie ein 12m² grosses Doppelzimmer.</p>
+            <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60m² grosser Gastraum mit Blick eine Weide, die Küche, ein Arbeitszimmer, zwei Bäder sowie ein 12m² grosses Doppelzimmer.</p>
 
             <Image src={grundrissEG} alt={'Havel Alm Kratzeburg Grundriss Erdgeschoss'}
                 unoptimized style={{ width: '100%', height: 'auto' }}
@@ -144,6 +145,8 @@ export default function Home() {
                 unoptimized style={{ width: '100%', height: 'auto' }}
             />
 
+            <p>Im Dachgeschoss gibt es <b>5</b> nahezu identische Kammern (<b>Zimmer 2 bis 6</b>). Jedes der Zimmer hat ein Doppelbett (200x140cm) sowie ein Hochbett (200x70cm) für Kinder.</p>
+            <p><b>Achtung!</b> Die Doppelbetten ist nur von einer Seite zugänglich, d.h. darin übernachtende Personen sollten sich gut kennen.</p>
             <Grid>
                 <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_I} />
                 <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_II} />
@@ -151,11 +154,17 @@ export default function Home() {
                 <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_IV} />
             </Grid>
             <Grid>
-                <Photo props={photos.Haus__Bad_3__Bad_3_I} />
+                <Card width={500} height={1000}>
+                    <p>Im Obergeschoss befindet sich auch ein drittes Bad mit Dusche.</p>
+                </Card>
                 <Photo props={photos.Haus__Bad_3__Bad_3_II} />
+                <Photo props={photos.Haus__Bad_3__Bad_3_I} />
                 <Photo props={photos.Haus__Bad_3__Bad_3_III} />
             </Grid>
             <Grid>
+                <Card width={2000} height={1000}>
+                    <p>Auf den Flächen vor den Kammern gibt es weitere Gelegenheiten zum Arbeiten, Lesen usw.</p>
+                </Card>
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_3} />
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_4} />
 
