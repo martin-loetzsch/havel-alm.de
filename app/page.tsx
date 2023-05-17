@@ -85,11 +85,10 @@ export default function Home() {
                 <Photo props={photos.Haus__Gastraum__Eingang} />
             </Grid>
             <Grid>
-                <Photo props={photos.Haus__Gastraum__Bar} />
-                <Photo props={photos.Haus__Kueche__Kueche_I} />
-                <Photo props={photos.Haus__Kueche__Kueche_II} />
-                <Photo props={photos.Haus__Kueche__Kueche_III} />
-                <Photo props={photos.Haus__Kueche__Kueche_IV} />
+                <Photo props={photos.Haus__Gastraum__Kueche__1} />
+                <Photo props={photos.Haus__Gastraum__Kueche__2} />
+                <Photo props={photos.Haus__Gastraum__Kueche__3} />
+                <Photo props={photos.Haus__Gastraum__Kueche__4} />
             </Grid>
             <Grid>
                 <Photo props={photos.Haus__Bad_2__Bad_2_I} />
