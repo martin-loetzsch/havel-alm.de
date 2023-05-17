@@ -84,9 +84,6 @@ export default function Home() {
             <Image src={grundrissEG} alt={'Havel Alm Kratzeburg Grundriss Erdgeschoss'}
                 unoptimized style={{ width: '100%', height: 'auto' }}
             />
-            <Image src={grundrissDG} alt={'Havel Alm Kratzeburg Grundriss Dachgeschoss'}
-                unoptimized style={{ width: '100%', height: 'auto' }}
-            />
             <Grid>
                 <Photo props={photos.Haus__Gastraum__Gastraum_II} />
                 <Photo props={photos.Haus__Gastraum__Gastraum_III} />
@@ -110,6 +107,9 @@ export default function Home() {
                 <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_2} />
                 <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_3} />
             </Grid>
+            <Image src={grundrissDG} alt={'Havel Alm Kratzeburg Grundriss Dachgeschoss'}
+                unoptimized style={{ width: '100%', height: 'auto' }}
+            />
             <Grid>
                 <Photo props={photos.Haus__Treppe__Treppe_1} />
                 <Photo props={photos.Haus__Treppe__Treppe_2} />
