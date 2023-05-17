@@ -79,7 +79,7 @@ export default function Home() {
                 <Photo props={photos.Haus__Gastraum__Gastraum_I} />
             </Grid> 
 
-            <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60m² grosser Gastraum mit Blick eine Weide, die Küche, ein Arbeitszimmer, zwei Bäder sowie ein 12m² grosses Doppelzimmer.</p>
+            <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60m² grosser Gastraum mit Blick auf eine Weide, die Küche, ein Arbeitszimmer, zwei Bäder sowie ein 12m² grosses Doppelzimmer.</p>
 
             <Image src={grundrissEG} alt={'Havel Alm Kratzeburg Grundriss Erdgeschoss'}
                 unoptimized style={{ width: '100%', height: 'auto' }}
