@@ -63,16 +63,19 @@ export default function Home() {
                     <p>+49 178 6803711</p>
                 </div>
             </Photo>
-            <Photo props={photos.Haus__Das_Haus_vom_Garten_aus_Mai_2023} >
+            <Photo props={photos.Haus__Das_Haus_vom_Garten_aus_Mai_2023} priority={true}>
                 <h2 className='color-cyan'>Das Haus</h2>
             </Photo>
             <Grid>
                 <TextCard width={2000} height={1000} backgroundCyan={true}>
                     <p>Die Havel Alm wurde ca. 1900 als Stallgebäude am Ortseingang von Kratzeburg errichtet. 2021 übernahmen wir das bis dahin als Cafe genutzte Haus und bauten es bis Mai 2023 ökologisch zu einem Ferien- und Seminarhaus um.</p>
                 </TextCard>
-                <Photo props={photos.Haus__Blick_von_der_Strasse_February_2023} />
+                <Photo props={photos.Haus__Blick_von_der_Strasse_February_2023}/>
             </Grid>
+            <Grid>
+            <Photo props={photos.Haus__Gastraum__Eingang} />
             <Photo props={photos.Haus__Gastraum__Gastraum_I} />
+            </Grid>
 
             <TextCard width={2000} height={1000} >
                 <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60 m² grosser Gastraum mit Blick auf den Garten, die Küche, ein Arbeitszimmer, zwei Bäder sowie ein 12m² grosses Doppelzimmer.</p>
@@ -89,7 +92,6 @@ export default function Home() {
                 <Photo props={photos.Haus__Gastraum__Gastraum_III} />
                 <Photo props={photos.Haus__Gastraum__Sofa_1} />
                 <Photo props={photos.Haus__Gastraum__Sofa_2} />
-                <Photo props={photos.Haus__Gastraum__Eingang} />
             </Grid>
             <Grid>
                 <Photo props={photos.Haus__Kueche___Kueche___1} />
