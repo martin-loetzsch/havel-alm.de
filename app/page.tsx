@@ -1,10 +1,11 @@
-import Photo from '../components/photo/photo'
-import Grid from "../components/grid/grid"
+import Photo from '@/components/photo/photo'
+import Grid from "@/components/grid/grid"
 import type { Metadata } from 'next';
 import Image from "next/image"
-import photos from '../components/photos'
-import grundrissEG from '../public/grundrisse/Grundriss EG.svg'
-import grundrissDG from '../public/grundrisse/Grundriss DG.svg'
+import photos from '@/components/photos'
+import grundrissEG from '@/public/grundrisse/Grundriss EG.svg'
+import grundrissDG from '@/public/grundrisse/Grundriss DG.svg'
+import Card from '@/components/card/card';
 
 const title = "Havel Alm Kratzeburg"
 const description = "68 Meter über Normalhöhennull, an der Quelle der Havel, 80 Minuten von Berlin per Regionalexpress"
@@ -62,13 +63,15 @@ export default function Home() {
                     <p>+49 178 6803711</p>
                 </div>
             </Photo>
-            <Grid>
-                <Photo props={photos.Haus__Ansicht_von_der_Strasse_im_Winter} priority={true}>
+            <Photo props={photos.Haus__Das_Haus_vom_Garten_aus_Mai_2023} className='color-cyan'>
                     <h2>Das Haus</h2>
-                </Photo>
-                <Photo props={photos.Haus__Das_Haus_vom_Garten_aus_Mai_2023} />
+            </Photo>
+            <Grid>
+                <Photo props={photos.Haus__Gastraum__Gastraum_I} />
                 <Photo props={photos.Haus__Blick_von_der_Strasse_February_2023} />
-                <Photo props={photos.Haus__Wegweiser_vor_dem_Haus} />
+                <Card width={1000} height={1000} >
+                    <blockquote>Hello</blockquote>
+                </Card>
             </Grid>
             <Image src={grundrissEG} alt={'Havel Alm Kratzeburg Grundriss Erdgeschoss'}
                 unoptimized style={{ width: '100%', height: 'auto' }}
@@ -77,7 +80,6 @@ export default function Home() {
                 unoptimized style={{ width: '100%', height: 'auto' }}
             />
             <Grid>
-                <Photo props={photos.Haus__Gastraum__Gastraum_I} />
                 <Photo props={photos.Haus__Gastraum__Gastraum_II} />
                 <Photo props={photos.Haus__Gastraum__Gastraum_III} />
                 <Photo props={photos.Haus__Gastraum__Sofa_1} />
@@ -138,6 +140,8 @@ export default function Home() {
                 <Photo props={photos.Garten__Terrasse_2} />
                 <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} />
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
+                <Photo props={photos.Haus__Wegweiser_vor_dem_Haus} />
+                <Photo props={photos.Haus__Ansicht_von_der_Strasse_im_Winter} priority={true} />
             </Grid>
             <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee}>
                 <h2>Die Umgebung</h2>

@@ -1,6 +1,6 @@
 import styles from './card.module.scss'
 
-import {FunctionComponent, ReactNode} from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 type CardProps = {
     width: number,
@@ -9,10 +9,10 @@ type CardProps = {
 }
 
 const Card: FunctionComponent<CardProps> = ({
-                                                      width,
-                                                      height,
-                                                      children
-                                                  }): JSX.Element => {
+    width,
+    height,
+    children
+}): JSX.Element => {
     return (
         <div data-width={width} data-height={height} className={styles.container}>
             {children}
