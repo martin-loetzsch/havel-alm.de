@@ -7,13 +7,14 @@ body {
   overflow: overlay;
 }
 
-.color-cyan, .color-cyan a {
-  color: #aaffff;
-}
 
-h1, h2, h3, p, blockquote {
-  padding-left:3vw;
-  padding-right:3vw;
+h1,
+h2,
+h3,
+p,
+blockquote {
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 h1 {
@@ -31,7 +32,8 @@ h2 {
   padding-bottom: 2vw;
 }
 
-h3, blockquote {
+h3,
+blockquote {
   @include font-bold;
   font-size: 4vw;
   padding-top: 1.5vw;
@@ -41,10 +43,24 @@ h3, blockquote {
 p {
   @include font-regular;
   font-size: 3.5vw;
+  padding-top: 1vw;
   padding-bottom: 1vw;
 }
 
 a {
   text-decoration: underline;
-  color:black;
+  color: black;
+}
+
+b {
+  @include font-bold;
+}
+
+.color-cyan, 
+.color-cyan a {
+  color: $color-cyan;
+}
+
+.background-cyan {
+  background-color: $color-cyan;
 }

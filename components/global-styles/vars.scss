@@ -1,7 +1,5 @@
-:root {
-  --cyan: #aaffff;
-  --textMargin: 0.4vw;
-}
+$color-cyan: #aaffff;
+
 
 @import "@fontsource/lexend-deca/latin-600.css";
 @import "@fontsource/lexend-deca/latin-300.css";
@@ -21,3 +19,4 @@
   font-family: "Lexend Deca", sans-serif;
   font-weight: 300;
 }
+

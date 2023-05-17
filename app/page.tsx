@@ -5,7 +5,7 @@ import Image from "next/image"
 import photos from '@/components/photos'
 import grundrissEG from '@/public/grundrisse/Grundriss EG.svg'
 import grundrissDG from '@/public/grundrisse/Grundriss DG.svg'
-import Card from '@/components/card/card';
+import TextCard from '@/components/card/textCard';
 
 const title = "Havel Alm Kratzeburg"
 const description = "68 Meter über Normalhöhennull, an der Quelle der Havel, 80 Minuten von Berlin per Regionalexpress"
@@ -63,16 +63,21 @@ export default function Home() {
                     <p>+49 178 6803711</p>
                 </div>
             </Photo>
-            <Photo props={photos.Haus__Das_Haus_vom_Garten_aus_Mai_2023} className='color-cyan'>
-                    <h2>Das Haus</h2>
+            <Photo props={photos.Haus__Das_Haus_vom_Garten_aus_Mai_2023} >
+                <h2 className='color-cyan'>Das Haus</h2>
             </Photo>
             <Grid>
-                <Photo props={photos.Haus__Gastraum__Gastraum_I} />
+                <TextCard width={2000} height={1000} backgroundCyan={true}>
+                    <p>Die Havel Alm wurde ca. 1900 als Stallgebäude am Ortseingang von Kratzeburg errichtet. 2021 übernahmen wir das bis dahin als Cafe genutzte Haus und bauten es bis Mai 2023 ökologisch zu einem Ferien- und Seminarhaus um.</p>
+                </TextCard>
                 <Photo props={photos.Haus__Blick_von_der_Strasse_February_2023} />
-                <Card width={1000} height={1000} >
-                    <blockquote>Hello</blockquote>
-                </Card>
             </Grid>
+            <Photo props={photos.Haus__Gastraum__Gastraum_I} />
+
+            <TextCard width={2000} height={1000} >
+                <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60 m² grosser Gastraum mit Blick auf den Garten, die Küche, ein Arbeitszimmer, zwei Bäder sowie ein 12m² grosses Doppelzimmer.</p>
+            </TextCard>
+
             <Image src={grundrissEG} alt={'Havel Alm Kratzeburg Grundriss Erdgeschoss'}
                 unoptimized style={{ width: '100%', height: 'auto' }}
             />

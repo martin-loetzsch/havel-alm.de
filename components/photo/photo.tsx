@@ -46,7 +46,7 @@ export const Photo: FunctionComponent<PhotoComponentProps> = (
     }
 
     return (
-        <div data-width={props.width} data-height={props.height} className={styles.container}>
+        <div data-width={props.width} data-height={props.height} data-is-text-card={false} className={styles.container}>
             {image}
             <div className={styles.children + ' ' + className}>
                 {children}

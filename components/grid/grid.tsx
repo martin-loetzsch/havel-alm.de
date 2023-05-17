@@ -2,8 +2,8 @@
 
 import styles from './grid.module.scss'
 
-import { ReactElement, FunctionComponent} from 'react'
-import {calcWidth, computeRowsLayout, GridItem} from './reactPhotoAlbum/rowsLayout'
+import { ReactElement, FunctionComponent } from 'react'
+import { calcWidth, computeRowsLayout, GridItem } from './reactPhotoAlbum/rowsLayout'
 
 import useWindowWidth from '../useWindowWidth'
 
@@ -13,16 +13,18 @@ type GridProps = {
     spacing?: number
 }
 
-const Grid: FunctionComponent<GridProps> = ({ children}): JSX.Element => {
+const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
     const windowWidth = useWindowWidth()
 
     const gridItems: Array<GridItem> = children.map((child) => {
         const width = child.props['data-width']
         const height = child.props['data-height']
-        if (!width || !height) {
-            throw Error('Child passed to <Grid> did not contain "data-width" and "data-height" props')
+        const isTextCard = child.props['data-is-text-card']
+
+        if (!width || !height || isTextCard==null) {
+            throw Error('Child passed to <Grid> did not contain "data-width", "data-height" and "data-is-text-card" props')
         }
-        return {width: width, height: height, element: child}
+        return { width: width, height: height, isTextCard: isTextCard, element: child }
     })
 
 
@@ -40,26 +42,28 @@ const Grid: FunctionComponent<GridProps> = ({ children}): JSX.Element => {
         const maxItems = Math.min(4, Math.max(1, 1 + Math.ceil((windowWidth - 800) / 400)))
 
         const rowsLayout = computeRowsLayout(gridItems, windowWidth, targetRowHeight, spacing, 1, maxItems)
-        
+
         return (
 
             <div className={styles.container}>
                 {rowsLayout.map((row, rowIndex) => (
                     <div className={styles.row}
-                         key={`row-${rowIndex}`}
-                         style={{
-                             ...(rowIndex < rowsLayout.length - 1 ? {marginBottom: `${spacing}px`} : null)
-                         }}>
-                        {row.map(({gridItem, height, width, index, itemIndex, itemsCount}) => (
+                        key={`row-${rowIndex}`}
+                        style={{
+                            ...(rowIndex < rowsLayout.length - 1 ? { marginBottom: `${spacing}px` } : null)
+                        }}>
+                        {row.map(({ gridItem, height, width, index, itemIndex, itemsCount }) => (
                             <div key={itemIndex}
-                                 className={styles.item}
-                                 style={
-                                     {
-                                         width: calcWidth("100%", width, itemIndex, spacing, windowWidth),
-                                         height: `${height}px`,
-                                         aspectRatio: `${gridItem.width} / ${gridItem.height}`,
-                                         // ...(onClick ? { cursor: "pointer" } : null),
-                                     }}>
+                                className={styles.item}
+                                style={{
+                                    ...(row.length > 1 || !gridItem.isTextCard? {
+
+                                        width: calcWidth("100%", width, itemIndex, spacing, windowWidth),
+                                        height: `${height}px`,
+                                        aspectRatio: `${gridItem.width} / ${gridItem.height}`,
+                                        // ...(onClick ? { cursor: "pointer" } : null),
+                                    } : null)
+                                }}>
                                 {gridItem.element}
                             </div>
                         ))}
