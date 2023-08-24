@@ -35,9 +35,9 @@ const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
                 {children}
             </div>)
     } else {
-        const targetRowHeight = windowWidth / 6
+        const targetRowHeight = windowWidth / 6.0
 
-        const spacing = Math.round(windowWidth / 200)
+        const spacing = windowWidth / 200.0
 
         const maxItems = Math.min(3, Math.max(1, 1 + Math.ceil((windowWidth - 800) / 400)))
 
@@ -51,7 +51,8 @@ const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
                         key={`row-${rowIndex}`}
                         style={{
                             ...(rowIndex < rowsLayout.length - 1 ? { marginBottom: `${spacing}px` } : null)
-                        }}>
+                        }}
+                        >
                         {row.map(({ gridItem, height, width, index, itemIndex, itemsCount }) => (
                             <div key={itemIndex}
                                 className={styles.item}
@@ -59,7 +60,7 @@ const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
                                     ...(row.length > 1 || !gridItem.isTextCard? {
 
                                         width: calcWidth("100%", width, itemIndex, spacing, windowWidth),
-                                        height: `${height}px`,
+                                        height: `${height - spacing}px`,
                                         aspectRatio: `${gridItem.width} / ${gridItem.height}`,
                                         // ...(onClick ? { cursor: "pointer" } : null),
                                     } : null)
