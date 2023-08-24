@@ -39,7 +39,7 @@ const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
 
         const spacing = Math.round(windowWidth / 200)
 
-        const maxItems = Math.min(4, Math.max(1, 1 + Math.ceil((windowWidth - 800) / 400)))
+        const maxItems = Math.min(3, Math.max(1, 1 + Math.ceil((windowWidth - 800) / 400)))
 
         const rowsLayout = computeRowsLayout(gridItems, windowWidth, targetRowHeight, spacing, 1, maxItems)
 
