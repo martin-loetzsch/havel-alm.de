@@ -37,7 +37,7 @@ const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
     } else {
         const targetRowHeight = windowWidth / 6.0
 
-        const spacing = windowWidth / 200.0
+        const spacing = windowWidth / 100.0
 
         const maxItems = Math.min(3, Math.max(1, 1 + Math.ceil((windowWidth - 800) / 400)))
 
@@ -60,7 +60,7 @@ const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
                                     ...(row.length > 1 || !gridItem.isTextCard? {
 
                                         width: calcWidth("100%", width, itemIndex, spacing, windowWidth),
-                                        height: `${height - spacing}px`,
+                                        //height: `${height - spacing*2}px`,
                                         aspectRatio: `${gridItem.width} / ${gridItem.height}`,
                                         // ...(onClick ? { cursor: "pointer" } : null),
                                     } : null)
