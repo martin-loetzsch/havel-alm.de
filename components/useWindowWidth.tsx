@@ -15,7 +15,7 @@ export default function useWindowWidth() {
         // Handler to call on window resize
         function handleResize() {
             // Set window width/height to state
-            setWindowWidth(window.innerWidth);
+            setWindowWidth(document.documentElement.clientWidth);
         }
 
         // Add event listener
