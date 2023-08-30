@@ -1,5 +1,6 @@
 import Photo from '@/components/photo/photo'
 import Grid from "@/components/grid/grid"
+import VerticallyAlignedDiv from '@/components/verticallyAlignedDiv';
 import type { Metadata } from 'next';
 import Image from "next/image"
 import photos from '@/components/photos'
@@ -34,25 +35,24 @@ export default function Home() {
             <Photo props={photos.Haus__Das_Haus_von_oben_1} priority={true} scale={70}
                 className='color-cyan' linkToPhotoPage={false}>
                 <h1>Havel Alm</h1>
-                <div style={{ top: '35vw' }}>
+                <VerticallyAlignedDiv percentageOfViewWidth={35}>
                     <blockquote>68 Meter über Normalhöhennull</blockquote>
                     <blockquote>An der Quelle der Havel</blockquote>
                     <blockquote>80 Minuten von Berlin per Regionalexpress</blockquote>
-                </div>
-                <div style={{ top: '80vw' }}>
+                </VerticallyAlignedDiv>
+                <VerticallyAlignedDiv percentageOfViewWidth={80}>
                     <blockquote>Das Ferienhaus für</blockquote>
                     <blockquote> - Urlaube in grösseren Gruppen</blockquote>
                     <blockquote> - Familientreffen</blockquote>
                     <blockquote> - Workshops und Team Offsites</blockquote>
-                </div>
-                <div style={{ top: '130vw' }}>
+                </VerticallyAlignedDiv>
+                <VerticallyAlignedDiv percentageOfViewWidth={130}>
                     <blockquote>200m², 6 Doppelzimmer, davon 5 mit zusätzlichem Hochbett</blockquote>
                     <blockquote>Für bis zu 12 Erwachsene plus Kinder</blockquote>
                     <blockquote>3 Bäder, grosser Gastraum, 100m² Terrasse, modern eingerichtete Küche</blockquote>
                     <blockquote>90 Mbps Internet, WLAN im ganzen Haus</blockquote>
-                </div>
-
-                <div style={{ 'top': '213vw' }}>
+                </VerticallyAlignedDiv>
+                <VerticallyAlignedDiv percentageOfViewWidth={211}>
                     <p>Havel Alm <a href="https://sabine-boettger.de">Sabine Boettger</a> und <a
                         href="https://martin-loetzsch.de">Martin Loetzsch</a> GbR
                     </p>
@@ -63,13 +63,14 @@ export default function Home() {
                         <a href="mailto:info@havel-alm.de">info@havel-alm.de</a>
                     </p>
                     <p>+49 178 6803711</p>
-                </div>
+
+                </VerticallyAlignedDiv>
             </Photo>
             <Photo props={photos.Haus__Das_Haus_vom_Garten_aus_Mai_2023} priority={true}>
                 <h2 className='color-cyan'>Das Haus</h2>
             </Photo>
             <Grid>
-                <TextCard width={2000} height={1000} backgroundCyan={true}>
+                <TextCard width={3000} height={2000} backgroundCyan={true}>
                     <p>Die Havel Alm wurde ca. 1900 als Stallgebäude am Ortseingang von Kratzeburg errichtet. 2021 übernahmen wir das bis dahin als Cafe genutzte Haus und bauten es bis Mai 2023 ökologisch zu einem Ferien- und Seminarhaus um.</p>
                 </TextCard>
                 <Photo props={photos.Haus__Blick_von_der_Strasse_February_2023} />
@@ -77,14 +78,14 @@ export default function Home() {
             <Grid>
                 <Photo props={photos.Haus__Gastraum__Eingang} />
                 <Photo props={photos.Haus__Gastraum__Gastraum_I} />
-            </Grid> 
+            </Grid>
 
             <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60m² grosser Gastraum mit Blick auf eine Weide, die Küche, ein Arbeitszimmer, zwei Bäder sowie ein 12m² grosses Doppelzimmer.</p>
 
             <Image src={grundrissEG} alt={'Havel Alm Kratzeburg Grundriss Erdgeschoss'}
                 unoptimized style={{ width: '100%', height: 'auto' }}
             />
-             <Grid>
+            <Grid>
                 <Card width={650} height={1000} >
                     <p>An drei Ess&shy;tischen finden bis zu 20 Personen Platz.</p>
                 </Card>
