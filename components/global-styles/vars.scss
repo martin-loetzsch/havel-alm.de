@@ -1,13 +1,13 @@
 $color-cyan: #aaffff;
 
 
+@mixin text-margins {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
 @import "@fontsource/lexend-deca/latin-600.css";
 @import "@fontsource/lexend-deca/latin-300.css";
-
-@mixin text-margins {
-  padding-left: 4vw;
-  padding-right: 4vw;
-}
 
 
 @mixin font-bold {
