@@ -3,15 +3,25 @@ import Link from 'next/link'
 
 import { FunctionComponent, ReactNode } from 'react'
 
+const links = {
+    '/': 'Start',
+    '/innen': 'Innen',
+    '/aussen': 'Aussen',
+    '/umgebung': 'Umgebung',
+    '/buchung': 'Buchung',
+}
 
 const Nav: FunctionComponent = (): JSX.Element => {
     return (
         <nav className={styles.container}>
             <ul>
-                <Link href='/'>Start</Link>
-                <Link href='/das-haus'>Das Haus</Link>
-                <Link href='/preise-und-Buchung'>Buchung und Preise</Link>
-                
+                {
+                    Object.keys(links).map((link, index) => (
+
+                        <Link key={link} href={link}>{links[link]}</Link>
+                    ))
+                }
+               
             </ul>
         </nav>
     )

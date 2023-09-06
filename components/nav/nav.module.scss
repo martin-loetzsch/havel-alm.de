@@ -1,8 +1,21 @@
 
+@import "../global-styles/vars.scss";
+
 .container {
     overflow: hidden;
     position: fixed;
-    background-color: yellow;
-  }
-  
+    top: 3vw;
+    right: 3vw;
+    background-color: $color-cyan;
+    padding: 1.5vw;
+    filter: alpha(opacity=90);
+    opacity: .90;
+}
+
+.container a {
+  display: block;
+  @include font-regular;
+  font-size: 6vw;
+  padding: 0.5vw;
+}
   
