@@ -4,6 +4,7 @@ import styles from './nav.module.scss'
 import Link from 'next/link'
 
 import { FunctionComponent, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 interface Map {
     [key: string]: string
@@ -20,6 +21,9 @@ const links: Map = {
 
 const Nav: FunctionComponent = (): JSX.Element => {
     const [isOpen, setIsOpen] = useState(false)
+    const pathname = usePathname()
+
+    console.log(pathname)
 
     return (
         <nav className={styles.nav + ' ' + (isOpen ? styles.navOpened : styles.navClosed)}
@@ -42,7 +46,10 @@ const Nav: FunctionComponent = (): JSX.Element => {
             {
                 isOpen &&
                 Object.keys(links).map((link, index) => (
+                    link != pathname ?
                     <Link key={link} href={{ pathname: link }}>{links[link]}</Link>
+                    :
+                    <p>{links[link]}</p>
                 ))}
 
 
