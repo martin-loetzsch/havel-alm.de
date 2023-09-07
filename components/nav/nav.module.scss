@@ -1,21 +1,56 @@
 
 @import "../global-styles/vars.scss";
 
-.container {
+.nav {
     overflow: hidden;
     position: fixed;
     top: 3vw;
     right: 3vw;
     background-color: $color-cyan;
     padding: 1.5vw;
-    filter: alpha(opacity=90);
-    opacity: .90;
+    filter: alpha(opacity=85);
+    opacity: .85;
 }
 
-.container a {
+.navClosed {
+  width: 9vw;
+  height: 9vw;
+}
+
+.icon {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  width: 7vw;
+  height: 7vw;
+}
+
+.navOpened .iconOpen {
+    display: None;
+}
+
+.navClosed {
+  width: 9vw;
+  height: 9vw;
+}
+
+.navOpened {
+  display: initial;
+}
+
+.iconClose {
+  font-size:7vw;
+  text-align: center;
+}
+
+.navClosed .iconClose {
+  display: none;
+}
+
+.nav a {
   display: block;
   @include font-regular;
   font-size: 6vw;
-  padding: 0.5vw;
+  padding-bottom: 1vw;
 }
   
