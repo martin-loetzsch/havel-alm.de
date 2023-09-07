@@ -1,33 +1,18 @@
-import Photo from '@/components/photo/photo'
-import Grid from "@/components/grid/grid"
+import { default as Card, default as TextCard } from '@/components/card/textCard';
+import getMetaData from '@/components/getMetaData';
+import Grid from "@/components/grid/grid";
+import Photo from '@/components/photo/photo';
+import photos from '@/components/photos';
 import VerticallyAlignedDiv from '@/components/verticallyAlignedDiv';
+import grundrissDG from '@/public/grundrisse/Grundriss DG.svg';
+import grundrissEG from '@/public/grundrisse/Grundriss EG.svg';
 import type { Metadata } from 'next';
-import Image from "next/image"
-import photos from '@/components/photos'
-import grundrissEG from '@/public/grundrisse/Grundriss EG.svg'
-import grundrissDG from '@/public/grundrisse/Grundriss DG.svg'
-import TextCard from '@/components/card/textCard';
-import Card from '@/components/card/textCard';
+import Image from "next/image";
 
 const title = "Havel Alm Kratzeburg"
 const description = "68 Meter über Normalhöhennull, an der Quelle der Havel, 80 Minuten von Berlin per Regionalexpress"
 
-export const metadata: Metadata = {
-    title: title,
-    description: description,
-    authors: [{ name: 'Havel Alm', url: 'https://havel-alm.de' }],
-    openGraph: {
-        title: title,
-        description: description,
-        url: 'https://havel-alm.de/',
-        siteName: 'havel-alm.de',
-        locale: 'de-DE',
-    },
-
-    icons: {
-        icon: '/favicon.ico',
-    }
-}
+export const metadata: Metadata = getMetaData(title, description)
 
 export default function Home() {
     return (
