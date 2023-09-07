@@ -1,6 +1,16 @@
 
 @import "../global-styles/vars.scss";
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes expand {
+  0% { width: 9vw; height: 9vw;}
+  100% { width: 35vw; height: 38vw;}
+}
+
 .nav {
     overflow: hidden;
     position: fixed;
@@ -23,19 +33,18 @@
   right: 1vw;
   width: 7vw;
   height: 7vw;
+  animation: fadeIn 0.5s;
+  cursor: pointer;
 }
 
 .navOpened .iconOpen {
     display: None;
 }
 
-.navClosed {
-  width: 9vw;
-  height: 9vw;
-}
+
 
 .navOpened {
-  display: initial;
+  animation: expand 0.1s linear;
 }
 
 .iconClose {

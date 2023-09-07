@@ -17,7 +17,10 @@ const Nav: FunctionComponent = (): JSX.Element => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <nav className={styles.nav + ' ' + (isOpen ? styles.navOpened : styles.navClosed)}>
+        <nav className={styles.nav + ' ' + (isOpen ? styles.navOpened : styles.navClosed)}
+            onMouseEnter={() => setIsOpen(true)}
+            onMouseLeave={() => setIsOpen(false)}
+        >
             <div className={`${styles.icon}  ${styles.iconOpen}`}
                 onClick={() => { setIsOpen(true) }}
             >
@@ -28,7 +31,7 @@ const Nav: FunctionComponent = (): JSX.Element => {
                 </svg>
             </div>
             <div className={`${styles.icon} ${styles.iconClose}`}
-            onClick={() => { setIsOpen(false) }}>
+                onClick={() => { setIsOpen(false) }}>
                 X
             </div>
             {
