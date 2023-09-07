@@ -1,4 +1,3 @@
-
 @import "../global-styles/vars.scss";
 
 @keyframes fadeIn {
@@ -11,6 +10,7 @@
   100% { width: 35vw; height: 38vw;}
 }
 
+
 .nav {
     overflow: hidden;
     position: fixed;
@@ -22,9 +22,14 @@
     opacity: .85;
 }
 
+
 .navClosed {
   width: 9vw;
   height: 9vw;
+}
+
+.navOpened {
+  animation: expand 0.1s linear;
 }
 
 .icon {
@@ -41,11 +46,6 @@
     display: None;
 }
 
-
-
-.navOpened {
-  animation: expand 0.1s linear;
-}
 
 .iconClose {
   font-size:7vw;

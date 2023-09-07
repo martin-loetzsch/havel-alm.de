@@ -5,7 +5,12 @@ import Link from 'next/link'
 
 import { FunctionComponent, useState } from 'react'
 
-const links = {
+interface Map {
+    [key: string]: string
+}
+
+
+const links: Map = {
     '/': 'Start',
     '/innen': 'Innen',
     '/aussen': 'Aussen',
@@ -37,8 +42,7 @@ const Nav: FunctionComponent = (): JSX.Element => {
             {
                 isOpen &&
                 Object.keys(links).map((link, index) => (
-
-                    <Link key={link} href={link}>{links[link]}</Link>
+                    <Link key={link} href={{ pathname: link }}>{links[link]}</Link>
                 ))}
 
 
