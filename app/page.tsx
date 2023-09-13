@@ -214,7 +214,7 @@ export default function Home() {
                 <Photo props={photos.Die_Umgebung__Radweg_in_Ricktung_Pieversdorf} />
             </Grid>
 
-            <Nav verticalOffsetInVWs={20}/>
+            <Nav verticalOffsetInVWs={230}/>
         </>
     )
 }
