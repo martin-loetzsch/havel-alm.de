@@ -84,6 +84,8 @@ const Nav: FunctionComponent<NavProps> = ({ verticalOffsetInVWs, customEntries }
 
             </nav>
         )
+    } else {
+        return <></>
     }
 }
 
