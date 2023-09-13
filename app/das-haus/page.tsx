@@ -3,57 +3,23 @@ import getMetaData from '@/components/getMetaData';
 import Grid from "@/components/grid/grid";
 import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
-import VerticallyAlignedDiv from '@/components/verticallyAlignedDiv';
 import grundrissDG from '@/public/grundrisse/Grundriss DG.svg';
 import grundrissEG from '@/public/grundrisse/Grundriss EG.svg';
 import type { Metadata } from 'next';
 import Image from "next/image";
-import Nav from '../components/nav/nav';
+import Nav from '../../components/nav/nav';
 
-const title = "Havel Alm Kratzeburg"
-const description = "68 Meter über Normalhöhennull, an der Quelle der Havel, 80 Minuten von Berlin per Regionalexpress"
+const title = "Das Haus"
+const description = "Alle Zimmer, die Einrichtung, Grundrisse etc."
 
 export const metadata: Metadata = getMetaData(title, description)
 
 export default function Home() {
     return (
         <>
-            <Photo props={photos.Haus__Das_Haus_von_oben_1} priority={true} scale={70}
-                className='color-cyan' linkToPhotoPage={false}>
-                <h1>Havel Alm</h1>
-                <VerticallyAlignedDiv percentageOfViewWidth={35}>
-                    <blockquote>68 Meter über Normalhöhennull</blockquote>
-                    <blockquote>An der Quelle der Havel</blockquote>
-                    <blockquote>80 Minuten von Berlin per Regionalexpress</blockquote>
-                </VerticallyAlignedDiv>
-                <VerticallyAlignedDiv percentageOfViewWidth={80}>
-                    <blockquote>Das Ferienhaus für</blockquote>
-                    <blockquote> - Urlaube in grösseren Gruppen</blockquote>
-                    <blockquote> - Familientreffen</blockquote>
-                    <blockquote> - Workshops und Team Offsites</blockquote>
-                </VerticallyAlignedDiv>
-                <VerticallyAlignedDiv percentageOfViewWidth={130}>
-                    <blockquote>200m², 6 Doppelzimmer, davon 5 mit zusätzlichem Hochbett</blockquote>
-                    <blockquote>Für bis zu 12 Erwachsene plus Kinder</blockquote>
-                    <blockquote>3 Bäder, grosser Gastraum, 100m² Terrasse, modern eingerichtete Küche</blockquote>
-                    <blockquote>90 Mbps Internet, WLAN im ganzen Haus</blockquote>
-                </VerticallyAlignedDiv>
-                <VerticallyAlignedDiv percentageOfViewWidth={211}>
-                    <p>Havel Alm <a href="https://sabine-boettger.de">Sabine Boettger</a> und <a
-                        href="https://martin-loetzsch.de">Martin Loetzsch</a> GbR
-                    </p>
-                    <p>
-                        <a href="https://goo.gl/maps/AE6Nh2RedGxnfaSi9">Dorfstr. 2a, 17237 Kratzeburg</a>
-                    </p>
-                    <p>
-                        <a href="mailto:info@havel-alm.de">info@havel-alm.de</a>
-                    </p>
-                    <p>+49 178 6803711</p>
-
-                </VerticallyAlignedDiv>
-            </Photo>
+            
             <Photo props={photos.Haus__Das_Haus_vom_Garten_aus_Mai_2023} priority={true}>
-                <h2 className='color-cyan'>Das Haus</h2>
+                <h1 className='color-cyan'>Das Haus</h1>
             </Photo>
             <Grid>
                 <TextCard width={3000} height={2000} backgroundCyan={true}>
@@ -156,65 +122,7 @@ export default function Home() {
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_4} />
 
             </Grid>
-            <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
-                <h2>Der Garten</h2>
-            </Photo>
-            <Grid>
-                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_1} />
-                <Photo props={photos.Garten__Terrasse_1} />
-                <Photo props={photos.Garten__Terrasse_2} />
-                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} />
-                <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
-                <Photo props={photos.Haus__Wegweiser_vor_dem_Haus} />
-                <Photo props={photos.Haus__Ansicht_von_der_Strasse_im_Winter} priority={true} />
-            </Grid>
-            <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee}>
-                <h2>Die Umgebung</h2>
-            </Photo>
-            <Grid>
-                <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee_im_Winter}>
-
-                </Photo>
-
-                <Photo props={photos.Die_Umgebung__Auf_dem_zugefrorenen_Kaebelicksee} />
-                <Photo props={photos.Die_Umgebung__Langlauf_Ski_fahren_auf_dem_Kaebelicksee} />
-                <Photo props={photos.Die_Umgebung__Der_zugefrorene_Kaebelicksee} />
-
-                <Photo props={photos.Die_Umgebung__Paddeln_auf_der_Havel} />
-                <Photo props={photos.Die_Umgebung__Paddeln_auf_der_Havel_kurz_vor_Babke} />
-                <Photo props={photos.Die_Umgebung__Auf_der_Havel_bei_Granzin} />
-
-                <Photo props={photos.Die_Umgebung__Wanderweg_am_Granziner_See} />
-                <Photo props={photos.Die_Umgebung__Wanderweg_Richtung_Pieversdorf} />
-                <Photo props={photos.Die_Umgebung__Wanderweg_nach_Dambeck} />
-                <Photo props={photos.Die_Umgebung__Pilze_suchen_bei_Pieversdorf_1} />
-                <Photo props={photos.Die_Umgebung__Pilze_suchen_bei_Pieversdorf_2} />
-
-                <Photo props={photos.Die_Umgebung__Zwischen_Dambeck_und_Havelquelle} />
-                <Photo props={photos.Die_Umgebung__Weg_nach_Dambeck} />
-                <Photo props={photos.Die_Umgebung__Weg_von_Dambeck_nach_Bornhof_1} />
-                <Photo props={photos.Die_Umgebung__Weg_von_Dambeck_nach_Bornhof_2} />
-                <Photo props={photos.Die_Umgebung__Weg_von_Dambeck_nach_Bornhof_3} />
-                <Photo props={photos.Die_Umgebung__Badestelle_am_Muehlensee__an_der_Havelquelle_} />
-                <Photo props={photos.Die_Umgebung__Badestrand_mit_Steg_am_Dambecker_See} />
-
-                <Photo props={photos.Die_Umgebung__Radweg_zwischen_Liepen_und_Klein_Vielen} />
-                <Photo props={photos.Die_Umgebung__Radweg_zwischen_Liepe_und_Klein_Vielen} />
-                <Photo props={photos.Die_Umgebung__Zwischen_Liepen_und_Klein_Vielen} />
-                <Photo props={photos.Die_Umgebung__Auf_dem_Schaeferberg__96m__zwischen_Pieversdorf_und_Hartwigsdorf} />
-
-                <Photo props={photos.Die_Umgebung__Weg_zwischen_Pieversdorf_und_Kratzeburg} />
-                <Photo props={photos.Die_Umgebung__Hochsitz_am_Glambecker_See} />
-
-                <Photo props={photos.Die_Umgebung__Der_Wald_hinter_dem_Haus} />
-                <Photo props={photos.Die_Umgebung__Am_Roethsee_zwischen_Dambeck_und_Kratzeburg} />
-                <Photo props={photos.Die_Umgebung__Kuehe_auf_der_Weide_in_Richtung_Pieversdorf_1} />
-
-                <Photo props={photos.Die_Umgebung__Kuehe_auf_der_Weide_in_Richtung_Pieversdorf_2} />
-                <Photo props={photos.Die_Umgebung__Radweg_in_Ricktung_Pieversdorf} />
-            </Grid>
-
-            <Nav verticalOffsetInVWs={20}/>
+            <Nav/>
         </>
     )
 }

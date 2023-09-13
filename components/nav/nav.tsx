@@ -11,19 +11,24 @@ interface Map {
 }
 
 
-const links: Map = {
+const defaultLinks: Map = {
     '/': 'Start',
-    '/innen': 'Innen',
-    '/aussen': 'Aussen',
+    '/das-haus': 'Innen',
+    '/der-garten': 'Aussen',
     '/umgebung': 'Umgebung',
-    '/buchung': 'Buchung',
+    '/preise-und-buchung': 'Buchung',
 }
 
-const Nav: FunctionComponent = (): JSX.Element => {
+type NavProps = {
+    verticalOffsetInVWs?: number,
+    customEntries?: { [url: string]: string }
+}
+
+const Nav: FunctionComponent<NavProps> = ({ verticalOffsetInVWs, customEntries }): JSX.Element => {
     const [isOpen, setIsOpen] = useState(false)
     const pathname = usePathname()
 
-    console.log(pathname)
+    const links = { ...customEntries, ...defaultLinks }
 
     return (
         <nav className={styles.nav + ' ' + (isOpen ? styles.navOpened : styles.navClosed)}
@@ -47,9 +52,9 @@ const Nav: FunctionComponent = (): JSX.Element => {
                 isOpen &&
                 Object.keys(links).map((link, index) => (
                     link != pathname ?
-                    <Link key={link} href={{ pathname: link }}>{links[link]}</Link>
-                    :
-                    <p>{links[link]}</p>
+                        <Link key={link} href={{ pathname: link }}>{links[link]}</Link>
+                        :
+                        <p key={link}>{links[link]}</p>
                 ))}
 
 
