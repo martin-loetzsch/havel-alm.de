@@ -18,9 +18,13 @@ export const metadata: Metadata = getMetaData(title, description)
 export default function Home() {
     return (
         <>
-            <Photo props={photos.Haus__Das_Haus_von_oben_1} priority={true} scale={70}
+
+            <Photo props={photos.Haus__Das_Haus_von_oben_2} priority={true} scale={75}
                 className='color-cyan' linkToPhotoPage={false}>
                 <h1>Havel Alm</h1>
+                <VerticallyAlignedDiv percentageOfViewWidth={10}>
+                    <h1>Havel Alm</h1>
+                </VerticallyAlignedDiv>
                 <VerticallyAlignedDiv percentageOfViewWidth={35}>
                     <blockquote>68 Meter über Normalhöhennull</blockquote>
                     <blockquote>An der Quelle der Havel</blockquote>
@@ -214,7 +218,7 @@ export default function Home() {
                 <Photo props={photos.Die_Umgebung__Radweg_in_Ricktung_Pieversdorf} />
             </Grid>
 
-            <Nav verticalOffsetInVWs={230}/>
+            <Nav verticalOffsetInVWs={230} />
         </>
     )
 }
