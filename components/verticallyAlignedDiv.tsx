@@ -5,13 +5,13 @@
 'use client'
 
 
-import { ReactElement, FunctionComponent } from 'react'
+import { FunctionComponent, ReactElement } from 'react'
 
 import useWindowWidth from './useWindowWidth'
 
 
 type VerticallyAlignedDivProps = {
-    children: Array<ReactElement>,
+    children: ReactElement | ReactElement[],
     percentageOfViewWidth: number
 }
 
@@ -21,15 +21,15 @@ const VerticallyAlignedDiv: FunctionComponent<VerticallyAlignedDivProps> = ({ pe
     if (!windowWidth) {
         // return grid elements as they are on the server side (so that images can be loaded as early as possible
         return (
-            <div style={{'top': percentageOfViewWidth + 'vw'}}>
+            <div style={{ 'top': percentageOfViewWidth + 'vw' }}>
                 {children}
             </div>)
     } else {
         return (
-            <div style={{'top': windowWidth * percentageOfViewWidth / 100.0 + 'px'}}>
+            <div style={{ 'top': windowWidth * percentageOfViewWidth / 100.0 + 'px' }}>
                 {children}
             </div>)
-        
+
     }
 }
 
