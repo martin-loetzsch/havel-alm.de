@@ -51,11 +51,6 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.36.0.tgz#9837f768c03a1e4a30bd304a64fb8844f0e72efe"
   integrity sha512-lxJ9R5ygVm8ZWgYdUweoq5ownDlJ4upvoWmO4eLxBYHdMo+vZ/Rx0EN6MbKWDJOSUGrqJy2Gt+Dyv/VKml0fjg==
 
-"@fontsource/lexend-deca@^4.5.14":
-  version "4.5.14"
-  resolved "https://registry.yarnpkg.com/@fontsource/lexend-deca/-/lexend-deca-4.5.14.tgz#6f962ba77b39f8db0cc614f32dc3b79fc159d1a9"
-  integrity sha512-jHn2fxC/linkGvx6LxsPrpkkNcWbk6H+vITZgvB32D5whQDlyFDXnhYLODTzimLaJPsHEufxCCQHj95qz1rW8g==
-
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.11"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.11.tgz#88a04c570dbbc7dd943e4712429c3df09bc32844"
