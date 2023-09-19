@@ -8,7 +8,7 @@
 import { FunctionComponent, ReactElement } from 'react'
 
 import useWindowWidth from './useWindowWidth'
-
+import styles from './verticallyAlignedDiv.module.scss'
 
 type VerticallyAlignedDivProps = {
     children: ReactElement | ReactElement[],
@@ -21,12 +21,12 @@ const VerticallyAlignedDiv: FunctionComponent<VerticallyAlignedDivProps> = ({ pe
     if (!windowWidth) {
         // return grid elements as they are on the server side (so that images can be loaded as early as possible
         return (
-            <div style={{ 'top': percentageOfViewWidth + 'vw' }}>
+            <div className={styles.hidden} style={{'top': percentageOfViewWidth + 'vw' }}>
                 {children}
             </div>)
     } else {
         return (
-            <div style={{ 'top': windowWidth * percentageOfViewWidth / 100.0 + 'px' }}>
+            <div className={styles.shown} style={{ 'top': windowWidth * percentageOfViewWidth / 100.0 + 'px' }}>
                 {children}
             </div>)
 

@@ -1,11 +1,11 @@
 'use client'
 
-import styles from './nav.module.scss'
 import Link from 'next/link'
+import styles from './nav.module.scss'
 
-import { FunctionComponent, useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
-import useWindowWidth from '../useWindowWidth'
+import { FunctionComponent, useEffect, useState } from 'react'
+import useWindowWidth from '../utils/useWindowWidth'
 
 
 interface Map {

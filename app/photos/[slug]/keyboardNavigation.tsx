@@ -2,7 +2,7 @@
 
 import {useRouter} from "next/navigation";
 import {useEffect, FunctionComponent} from "react";
-import useWindowWidth from "@/components/useWindowWidth"
+import useWindowWidth from "@/components/utils/useWindowWidth"
 
 
 type KeyboardNavigationProps = {

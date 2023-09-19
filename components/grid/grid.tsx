@@ -5,7 +5,7 @@ import styles from './grid.module.scss'
 import { ReactElement, FunctionComponent } from 'react'
 import { calcWidth, computeRowsLayout, GridItem } from './reactPhotoAlbum/rowsLayout'
 
-import useWindowWidth from '../useWindowWidth'
+import useWindowWidth from '../utils/useWindowWidth'
 
 
 type GridProps = {

@@ -1,4 +1,4 @@
-import getMetaData from '@/components/getMetaData';
+import getMetaData from '@/components/utils/getMetaData';
 import type { Metadata } from 'next';
 import Nav from '../../components/nav/nav';
 

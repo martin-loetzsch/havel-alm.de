@@ -1,5 +1,5 @@
 import { default as Card, default as TextCard } from '@/components/card/textCard';
-import getMetaData from '@/components/getMetaData';
+import getMetaData from '@/components/utils/getMetaData';
 import Grid from "@/components/grid/grid";
 import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
