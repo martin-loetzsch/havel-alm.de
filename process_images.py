@@ -75,7 +75,7 @@ for path in photos_dir.glob('**/*.[jJ][pP][gG]'):
         height = image.height
 
         # create review image as base64 encoded data url
-        image.thumbnail(size=(20, 20))
+        image.thumbnail(size=(30, 30))
         # image.show()
         buffered = io.BytesIO()
         image.save(buffered, format="PNG")
