@@ -1,8 +1,8 @@
 import { default as Card, default as TextCard } from '@/components/card/textCard';
-import getMetaData from '@/components/utils/getMetaData';
 import Grid from "@/components/grid/grid";
 import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
+import getMetaData from '@/components/utils/getMetaData';
 import grundrissDG from '@/public/grundrisse/Grundriss DG.svg';
 import grundrissEG from '@/public/grundrisse/Grundriss EG.svg';
 import type { Metadata } from 'next';
@@ -10,7 +10,7 @@ import Image from "next/image";
 import Nav from '../../components/nav/nav';
 
 const title = "Das Haus"
-const description = "Alle Zimmer, die Einrichtung, Grundrisse etc."
+const description = "Alle Zimmer, die Ausstattung & Grundrisse"
 
 export const metadata: Metadata = getMetaData(title, description)
 
@@ -122,7 +122,7 @@ export default function Home() {
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_4} />
 
             </Grid>
-            <Nav/>
+            <Nav verticalOffsetInVWs={58}/>
         </>
     )
 }

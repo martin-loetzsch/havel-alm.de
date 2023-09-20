@@ -17,8 +17,9 @@ const defaultLinks: Map = {
     '/': 'Start',
     '/das-haus': 'Innen',
     '/der-garten': 'Aussen',
-    '/umgebung': 'Umgebung',
     '/preise-und-buchung': 'Buchung',
+    '/umgebung': 'Umgebung',
+    '/making-of': 'Making-of',
 }
 
 type NavProps = {
@@ -76,7 +77,9 @@ const Nav: FunctionComponent<NavProps> = ({ verticalOffsetInVWs, customEntries }
                     isOpen &&
                     Object.keys(links).map((link, index) => (
                         link != pathname ?
-                            <Link key={link} href={{ pathname: link }}>{links[link]}</Link>
+                            <Link key={link} href={{ pathname: link }} prefetch={false}>
+                                {links[link]}
+                            </Link>
                             :
                             <p key={link}>{links[link]}</p>
                     ))}

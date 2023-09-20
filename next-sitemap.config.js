@@ -2,7 +2,7 @@
 module.exports = {
   siteUrl: 'https://havel-alm.de',
   changefreq: 'daily',
-  exclude: ['/gaeste'],
+  exclude: ['/gaeste', '/making-of'],
   priority: 0.7,
   sitemapSize: 20000,
   generateIndexSitemap: false,

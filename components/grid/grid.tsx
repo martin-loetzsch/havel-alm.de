@@ -9,12 +9,14 @@ import useWindowWidth from '../utils/useWindowWidth'
 
 
 type GridProps = {
-    children: Array<ReactElement>,
+    children: ReactElement| ReactElement[],
     spacing?: number
 }
 
 const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
     const windowWidth = useWindowWidth()
+
+    children = Array.isArray(children) ? children : [children]
 
     const gridItems: Array<GridItem> = children.map((child) => {
         const width = child.props['data-width']

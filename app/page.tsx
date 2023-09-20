@@ -21,40 +21,20 @@ export default function Home() {
 
             <Photo props={photos.Haus__Das_Haus_von_oben_2} priority={true} scale={75}
                 className='color-cyan' linkToPhotoPage={false}>
-                <VerticallyAlignedDiv percentageOfViewWidth={10}>
-                    <h1>Havel Alm</h1>
-                </VerticallyAlignedDiv>
-                <VerticallyAlignedDiv percentageOfViewWidth={35}>
+                <h1 style={{ top: '9vw' }}>Havel Alm</h1>
+                <div style={{ top: '47vw' }}>
                     <blockquote>68 Meter über Normalhöhennull</blockquote>
                     <blockquote>An der Quelle der Havel</blockquote>
                     <blockquote>80 Minuten von Berlin per Regionalexpress</blockquote>
-                </VerticallyAlignedDiv>
-                <VerticallyAlignedDiv percentageOfViewWidth={80}>
+                </div>
+                <VerticallyAlignedDiv percentageOfViewWidth={151}>
                     <blockquote>Das Ferienhaus für</blockquote>
                     <blockquote> - Urlaube in grösseren Gruppen</blockquote>
                     <blockquote> - Familientreffen</blockquote>
                     <blockquote> - Workshops und Team Offsites</blockquote>
                 </VerticallyAlignedDiv>
-                <VerticallyAlignedDiv percentageOfViewWidth={130}>
-                    <blockquote>200m², 6 Doppelzimmer, davon 5 mit zusätzlichem Hochbett</blockquote>
-                    <blockquote>Für bis zu 12 Erwachsene plus Kinder</blockquote>
-                    <blockquote>3 Bäder, grosser Gastraum, 100m² Terrasse, modern eingerichtete Küche</blockquote>
-                    <blockquote>90 Mbps Internet, WLAN im ganzen Haus</blockquote>
-                </VerticallyAlignedDiv>
-                <VerticallyAlignedDiv percentageOfViewWidth={211}>
-                    <p>Havel Alm <a href="https://sabine-boettger.de">Sabine Boettger</a> und <a
-                        href="https://martin-loetzsch.de">Martin Loetzsch</a> GbR
-                    </p>
-                    <p>
-                        <a href="https://goo.gl/maps/AE6Nh2RedGxnfaSi9">Dorfstr. 2a, 17237 Kratzeburg</a>
-                    </p>
-                    <p>
-                        <a href="mailto:info@havel-alm.de">info@havel-alm.de</a>
-                    </p>
-                    <p>+49 178 6803711</p>
-
-                </VerticallyAlignedDiv>
             </Photo>
+
             <Photo props={photos.Haus__Das_Haus_vom_Garten_aus_Mai_2023} priority={true}>
                 <h2 className='color-cyan'>Das Haus</h2>
             </Photo>
@@ -68,7 +48,12 @@ export default function Home() {
                 <Photo props={photos.Haus__Gastraum__Eingang} />
                 <Photo props={photos.Haus__Gastraum__Gastraum_I} />
             </Grid>
-
+            <div>
+                <blockquote>200m², 6 Doppelzimmer, davon 5 mit zusätzlichem Hochbett</blockquote>
+                <blockquote>Für bis zu 12 Erwachsene plus Kinder</blockquote>
+                <blockquote>3 Bäder, grosser Gastraum, 100m² Terrasse, modern eingerichtete Küche</blockquote>
+                <blockquote>90 Mbps Internet, WLAN im ganzen Haus</blockquote>
+            </div>
             <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60m² grosser Gastraum mit Blick auf eine Weide, die Küche, ein Arbeitszimmer, zwei Bäder sowie ein 12m² grosses Doppelzimmer.</p>
 
             <Image src={grundrissEG} alt={'Havel Alm Kratzeburg Grundriss Erdgeschoss'}
@@ -217,7 +202,7 @@ export default function Home() {
                 <Photo props={photos.Die_Umgebung__Radweg_in_Ricktung_Pieversdorf} />
             </Grid>
 
-            <Nav verticalOffsetInVWs={230} />
+            <Nav verticalOffsetInVWs={240} />
         </>
     )
 }
