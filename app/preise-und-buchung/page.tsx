@@ -17,9 +17,9 @@ export const metadata: Metadata = getMetaData(title, description)
 
 
 const prices: { [key: string]: number[] } = {
-    'Neben&shy;saison': [450, 400, 360, 320, 280],
-    'Haupt&shy;saison': [600, 500, 400, 350, 300],
-    'Feier&shy;tage': [900, 700, 500, 400, 400]
+    'Neben&shy;saison': [450, 390, 330, 290, 260],
+    'Haupt&shy;saison': [600, 520, 450, 390, 340],
+    'Feier&shy;tage': [850, 850, 790, 680, 590, 520]
 }
 
 
@@ -29,7 +29,7 @@ export default function Home() {
     return (
         <>
 
-            <Photo props={photos.Haus__Gastraum__Sofa_1} priority={true}>
+            <Photo props={photos.Die_Umgebung__Badestelle_am_Käbelicksee_2} priority={true}>
                 <h1 className='color-cyan'>Preise und Buchung</h1>
             </Photo>
             <Grid>
@@ -50,12 +50,12 @@ export default function Home() {
                         </thead>
                         <tbody>
                             {
-                                ['2', '3', '4', '5', '6+'].map((nights, index) => (
-                                    <tr key={index} >
+                                ['2', '3', '4', '5', '6+'].map((nights, indexNights) => (
+                                    <tr key={indexNights} >
                                         <td>{nights}</td>
                                         {
-                                            Object.keys(prices).map((season, index) => (
-                                                <td key={index}> {prices[season][index]}€</td>
+                                            Object.keys(prices).map((season, indexPrice) => (
+                                                <td key={indexPrice}> {prices[season][indexNights]}€</td>
                                             ))
                                         }
                                     </tr>
