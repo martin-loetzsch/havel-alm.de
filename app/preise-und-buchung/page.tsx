@@ -1,14 +1,10 @@
-import { default as Card, default as TextCard } from '@/components/card/textCard';
+import { default as TextCard } from '@/components/card/textCard';
 import Grid from "@/components/grid/grid";
 import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
 import getMetaData from '@/components/utils/getMetaData';
-import grundrissDG from '@/public/grundrisse/Grundriss DG.svg';
-import grundrissEG from '@/public/grundrisse/Grundriss EG.svg';
 import type { Metadata } from 'next';
-import Image from "next/image";
 import Nav from '../../components/nav/nav';
-import { FunctionComponent, ReactNode } from 'react'
 
 const title = "Preise und Buchung"
 const description = "Verfügbarkeiten, Buchungsoptionen & Konditionen"
@@ -29,12 +25,14 @@ export default function Home() {
     return (
         <>
 
-            <Photo props={photos.Die_Umgebung__Badestelle_am_Käbelicksee_2} priority={true}>
+            <Photo props={photos.Die_Umgebung__Badestelle_am_Käbelicksee_2} priority={true} quality={100}>
                 <h1 className='color-cyan'>Preise und Buchung</h1>
             </Photo>
+            <p>Ihr könnt die Havel Alm über <a href="https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5361182">FeWo-Direkt</a> oder <a href='/404'>AirBnB</a> buchen (dort seht ihr auch unsere Verfügbarkeiten).</p>
+            <p>Oder ihr schreibt uns eine Email an <a href="mailto:info@havel-alm.de">info@havel-alm.de</a>, dann gelten diese Preise:</p>
             <Grid>
                 <TextCard width={1000} height={heightPricingTable} backgroundCyan={true}>
-                    <p style={{ marginBottom: '2vw' }}>Preise pro Nacht</p>
+                    <p style={{ marginBottom: '2vw' }}>Preis pro Nacht</p>
                     <table style={{ textAlign: 'left' }}>
                         <thead>
                             <tr>
@@ -65,13 +63,20 @@ export default function Home() {
                     </table>
                 </TextCard>
                 <TextCard width={350} height={heightPricingTable} backgroundCyan={false}>
-                    {/* <p style={{ marginBottom: '2vw' }}>Zeiträume</p> */}
                     <p>&sup1;September bis Juni</p>
                     <p>&sup2;Juli & August + Brückentage</p>
                     <p>&sup3;Ostern, Himmel&shy;fahrt, Pfingsten, Weihnachten, Neu&shy;jahr</p>
                 </TextCard>
             </Grid>
-            <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} />
+            <p>Zum Übernachtungspreis kommt eine <strong>Endreinigungs&shy;ge&shy;bühr</strong> von 250€ hinzu.</p>
+            <p>Enthalten sind Betwäsche, Handtücher, alle Ver&shy;brauchs&shy;materialien, Strom (auch für Waschmaschine & Trockner) sowie alle sonstigen Nebenkosten.</p>
+            <p>E-Autos können nach Abspache aufgeladen werden.</p>
+            <div className='background-cyan'>
+                <p>Wenn ihr über uns direkt bucht, könnt ihr bis zwei Monate vor Anreise eure Buchung <strong>kostenlos stornieren</strong>.</p>
+                <p>Bei Buchung überweist ihr 50% des Preises, der zweite Teil ist 2 Monate vor Anreise fällig (den wir dann leider nicht mehr erstatten können).</p>
+                <p>Bei der Buchung über Portale gelten die dort hinterlegten Stornierungsbedingungen.</p>
+            </div>
+            <Photo props={photos.Die_Umgebung__Der_zugefrorene_Kaebelicksee} />
 
             <Nav verticalOffsetInVWs={58} />
         </>
