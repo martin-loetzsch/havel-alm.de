@@ -41,7 +41,7 @@ export default function Home() {
                                 <th style={{ fontWeight: 'bold' }}>Nächte</th>
                                 {
                                     Object.keys(prices).map((season, index) => (
-                                        <th style={{ fontWeight: 'bold' }}>
+                                        <th key={index} style={{ fontWeight: 'bold' }}>
                                             <span dangerouslySetInnerHTML={{ __html: season + '&sup' + (index + 1) + ';' }} />
                                         </th>
                                     ))
@@ -51,11 +51,11 @@ export default function Home() {
                         <tbody>
                             {
                                 ['2', '3', '4', '5', '6+'].map((nights, index) => (
-                                    <tr>
+                                    <tr key={index} >
                                         <td>{nights}</td>
                                         {
-                                            Object.keys(prices).map((season) => (
-                                                <td>{prices[season][index]}€</td>
+                                            Object.keys(prices).map((season, index) => (
+                                                <td key={index}> {prices[season][index]}€</td>
                                             ))
                                         }
                                     </tr>
