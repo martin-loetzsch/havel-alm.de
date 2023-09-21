@@ -25,6 +25,7 @@ const prices: { [key: string]: number[] } = {
 
 
 export default function Home() {
+    let heightPricingTable = 620
     return (
         <>
 
@@ -32,8 +33,8 @@ export default function Home() {
                 <h1 className='color-cyan'>Preise und Buchung</h1>
             </Photo>
             <Grid>
-                <TextCard width={3000} height={3000} backgroundCyan={true}>
-                    <p>Preise pro Nacht</p>
+                <TextCard width={1000} height={heightPricingTable} backgroundCyan={true}>
+                    <p style={{ marginBottom: '2vw' }}>Preise pro Nacht</p>
                     <table style={{ textAlign: 'left' }}>
                         <thead>
                             <tr>
@@ -41,7 +42,7 @@ export default function Home() {
                                 {
                                     Object.keys(prices).map((season, index) => (
                                         <th style={{ fontWeight: 'bold' }}>
-                                            <span dangerouslySetInnerHTML={{ __html: season + '&sup' + (index + 1) +';' }}/>
+                                            <span dangerouslySetInnerHTML={{ __html: season + '&sup' + (index + 1) + ';' }} />
                                         </th>
                                     ))
                                 }
@@ -63,8 +64,14 @@ export default function Home() {
                         </tbody>
                     </table>
                 </TextCard>
-                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} />
+                <TextCard width={350} height={heightPricingTable} backgroundCyan={false}>
+                    {/* <p style={{ marginBottom: '2vw' }}>Zeiträume</p> */}
+                    <p>&sup1;September bis Juni</p>
+                    <p>&sup2;Juli & August + Brückentage</p>
+                    <p>&sup3;Ostern, Himmel&shy;fahrt, Pfingsten, Weihnachten, Neu&shy;jahr</p>
+                </TextCard>
             </Grid>
+            <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} />
 
             <Nav verticalOffsetInVWs={58} />
         </>
