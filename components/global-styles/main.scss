@@ -12,8 +12,14 @@ h1,
 h2,
 h3,
 p,
+th,
+td,
 blockquote {
   @include text-margins
+}
+
+th:not(:last-child), td:not(:last-child) {
+  padding-right:0;
 }
 
 h1 {
@@ -39,7 +45,7 @@ blockquote {
   padding-bottom: 2vw;
 }
 
-p {
+p, th, td {
   @include font-regular;
   font-size: 3.5vw;
   padding-top: 1vw;
@@ -52,9 +58,10 @@ a {
   color: black;
 }
 
-b {
+b, strong {
   @include font-bold;
 }
+
 
 .color-cyan, 
 .color-cyan a {
