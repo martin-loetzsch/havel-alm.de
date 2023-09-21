@@ -1,6 +1,6 @@
 import Photo from "@/components/photo/photo";
 import photos, { photosBySlug } from "@/components/photos";
-import type { Metadata, Route } from 'next';
+import type { Metadata } from 'next';
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import KeyboardNavigation from "./keyboardNavigation";
@@ -76,15 +76,14 @@ export default function Page({ params }: PageProps) {
                 <h3>{photo.title}</h3>
                 <h3>
                     {previousPhotoLink &&
-                        <Link href={previousPhotoLink as Route}
-                            scroll={false}>
+                        <Link href={{ pathname: previousPhotoLink}} scroll={false}>
                             ⬅
                         </Link>}
 
                     {nextPhotoLink &&
                         <>
                             &#160;&#160;&#160;
-                            <Link scroll={false} href={nextPhotoLink as Route}>⮕</Link>
+                            <Link scroll={false} href={{pathname: nextPhotoLink}}>⮕</Link>
                         </>
                     }
                 </h3>
@@ -92,7 +91,7 @@ export default function Page({ params }: PageProps) {
             <Photo props={photo} scale={150} quality={100} priority={true} linkToPhotoPage={false} />
             <p className={styles.flexContainer}>
                 {new Intl.DateTimeFormat("de").format(photo.createdAt)}
-                <Link href={photo.src as Route} prefetch={false}
+                <Link href={{pathname:photo.src}} prefetch={false}
                     target="_blank" rel="nofollow">
                     Original ({photo.width} x {photo.height} px)
                 </Link>
