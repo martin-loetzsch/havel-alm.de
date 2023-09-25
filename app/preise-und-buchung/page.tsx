@@ -25,7 +25,7 @@ export default function Home() {
     return (
         <>
 
-            <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee_2} priority={true} quality={100}>
+            <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee_2} linkToPhotoPage={false} priority={true} quality={100}>
                 <h1 className='color-cyan'>Preise und Buchung</h1>
             </Photo>
             <p>Ihr könnt die Havel Alm über <a href="https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5361182">FeWo-Direkt</a> und <a href='/airbnb'>AirBnB</a> buchen (dort seht ihr auch unsere Verfügbarkeiten).</p>
@@ -69,10 +69,10 @@ export default function Home() {
                 </TextCard>
             </Grid>
             <p>Zum Übernachtungspreis kommt eine <strong>Endreinigungs&shy;ge&shy;bühr</strong> von 250€ hinzu (ja das ist hoch, deckt aber nicht die Kosten).</p>
-            <p>Enthalten sind Betwäsche, Handtücher, alle Ver&shy;brauchs&shy;materialien, Strom (auch für Waschmaschine & Trockner) sowie alle sonstigen Nebenkosten.</p>
+            <p>Enthalten sind Betwäsche, Handtücher, Kafee, Strom (auch für Waschmaschine & Trockner) sowie alle sonstigen Nebenkosten.</p>
             <p>E-Autos können nach Abspache aufgeladen werden.</p>
             <div className='background-cyan'>
-                <p>Wenn ihr über uns direkt bucht, könnt ihr bis zwei Monate vor Anreise eure Buchung <strong>kostenlos stornieren</strong>.</p>
+                <p>Wenn ihr direkt über uns bucht, könnt ihr bis zwei Monate vor Anreise eure Buchung <strong>kostenlos stornieren</strong>.</p>
                 <p>Bei Buchung überweist ihr 50% des Preises, der zweite Teil ist 2 Monate vor Anreise fällig (den wir dann leider nicht mehr erstatten können).</p>
                 <p>Bei der Buchung über Portale gelten die dort hinterlegten Stornierungsbedingungen.</p>
             </div>
