@@ -156,11 +156,11 @@ export default function Home() {
                 <Photo props={photos.Haus__Wegweiser_vor_dem_Haus} />
                 <Photo props={photos.Haus__Ansicht_von_der_Strasse_im_Winter} priority={true} />
             </Grid>
-            <Photo props={photos.Die_Umgebung__Badestelle_am_Käbelicksee}>
+            <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee}>
                 <h2>Die Umgebung</h2>
             </Photo>
             <Grid>
-                <Photo props={photos.Die_Umgebung__Badestelle_am_Käbelicksee_im_Winter}>
+                <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee_im_Winter}>
 
                 </Photo>
 
@@ -174,7 +174,6 @@ export default function Home() {
 
                 <Photo props={photos.Die_Umgebung__Wanderweg_am_Granziner_See} />
                 <Photo props={photos.Die_Umgebung__Wanderweg_Richtung_Pieversdorf} />
-                <Photo props={photos.Die_Umgebung__Wanderweg_nach_Dambeck} />
                 <Photo props={photos.Die_Umgebung__Pilze_suchen_bei_Pieversdorf_1} />
                 <Photo props={photos.Die_Umgebung__Pilze_suchen_bei_Pieversdorf_2} />
 

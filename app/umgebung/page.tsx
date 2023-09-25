@@ -18,11 +18,11 @@ export const metadata: Metadata = getMetaData(title, description)
 export default function Home() {
     return (
         <>
-            <Photo props={photos.Die_Umgebung__Badestelle_am_Käbelicksee}>
+            <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee}>
                 <h1 className='color-cyan'>Die Umgebung</h1>
             </Photo>
             <Grid>
-                <Photo props={photos.Die_Umgebung__Badestelle_am_Käbelicksee_im_Winter}>
+                <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee_im_Winter}>
 
                 </Photo>
 
@@ -36,7 +36,6 @@ export default function Home() {
 
                 <Photo props={photos.Die_Umgebung__Wanderweg_am_Granziner_See} />
                 <Photo props={photos.Die_Umgebung__Wanderweg_Richtung_Pieversdorf} />
-                <Photo props={photos.Die_Umgebung__Wanderweg_nach_Dambeck} />
                 <Photo props={photos.Die_Umgebung__Pilze_suchen_bei_Pieversdorf_1} />
                 <Photo props={photos.Die_Umgebung__Pilze_suchen_bei_Pieversdorf_2} />
 
