@@ -3,6 +3,7 @@ import photos, { photosBySlug } from "@/components/photos";
 import type { Metadata } from 'next';
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Nav from '../../../components/nav/nav';
 import KeyboardNavigation from "./keyboardNavigation";
 import styles from './page.module.scss';
 
@@ -58,6 +59,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 
+
 export default function Page({ params }: PageProps) {
     const photo = photosBySlug[decodeURI(params.slug)]
 
@@ -71,27 +73,26 @@ export default function Page({ params }: PageProps) {
 
     return (
         <>
-            <h1><Link href="/">Havel Alm</Link></h1>
-            <div className={styles.flexContainer}>
-                <h3>{photo.title}</h3>
-                <h3>
-                    {previousPhotoLink &&
-                        <Link href={{ pathname: previousPhotoLink}} scroll={false}>
-                            ⬅
-                        </Link>}
+            <Photo props={photo} scale={150} quality={100} priority={true} linkToPhotoPage={false} >
+                <div className={`${styles.flexContainer} color-cyan`}>
+                    <h2>{photo.title}</h2>
+                    <div style={{fontSize:'12vw'}}>
+                        {previousPhotoLink &&
+                            <Link href={{ pathname: previousPhotoLink }} >◄</Link>}
 
-                    {nextPhotoLink &&
-                        <>
-                            &#160;&#160;&#160;
-                            <Link scroll={false} href={{pathname: nextPhotoLink}}>⮕</Link>
-                        </>
-                    }
-                </h3>
-            </div>
-            <Photo props={photo} scale={150} quality={100} priority={true} linkToPhotoPage={false} />
+                        {nextPhotoLink &&
+                            <>
+                                &#160;&#160;
+                                <Link href={{ pathname: nextPhotoLink }}>►</Link>
+                            </>
+                        }
+                    </div>
+                </div>
+
+            </Photo>
             <p className={styles.flexContainer}>
                 {new Intl.DateTimeFormat("de").format(photo.createdAt)}
-                <Link href={{pathname:photo.src}} prefetch={false}
+                <Link href={{ pathname: photo.src }} prefetch={false}
                     target="_blank" rel="nofollow">
                     Original ({photo.width} x {photo.height} px)
                 </Link>
@@ -109,5 +110,6 @@ export default function Page({ params }: PageProps) {
             <KeyboardNavigation
                 linkOnLeftArrow={previousPhotoLink}
                 linkOnRightArrow={nextPhotoLink} />
+            <Nav verticalOffsetInVWs={10} />
         </>)
 }
