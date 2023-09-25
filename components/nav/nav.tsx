@@ -19,7 +19,7 @@ const defaultLinks: Map = {
     '/der-garten': 'Aussen',
     '/preise-und-buchung': 'Buchung',
     '/umgebung': 'Umgebung',
-    '/making-of': 'Making-of',
+    // '/making-of': 'Making-of',
 }
 
 type NavProps = {
