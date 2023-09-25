@@ -156,11 +156,11 @@ export default function Home() {
                 <Photo props={photos.Haus__Wegweiser_vor_dem_Haus} />
                 <Photo props={photos.Haus__Ansicht_von_der_Strasse_im_Winter} priority={true} />
             </Grid>
-            <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee}>
+            <Photo props={photos.Die_Umgebung__Badestelle_am_Käbelicksee}>
                 <h2>Die Umgebung</h2>
             </Photo>
             <Grid>
-                <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee_im_Winter}>
+                <Photo props={photos.Die_Umgebung__Badestelle_am_Käbelicksee_im_Winter}>
 
                 </Photo>
 

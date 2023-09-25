@@ -25,10 +25,10 @@ export default function Home() {
     return (
         <>
 
-            <Photo props={photos.Die_Umgebung__Badestelle_am_Käbelicksee_2} priority={true} quality={100}>
+            <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee_2} priority={true} quality={100}>
                 <h1 className='color-cyan'>Preise und Buchung</h1>
             </Photo>
-            <p>Ihr könnt die Havel Alm über <a href="https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5361182">FeWo-Direkt</a> oder <a href='/404'>AirBnB</a> buchen (dort seht ihr auch unsere Verfügbarkeiten).</p>
+            <p>Ihr könnt die Havel Alm über <a href="https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5361182">FeWo-Direkt</a> und <a href='/airbnb'>AirBnB</a> buchen (dort seht ihr auch unsere Verfügbarkeiten).</p>
             <p>Oder ihr schreibt uns eine Email an <a href="mailto:info@havel-alm.de">info@havel-alm.de</a>, dann gelten diese Preise:</p>
             <Grid>
                 <TextCard width={1000} height={heightPricingTable} backgroundCyan={true}>
@@ -68,7 +68,7 @@ export default function Home() {
                     <p>&sup3;Ostern, Himmel&shy;fahrt, Pfingsten, Weihnachten, Neu&shy;jahr</p>
                 </TextCard>
             </Grid>
-            <p>Zum Übernachtungspreis kommt eine <strong>Endreinigungs&shy;ge&shy;bühr</strong> von 250€ hinzu.</p>
+            <p>Zum Übernachtungspreis kommt eine <strong>Endreinigungs&shy;ge&shy;bühr</strong> von 250€ hinzu (ja das ist hoch, deckt aber nicht die Kosten).</p>
             <p>Enthalten sind Betwäsche, Handtücher, alle Ver&shy;brauchs&shy;materialien, Strom (auch für Waschmaschine & Trockner) sowie alle sonstigen Nebenkosten.</p>
             <p>E-Autos können nach Abspache aufgeladen werden.</p>
             <div className='background-cyan'>

@@ -18,11 +18,11 @@ export const metadata: Metadata = getMetaData(title, description)
 export default function Home() {
     return (
         <>
-            <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee}>
+            <Photo props={photos.Die_Umgebung__Badestelle_am_Käbelicksee}>
                 <h1 className='color-cyan'>Die Umgebung</h1>
             </Photo>
             <Grid>
-                <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee_im_Winter}>
+                <Photo props={photos.Die_Umgebung__Badestelle_am_Käbelicksee_im_Winter}>
 
                 </Photo>
 
