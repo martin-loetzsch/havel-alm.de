@@ -22,7 +22,7 @@ export const Photo: FunctionComponent<PhotoComponentProps> = (
         scale = 35,
         quality = 75,
         priority = false,
-        className,
+        className = '',
         linkToPhotoPage = true
     }): JSX.Element => {
 

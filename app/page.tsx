@@ -1,14 +1,11 @@
-import { default as Card, default as TextCard } from '@/components/card/textCard';
-import getMetaData from '@/components/utils/getMetaData';
+import { default as TextCard } from '@/components/card/textCard';
 import Grid from "@/components/grid/grid";
 import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
+import getMetaData from '@/components/utils/getMetaData';
 import VerticallyAlignedDiv from '@/components/utils/verticallyAlignedDiv';
-import grundrissDG from '@/public/grundrisse/Grundriss DG.svg';
-import grundrissEG from '@/public/grundrisse/Grundriss EG.svg';
-import Link from 'next/link'
 import type { Metadata } from 'next';
-import Image from "next/image";
+import Link from 'next/link';
 import Nav from '../components/nav/nav';
 
 const title = "Havel Alm Kratzeburg"
@@ -92,9 +89,9 @@ export default function Home() {
                 <Photo props={photos.Die_Umgebung__Auf_der_Havel_bei_Granzin} />
 
                 <Photo props={photos.Die_Umgebung__Wanderweg_am_Granziner_See} />
-                <Photo props={photos.Die_Umgebung__Wanderweg_Richtung_Pieversdorf} />
-                <Photo props={photos.Die_Umgebung__Pilze_suchen_bei_Pieversdorf_1} />
-                <Photo props={photos.Die_Umgebung__Pilze_suchen_bei_Pieversdorf_2} />
+                <Photo props={photos.Die_Umgebung__Wanderweg_Richtung_Pieverstorf} />
+                <Photo props={photos.Die_Umgebung__Pilze_suchen_bei_Pieverstorf_1} />
+                <Photo props={photos.Die_Umgebung__Pilze_suchen_bei_Pieverstorf_2} />
 
                 <Photo props={photos.Die_Umgebung__Zwischen_Dambeck_und_Havelquelle} />
                 <Photo props={photos.Die_Umgebung__Weg_nach_Dambeck} />
@@ -107,17 +104,17 @@ export default function Home() {
                 <Photo props={photos.Die_Umgebung__Radweg_zwischen_Liepen_und_Klein_Vielen} />
                 <Photo props={photos.Die_Umgebung__Radweg_zwischen_Liepe_und_Klein_Vielen} />
                 <Photo props={photos.Die_Umgebung__Zwischen_Liepen_und_Klein_Vielen} />
-                <Photo props={photos.Die_Umgebung__Auf_dem_Schaeferberg__96m__zwischen_Pieversdorf_und_Hartwigsdorf} />
+                <Photo props={photos.Die_Umgebung__Auf_dem_Schäferberg__96m__zwischen_Pieverstorf_und_Hartwigsdorf} />
 
-                <Photo props={photos.Die_Umgebung__Weg_zwischen_Pieversdorf_und_Kratzeburg} />
-                <Photo props={photos.Die_Umgebung__Hochsitz_am_Glambecker_See} />
+                <Photo props={photos.Die_Umgebung__Weg_zwischen_Pieverstorf_und_Kratzeburg} />
+                <Photo props={photos.Die_Umgebung__Hochsitz_am_Dambecker_See} />
 
                 <Photo props={photos.Die_Umgebung__Der_Wald_hinter_dem_Haus} />
                 <Photo props={photos.Die_Umgebung__Am_Roethsee_zwischen_Dambeck_und_Kratzeburg} />
-                <Photo props={photos.Die_Umgebung__Kuehe_auf_der_Weide_in_Richtung_Pieversdorf_1} />
+                <Photo props={photos.Die_Umgebung__Kuehe_auf_der_Weide_in_Richtung_Pieverstorf_1} />
 
-                <Photo props={photos.Die_Umgebung__Kuehe_auf_der_Weide_in_Richtung_Pieversdorf_2} />
-                <Photo props={photos.Die_Umgebung__Radweg_in_Ricktung_Pieversdorf} />
+                <Photo props={photos.Die_Umgebung__Kuehe_auf_der_Weide_in_Richtung_Pieverstorf_2} />
+                <Photo props={photos.Die_Umgebung__Radweg_in_Richtung_Pieverstorf} />
             </Grid>
 
             <Nav verticalOffsetInVWs={240} />

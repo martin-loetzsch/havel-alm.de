@@ -76,7 +76,7 @@ export default function Page({ params }: PageProps) {
             <Photo props={photo} scale={150} quality={100} priority={true} linkToPhotoPage={false} >
                 <div className={`${styles.flexContainer} color-cyan`}>
                     <h2>{photo.title}</h2>
-                    <div style={{fontSize:'12vw'}}>
+                    <div style={{fontSize:'12vw', marginTop:'-3vw'}}>
                         {previousPhotoLink &&
                             <Link href={{ pathname: previousPhotoLink }} >◄</Link>}
 
@@ -86,6 +86,7 @@ export default function Page({ params }: PageProps) {
                                 <Link href={{ pathname: nextPhotoLink }}>►</Link>
                             </>
                         }
+                        &#160;
                     </div>
                 </div>
 
