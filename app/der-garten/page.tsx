@@ -13,7 +13,7 @@ export const metadata: Metadata = getMetaData(title, description)
 export default function Home() {
     return (
         <>
-            <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
+            <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2} priority={true}>
                 <h1 className='color-cyan'>Der Garten</h1>
             </Photo>
             <Grid>
@@ -25,9 +25,9 @@ export default function Home() {
                 <Photo props={photos.Haus__Wegweiser_vor_dem_Haus} />
                 <Photo props={photos.Haus__Ansicht_von_der_Strasse_im_Winter} priority={true} />
             </Grid>
-            
 
-            <Nav verticalOffsetInVWs={40} />
+
+            <Nav verticalOffsetInVWs={20} />
         </>
     )
 }
