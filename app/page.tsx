@@ -54,9 +54,9 @@ export default function Home() {
                 <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_I} />
             </Grid>
             <Grid>
-                <TextCard width={1000} height={1000}>
-                    <p>Wir vermieten keine einzelnen Zimmer, sondern nur das ganze Haus und für mindestens zwei Nächte.</p>
-                    <p>Alle Infos dazu findet ihr auf unserer Seite für <Link href={{pathname:'/preise-und-buchung'}} prefetch={false}>Preise und Buchung</Link>.</p>
+                <TextCard width={400} height={1000} backgroundCyan={true}>
+                    <p style={{backgroundColor:'white'}}>Wir vermieten keine einzel&shy;nen Zimmer, sondern nur das ganze Haus und die&shy;ses für min&shy;des&shy;tens zwei Nächte.</p>
+                    <p>Alle Infos dazu findet ihr auf <Link href={{pathname:'/preise-und-buchung'}} prefetch={false}>un&shy;ser&shy;er Seite zu Preisen und Buch&shy;ung</Link>.</p>
                 </TextCard>
                 <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_I} />
             </Grid>
