@@ -51,30 +51,26 @@ export default function Home() {
                 <Photo props={photos.Haus__Zimmer_1__Zimmer_1_II} />
 
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_1} />
-                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_I} />
+            </Grid>
+            <Grid>
+                <TextCard width={2000} height={1000} backgroundCyan={true}>
+                    <p style={{backgroundColor:'white'}}>Die Havel Alm hat einen ca. 1000m² grossen Garten. Von der ca. 100m² grossen Terrasse habt ihr einen wundervollen Blick  auf einen Sumpf/ eine Weide.</p>
+                    <p>Hier findet ihr mehr <Link href='/der-garten'>Eindrücke von unserem Grundstück</Link>.</p>
+                </TextCard>
+                <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
+                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} />
+                <Photo props={photos.Garten__Terrasse_1} />
             </Grid>
             <Grid>
                 <TextCard width={400} height={1000} backgroundCyan={true}>
-                    <p style={{backgroundColor:'white'}}>Wir vermieten keine einzel&shy;nen Zimmer, sondern nur das ganze Haus und die&shy;ses für min&shy;des&shy;tens zwei Nächte.</p>
-                    <p>Alle Infos dazu findet ihr auf <Link href={{pathname:'/preise-und-buchung'}} prefetch={false}>un&shy;ser&shy;er Seite zu Preisen und Buch&shy;ung</Link>.</p>
+                    <p style={{ backgroundColor: 'white' }}>Wir vermie&shy;ten keine ein&shy;zel&shy;nen Zimmer, sondern nur das ganze Haus und die&shy;ses für min&shy;des&shy;tens zwei Nächte.</p>
+                    <p>Alle Infos dazu findet ihr auf <Link href={{ pathname: '/preise-und-buchung' }} prefetch={false}>un&shy;ser&shy;er Seite zu Preisen und Buch&shy;ung</Link>.</p>
                 </TextCard>
                 <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_I} />
             </Grid>
-            {/* <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
-                <h2>Der Garten</h2>
-            </Photo>
-            <Grid>
-                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_1} />
-                <Photo props={photos.Garten__Terrasse_1} />
-                <Photo props={photos.Garten__Terrasse_2} />
-                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} />
-                <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
-                <Photo props={photos.Haus__Wegweiser_vor_dem_Haus} />
-                <Photo props={photos.Haus__Ansicht_von_der_Strasse_im_Winter} priority={true} />
-            </Grid> */}
             <Grid>
                 <TextCard width={1950} height={1000} backgroundCyan={true}>
-                    <p style={{backgroundColor:'white'}}>Kratzeburg ist ein idyllisches Dorf inmittem vom Müritz-Nationalpark. Es ist umgeben von von klaren Seen und dichten Wäldern und bietet unzählige Möglichkeiten zum Wandern, Radfahren und Paddeln. </p>
+                    <p style={{ backgroundColor: 'white' }}>Kratzeburg ist ein idyllisches Dorf inmitten vom Müritz-Nationalpark. Es ist umgeben von von klaren Seen und dichten Wäldern und bietet unzählige Möglichkeiten zum Wandern, Radfahren und Paddeln. </p>
                     <p><Link href="/kratzeburg">Lest hier mehr über die Umgebung der Havel Alm</Link>.</p>
                 </TextCard>
                 <Photo props={photos.Kratzeburg__Wanderweg_Richtung_Pieverstorf} />
