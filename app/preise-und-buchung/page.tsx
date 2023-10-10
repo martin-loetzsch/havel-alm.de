@@ -78,7 +78,7 @@ export default function Home() {
             </div>
             <Photo props={photos.Kratzeburg__Der_zugefrorene_Kaebelicksee} />
 
-            <Nav verticalOffsetInVWs={58} />
+            <Nav verticalOffsetInVWs={20} />
         </>
     )
 }
