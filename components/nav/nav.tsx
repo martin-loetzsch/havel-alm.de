@@ -18,7 +18,7 @@ const defaultLinks: Map = {
     '/das-haus': 'Innen',
     '/der-garten': 'Aussen',
     '/preise-und-buchung': 'Buchung',
-    '/umgebung': 'Umgebung',
+    '/kratzeburg': 'Kratzeburg',
     // '/making-of': 'Making-of',
 }
 

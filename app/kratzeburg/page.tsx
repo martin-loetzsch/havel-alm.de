@@ -1,17 +1,12 @@
-import { default as Card, default as TextCard } from '@/components/card/textCard';
-import getMetaData from '@/components/utils/getMetaData';
 import Grid from "@/components/grid/grid";
 import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
-import VerticallyAlignedDiv from '@/components/utils/verticallyAlignedDiv';
-import grundrissDG from '@/public/grundrisse/Grundriss DG.svg';
-import grundrissEG from '@/public/grundrisse/Grundriss EG.svg';
+import getMetaData from '@/components/utils/getMetaData';
 import type { Metadata } from 'next';
-import Image from "next/image";
 import Nav from '../../components/nav/nav';
 
-const title = "Die Umgebung"
-const description = "Kratzeburg und der Müritz-Nationalpark"
+const title = "Kratzeburg"
+const description = "Radfahren, wandern und paddeln im Müritz-Nationalpark"
 
 export const metadata: Metadata = getMetaData(title, description)
 
@@ -19,8 +14,12 @@ export default function Home() {
     return (
         <>
             <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee}>
-                <h1 className='color-cyan'>Die Umgebung</h1>
+                <h1 className='color-cyan'>Kratzeburg</h1>
             </Photo>
+            <p>
+                <a href="http://www.kratzeburg.de/">Kratzeburg</a> liegt inmitten der Mecklenburgischen Seenplatte und ist der ideale Ausgangspunkt für Ausflüge in den <a href="https://www.mueritz-nationalpark.de">Müritz-Nationalpark</a>.
+            </p>
+            <p className='background-cyan'>Diese Unterseite befindet sich noch im Aufbau, doch hier schon einmal einige Eindrücke aus der Umgebung der Havel Alm:</p>
             <Grid>
                 <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee_im_Winter}>
 
@@ -63,7 +62,7 @@ export default function Home() {
                 <Photo props={photos.Die_Umgebung__Radweg_in_Richtung_Pieverstorf} />
             </Grid>
 
-            <Nav verticalOffsetInVWs={40} />
+            <Nav verticalOffsetInVWs={62} />
         </>
     )
 }

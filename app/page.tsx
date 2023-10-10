@@ -53,9 +53,6 @@ export default function Home() {
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_1} />
                 <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_I} />
             </Grid>
-            <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
-                <h2>Der Garten</h2>
-            </Photo>
             <Grid>
                 <TextCard width={1000} height={1000}>
                     <p>Wir vermieten keine einzelnen Zimmer, sondern nur das ganze Haus und für mindestens zwei Nächte.</p>
@@ -63,6 +60,9 @@ export default function Home() {
                 </TextCard>
                 <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_I} />
             </Grid>
+            <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
+                <h2>Der Garten</h2>
+            </Photo>
             <Grid>
                 <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_1} />
                 <Photo props={photos.Garten__Terrasse_1} />
