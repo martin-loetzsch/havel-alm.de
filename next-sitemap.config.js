@@ -1,4 +1,4 @@
-let exclude = ['/gaeste', '/gaeste/*', '/making-of', '/photos/20*']
+let exclude = ['/gaeste', '/gaeste/*', '/making-of', '/photos/20*', '/photos/all']
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
