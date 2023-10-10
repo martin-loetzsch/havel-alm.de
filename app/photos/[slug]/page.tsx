@@ -76,7 +76,7 @@ export default function Page({ params }: PageProps) {
             <Photo props={photo} scale={150} quality={100} priority={true} linkToPhotoPage={false} >
                 <div className={`${styles.flexContainer} color-cyan`}>
                     <h2>{photo.title}</h2>
-                    <div style={{fontSize:'12vw', marginTop:'-3vw'}}>
+                    <div style={{fontSize:'10vw', marginTop:'-1.5vw'}}>
                         {previousPhotoLink &&
                             <Link href={{ pathname: previousPhotoLink }} >◄</Link>}
 
@@ -92,7 +92,7 @@ export default function Page({ params }: PageProps) {
 
             </Photo>
             <p className={styles.flexContainer}>
-                {new Intl.DateTimeFormat("de").format(photo.createdAt)}
+                Aufgenommen {new Intl.DateTimeFormat("de").format(photo.createdAt)}
                 <Link href={{ pathname: photo.src }} prefetch={false}
                     target="_blank" rel="nofollow">
                     Original ({photo.width} x {photo.height} px)

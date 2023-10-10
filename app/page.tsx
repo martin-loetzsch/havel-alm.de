@@ -60,7 +60,7 @@ export default function Home() {
                 </TextCard>
                 <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_I} />
             </Grid>
-            <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
+            {/* <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2}>
                 <h2>Der Garten</h2>
             </Photo>
             <Grid>
@@ -71,53 +71,20 @@ export default function Home() {
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
                 <Photo props={photos.Haus__Wegweiser_vor_dem_Haus} />
                 <Photo props={photos.Haus__Ansicht_von_der_Strasse_im_Winter} priority={true} />
-            </Grid>
-            <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee}>
-                <h2>Die Umgebung</h2>
-            </Photo>
+            </Grid> */}
             <Grid>
-                <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee_im_Winter}>
+                <TextCard width={1950} height={1000} backgroundCyan={true}>
+                    <p style={{backgroundColor:'white'}}>Kratzeburg ist ein idyllisches Dorf inmittem vom Müritz-Nationalpark. Es ist umgeben von von klaren Seen und dichten Wäldern und bietet unzählige Möglichkeiten zum Wandern, Radfahren und Paddeln. </p>
+                    <p><Link href="/kratzeburg">Lest hier mehr über die Umgebung der Havel Alm</Link>.</p>
+                </TextCard>
+                <Photo props={photos.Kratzeburg__Wanderweg_Richtung_Pieverstorf} />
+                <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_1} />
+                <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel_kurz_vor_Babke} />
 
-                </Photo>
 
-                <Photo props={photos.Die_Umgebung__Auf_dem_zugefrorenen_Kaebelicksee} />
-                <Photo props={photos.Die_Umgebung__Langlauf_Ski_fahren_auf_dem_Kaebelicksee} />
-                <Photo props={photos.Die_Umgebung__Der_zugefrorene_Kaebelicksee} />
-
-                <Photo props={photos.Die_Umgebung__Paddeln_auf_der_Havel} />
-                <Photo props={photos.Die_Umgebung__Paddeln_auf_der_Havel_kurz_vor_Babke} />
-                <Photo props={photos.Die_Umgebung__Auf_der_Havel_bei_Granzin} />
-
-                <Photo props={photos.Die_Umgebung__Wanderweg_am_Granziner_See} />
-                <Photo props={photos.Die_Umgebung__Wanderweg_Richtung_Pieverstorf} />
-                <Photo props={photos.Die_Umgebung__Pilze_suchen_bei_Pieverstorf_1} />
-                <Photo props={photos.Die_Umgebung__Pilze_suchen_bei_Pieverstorf_2} />
-
-                <Photo props={photos.Die_Umgebung__Zwischen_Dambeck_und_Havelquelle} />
-                <Photo props={photos.Die_Umgebung__Weg_nach_Dambeck} />
-                <Photo props={photos.Die_Umgebung__Weg_von_Dambeck_nach_Bornhof_1} />
-                <Photo props={photos.Die_Umgebung__Weg_von_Dambeck_nach_Bornhof_2} />
-                <Photo props={photos.Die_Umgebung__Weg_von_Dambeck_nach_Bornhof_3} />
-                <Photo props={photos.Die_Umgebung__Badestelle_am_Muehlensee__an_der_Havelquelle_} />
-                <Photo props={photos.Die_Umgebung__Badestrand_mit_Steg_am_Dambecker_See} />
-
-                <Photo props={photos.Die_Umgebung__Radweg_zwischen_Liepen_und_Klein_Vielen} />
-                <Photo props={photos.Die_Umgebung__Radweg_zwischen_Liepe_und_Klein_Vielen} />
-                <Photo props={photos.Die_Umgebung__Zwischen_Liepen_und_Klein_Vielen} />
-                <Photo props={photos.Die_Umgebung__Auf_dem_Schäferberg__96m__zwischen_Pieverstorf_und_Hartwigsdorf} />
-
-                <Photo props={photos.Die_Umgebung__Weg_zwischen_Pieverstorf_und_Kratzeburg} />
-                <Photo props={photos.Die_Umgebung__Hochsitz_am_Dambecker_See} />
-
-                <Photo props={photos.Die_Umgebung__Der_Wald_hinter_dem_Haus} />
-                <Photo props={photos.Die_Umgebung__Am_Roethsee_zwischen_Dambeck_und_Kratzeburg} />
-                <Photo props={photos.Die_Umgebung__Kuehe_auf_der_Weide_in_Richtung_Pieverstorf_1} />
-
-                <Photo props={photos.Die_Umgebung__Kuehe_auf_der_Weide_in_Richtung_Pieverstorf_2} />
-                <Photo props={photos.Die_Umgebung__Radweg_in_Richtung_Pieverstorf} />
             </Grid>
 
-            <Nav verticalOffsetInVWs={240} />
+            <Nav verticalOffsetInVWs={30} />
         </>
     )
 }

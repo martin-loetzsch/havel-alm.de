@@ -25,7 +25,7 @@ export default function Home() {
     return (
         <>
 
-            <Photo props={photos.Die_Umgebung__Badestelle_am_Kaebelicksee_2} linkToPhotoPage={false} priority={true} quality={100}>
+            <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_2} linkToPhotoPage={false} priority={true} quality={100}>
                 <h1 className='color-cyan'>Preise und Buchung</h1>
             </Photo>
             <p>Ihr könnt die Havel Alm über <a href="https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5361182">FeWo-Direkt</a> buchen (dort seht ihr auch unsere Verfügbarkeiten).</p>
@@ -76,7 +76,7 @@ export default function Home() {
                 <p>Bei Buchung überweist ihr 50% des Preises, der zweite Teil ist 2 Monate vor Anreise fällig (den wir dann leider nicht mehr erstatten können).</p>
                 <p>Bei der Buchung über Portale gelten die dort hinterlegten Stornierungsbedingungen.</p>
             </div>
-            <Photo props={photos.Die_Umgebung__Der_zugefrorene_Kaebelicksee} />
+            <Photo props={photos.Kratzeburg__Der_zugefrorene_Kaebelicksee} />
 
             <Nav verticalOffsetInVWs={58} />
         </>
