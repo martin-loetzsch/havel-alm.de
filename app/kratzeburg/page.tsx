@@ -49,7 +49,7 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_1} />
                 <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_2} />
                 <Photo props={photos.Kratzeburg__Zwischen_Liepen_und_Klein_Vielen} />
-                <Photo props={photos.Kratzeburg__Auf_dem_Schäferberg__96m__zwischen_Pieverstorf_und_Hartwigsdorf} />
+                <Photo props={photos.Kratzeburg__Auf_dem_Schaeferberg__96m__zwischen_Pieverstorf_und_Hartwigsdorf} />
 
                 <Photo props={photos.Kratzeburg__Weg_zwischen_Pieverstorf_und_Kratzeburg} />
                 <Photo props={photos.Kratzeburg__Hochsitz_am_Dambecker_See} />
