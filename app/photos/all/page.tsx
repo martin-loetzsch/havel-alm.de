@@ -1,6 +1,6 @@
 import Grid from "@/components/grid/grid";
 import Photo from '@/components/photo/photo';
-import photosBySlug from '@/components/photos';
+import photos from '@/components/photos';
 import getMetaData from '@/components/utils/getMetaData';
 import type { Metadata } from 'next';
 import Nav from '../../../components/nav/nav';
@@ -15,9 +15,9 @@ export default function Page() {
         <>
             <h1 className='background-cyan'>Alle Fotos</h1>
             <Grid>
-                {Object.keys(photosBySlug).map((key, index) => (
-                    <Photo props={photosBySlug[key]} key={index} >
-                        <p className='color-cyan'>{photosBySlug[key].title}</p>
+                {Object.keys(photos).map((key, index) => (
+                    <Photo props={photos[key]} key={index} >
+                        <p className='color-cyan'>{photos[key].title}</p>
                     </Photo>
                 ))}
             </Grid>
