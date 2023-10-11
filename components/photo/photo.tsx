@@ -1,8 +1,8 @@
 import styles from './photo.module.scss'
 
 import Image from "next/image"
-import {FunctionComponent} from 'react'
-import {PhotoProps} from '../photos'
+import { FunctionComponent } from 'react'
+import { PhotoProps } from '../photos'
 import Link from "next/link";
 
 export type PhotoComponentProps = {
@@ -12,7 +12,8 @@ export type PhotoComponentProps = {
     quality?: number,
     priority?: boolean,
     className?: string,
-    linkToPhotoPage?: boolean
+    linkToPhotoPage?: boolean,
+    printSrcPathDuringBuild?: boolean
 }
 
 export const Photo: FunctionComponent<PhotoComponentProps> = (
@@ -23,7 +24,8 @@ export const Photo: FunctionComponent<PhotoComponentProps> = (
         quality = 75,
         priority = false,
         className = '',
-        linkToPhotoPage = true
+        linkToPhotoPage = true,
+        printSrcPathDuringBuild = true
     }): JSX.Element => {
 
     let image = <Image
@@ -43,6 +45,10 @@ export const Photo: FunctionComponent<PhotoComponentProps> = (
         image = <Link href={`/photos/${props.slug}`} prefetch={false} className={styles.imageLink}>
             {image}
         </Link>
+    }
+
+    if (printSrcPathDuringBuild) {
+        console.log(props.src.slice(1))
     }
 
     return (

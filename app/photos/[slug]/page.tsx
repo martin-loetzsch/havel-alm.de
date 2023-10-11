@@ -73,10 +73,13 @@ export default function Page({ params }: PageProps) {
 
     return (
         <>
-            <Photo props={photo} scale={150} quality={100} priority={true} linkToPhotoPage={false} >
+            <Photo
+                props={photo} scale={150} quality={100} priority={true}
+                linkToPhotoPage={false} printSrcPathDuringBuild={false}
+            >
                 <div className={`${styles.flexContainer} color-cyan`}>
                     <h2>{photo.title}</h2>
-                    <div style={{fontSize:'10vw', marginTop:'-1.5vw'}}>
+                    <div style={{ fontSize: '10vw', marginTop: '-1.5vw' }}>
                         {previousPhotoLink &&
                             <Link href={{ pathname: previousPhotoLink }} >◄</Link>}
 
