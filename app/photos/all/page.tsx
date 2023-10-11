@@ -1,6 +1,6 @@
 import Grid from "@/components/grid/grid";
 import Photo from '@/components/photo/photo';
-import photos from '@/components/photos';
+import photosBySlug from '@/components/photos';
 import getMetaData from '@/components/utils/getMetaData';
 import type { Metadata } from 'next';
 import Nav from '../../../components/nav/nav';
@@ -15,11 +15,15 @@ export default function Page() {
         <>
             <h1 className='background-cyan'>Alle Fotos</h1>
             <Grid>
-                {Object.keys(photos).map((key, index) => (
-                    <Photo props={photos[key]} key={index} >
-                        <p className='color-cyan'>{photos[key].title}</p>
-                    </Photo>
-                ))}
+                {Object.keys(photosBySlug).map((key, index) => {
+                    const props = photosBySlug[key as keyof typeof photosBySlug]
+
+                    return (
+                        <Photo props={props} key={index} priority={true}>
+                            <p className='color-cyan'>{props.title}</p>
+                        </Photo>
+                    )
+                })}
             </Grid>
             <Nav verticalOffsetInVWs={20} />
         </>

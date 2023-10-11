@@ -133,7 +133,7 @@ export const photosBySlug: {{[Key: string]: PhotoProps}} = {{
 ''', file=output)
 
     for photo in photos:
-        print(f'''    '{photo.slug}': photos['{photo.js_variable_name}'],''', file=output)
+        print(f'''    '{photo.slug}': photos.{photo.js_variable_name},''', file=output)
 
     print(f'''}}''',file=output)
 

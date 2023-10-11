@@ -25,7 +25,7 @@ export default function Home() {
                 <TextCard width={3000} height={2000} backgroundCyan={true}>
                     <p>Die Havel Alm wurde ca. 1900 als Stallgebäude am Ortseingang von Kratzeburg errichtet. 2021 übernahmen wir das bis dahin als Cafe genutzte Haus und bauten es bis Mai 2023 ökologisch zu einem Ferien- und Seminarhaus um.</p>
                 </TextCard>
-                <Photo props={photos.Haus__Blick_von_der_Strasse_February_2023} />
+                <Photo props={photos.Haus__Blick_von_der_Strasse_Februar_2023} />
             </Grid>
             <Grid>
                 <Photo props={photos.Haus__Gastraum__Eingang} />
@@ -54,9 +54,9 @@ export default function Home() {
                     <p>In der komplett ausgestat&shy;teten <b>Küche</b> kann für viele Personen gekocht werden.</p>
                     <p>Es gibt einen grossen Induktionsherd, zwei Back&shy;öfen, einen Kühl&shy;schrank, eine Spülmaschine sowie eine Kaffemaschine.</p>
                 </Card>
-                <Photo props={photos.Haus__Kueche___Kueche___1} />
-                <Photo props={photos.Haus__Kueche___Kueche___3} />
-                <Photo props={photos.Haus__Kueche___Kueche___4} />
+                <Photo props={photos.Haus__Kueche___Kueche_1} />
+                <Photo props={photos.Haus__Kueche___Kueche_3} />
+                <Photo props={photos.Haus__Kueche___Kueche_4} />
             </Grid>
             <Grid>
                 <Card width={700} height={1000}>
