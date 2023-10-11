@@ -47,10 +47,11 @@ export default function Home() {
 
             <Grid>
                 <Photo props={photos.Haus__Gastraum__Sofa_1} />
-
                 <Photo props={photos.Haus__Zimmer_1__Zimmer_1_II} />
-
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_1} />
+                <TextCard width={500} height={800} backgroundCyan={true}>
+                    <p><Link href='/das-haus' prefetch={false}>Hier findet ihr alle Infos zu unserem Haus.</Link></p>
+                </TextCard>
             </Grid>
             <Grid>
                 <TextCard width={2000} height={1000} backgroundCyan={true}>
