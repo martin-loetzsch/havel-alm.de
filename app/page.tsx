@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <>
 
-            <Photo props={photos.Haus__Das_Haus_von_oben_2} priority={true} scale={75}
+            <Photo props={photos.Haus__Das_Haus_von_oben_1} priority={true} scale={75}
                 className='color-cyan' linkToPhotoPage={false}>
                 <h1 style={{ top: '9vw' }}>Havel Alm</h1>
                 <div style={{ top: '47vw' }}>
@@ -55,7 +55,7 @@ export default function Home() {
             <Grid>
                 <TextCard width={2000} height={1000} backgroundCyan={true}>
                     <p style={{backgroundColor:'white'}}>Die Havel Alm hat einen ca. 1000m² grossen Garten. Von der ca. 100m² grossen Terrasse habt ihr einen wundervollen Blick  auf einen Sumpf/ eine Weide.</p>
-                    <p>Hier findet ihr mehr <Link href='/der-garten'>Eindrücke von unserem Grundstück</Link>.</p>
+                    <p>Hier findet ihr mehr <Link prefetch={false} href='/der-garten'>Eindrücke von unserem Grundstück</Link>.</p>
                 </TextCard>
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
                 <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} />
@@ -71,7 +71,7 @@ export default function Home() {
             <Grid>
                 <TextCard width={1950} height={1000} backgroundCyan={true}>
                     <p style={{ backgroundColor: 'white' }}>Kratzeburg ist ein idyllisches Dorf inmitten vom Müritz-Nationalpark. Es ist umgeben von von klaren Seen und dichten Wäldern und bietet unzählige Möglichkeiten zum Wandern, Radfahren und Paddeln. </p>
-                    <p><Link href="/kratzeburg">Lest hier mehr über die Umgebung der Havel Alm</Link>.</p>
+                    <p><Link prefetch={false} href="/kratzeburg">Lest hier mehr über die Umgebung der Havel Alm</Link>.</p>
                 </TextCard>
                 <Photo props={photos.Kratzeburg__Wanderweg_Richtung_Pieverstorf} />
                 <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_1} />

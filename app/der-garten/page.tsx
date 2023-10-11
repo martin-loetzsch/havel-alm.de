@@ -4,6 +4,9 @@ import photos from '@/components/photos';
 import getMetaData from '@/components/utils/getMetaData';
 import type { Metadata } from 'next';
 import Nav from '../../components/nav/nav';
+import PlanGrundstück from '@/public/grundrisse/Plan Grundstück.svg';
+import Image from "next/image";
+import TextCard from "@/components/card/textCard";
 
 const title = "Der Garten"
 const description = "Rund um das Haus"
@@ -16,6 +19,13 @@ export default function Home() {
             <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2} priority={true}>
                 <h1 className='color-cyan'>Der Garten</h1>
             </Photo>
+            <Grid>
+                <Photo props={photos.Haus__Das_Haus_von_oben_2} priority={true} scale={75} />
+                <TextCard width={760} height={810}>
+                    <Image src={PlanGrundstück} alt={'Havel Alm Kratzeburg Plan Grundstück'}
+                        unoptimized style={{ width: '100%', height: 'auto' }}
+                    /></TextCard>
+            </Grid>
             <Grid>
                 <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_1} />
                 <Photo props={photos.Garten__Terrasse_1} />
