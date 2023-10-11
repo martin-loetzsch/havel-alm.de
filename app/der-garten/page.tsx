@@ -20,7 +20,7 @@ export default function Home() {
                 <h1 className='color-cyan'>Der Garten</h1>
             </Photo>
             <Grid>
-                <Photo props={photos.Haus__Das_Haus_von_oben_2} priority={true} scale={75} />
+                <Photo props={photos.Haus__Das_Haus_von_oben_2} priority={true} scale={75} quality={90}/>
                 <TextCard width={760} height={810}>
                     <Image src={PlanGrundstück} alt={'Havel Alm Kratzeburg Plan Grundstück'}
                         unoptimized style={{ width: '100%', height: 'auto' }}
