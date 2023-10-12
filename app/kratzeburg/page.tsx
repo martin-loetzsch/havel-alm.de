@@ -3,7 +3,8 @@ import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
 import getMetaData from '@/components/utils/getMetaData';
 import type { Metadata } from 'next';
-import Nav from '../../components/nav/nav';
+import Nav from '../../components/nav/nav'
+import VerticallyAlignedDiv from "@/components/utils/verticallyAlignedDiv";
 
 const title = "Kratzeburg"
 const description = "Radfahren, wandern und paddeln im Müritz-Nationalpark"
@@ -13,8 +14,11 @@ export const metadata: Metadata = getMetaData(title, description)
 export default function Home() {
     return (
         <>
-            <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee}>
+            <Photo props={photos.Kratzeburg__Kratzeburg_von_oben_II}>
                 <h1 className='color-cyan'>Kratzeburg</h1>
+                <VerticallyAlignedDiv percentageOfViewWidth={43}>
+                    <p className="color-cyan" style={{marginLeft:'1vw',textAlign:'center'}}>Havel Alm<br/>↓</p>
+                </VerticallyAlignedDiv>
             </Photo>
             <p>
                 <a href="http://www.kratzeburg.de/">Kratzeburg</a> liegt inmitten der Mecklenburgischen Seenplatte und ist der ideale Ausgangspunkt für Ausflüge in den <a href="https://www.mueritz-nationalpark.de">Müritz-Nationalpark</a>.
