@@ -19,7 +19,7 @@ export default function Page() {
                     const props = photosBySlug[key as keyof typeof photosBySlug]
 
                     return (
-                        <Photo props={props} key={index} priority={true} printSrcPathDuringBuild={false}>
+                        <Photo props={props} key={index} priority={false} printSrcPathDuringBuild={false}>
                             <p className='color-cyan'>{props.title}</p>
                         </Photo>
                     )
