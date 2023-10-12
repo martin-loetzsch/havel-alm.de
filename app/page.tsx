@@ -36,6 +36,7 @@ export default function Home() {
 
             <Grid>
                 <Photo props={photos.Haus__Das_Haus_vom_Garten_aus_Mai_2023} />
+                <Photo props={photos.Haus__Das_Haus_von_oben_3}/>
                 <Photo props={photos.Haus__Gastraum__Gastraum_I} />
             </Grid>
             <div>
