@@ -14,7 +14,7 @@ export const metadata: Metadata = getMetaData(title, description)
 export default function Home() {
     return (
         <>
-            <Photo props={photos.Kratzeburg__Kratzeburg_von_oben_II}>
+            <Photo props={photos.Kratzeburg__Kratzeburg_von_oben}>
                 <h1 className='color-cyan'>Kratzeburg</h1>
                 <VerticallyAlignedDiv percentageOfViewWidth={43}>
                     <p className="color-cyan" style={{marginLeft:'1vw',textAlign:'center'}}>Havel Alm<br/>↓</p>

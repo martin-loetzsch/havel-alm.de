@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <>
 
-            <Photo props={photos.Haus__Das_Haus_von_oben_1} priority={true} scale={75}
+            <Photo props={photos.Ansichten__Das_Haus_von_oben_1} priority={true} scale={75}
                 className='color-cyan' linkToPhotoPage={false}>
                 <h1 style={{ top: '9vw' }}>Havel Alm</h1>
                 <div style={{ top: '47vw' }}>
@@ -35,8 +35,8 @@ export default function Home() {
 
 
             <Grid>
-                <Photo props={photos.Haus__Das_Haus_vom_Garten_aus_Mai_2023} />
-                <Photo props={photos.Haus__Das_Haus_von_oben_3}/>
+                <Photo props={photos.Ansichten__Das_Haus_vom_Garten_aus_Mai_2023} />
+                <Photo props={photos.Ansichten__Das_Haus_von_oben_3}/>
                 <Photo props={photos.Haus__Gastraum__Gastraum_I} />
             </Grid>
             <div>
