@@ -33,7 +33,7 @@ export default function Home() {
                 <Photo props={photos.Ansichten__Das_Haus_von_oben_4} />
             </Grid>
             <Grid>
-                <TextCard width={500} height={400}>
+                <TextCard width={500} height={600}>
                     <p>Auf der von der Strasse abgewandten Seite ist eine ca 100m² gro&shy;ße Terrasse.</p>
                 </TextCard>
                 <Photo props={photos.Garten__Terrasse_1} />
@@ -46,9 +46,9 @@ export default function Home() {
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
 
                 <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_1} />
+                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2} />
                 <Photo props={photos.Garten__Schafe_auf_der_Weide_hinter_dem_Grundstueck} />
                 <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_3} />
-                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2} />
 
             </Grid>
             <Grid>
