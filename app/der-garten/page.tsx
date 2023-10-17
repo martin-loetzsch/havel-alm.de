@@ -16,27 +16,54 @@ export const metadata: Metadata = getMetaData(title, description)
 export default function Home() {
     return (
         <>
-            <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2} priority={true}>
-                <h1 className='color-cyan'>Der Garten</h1>
+
+            <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} priority={true} linkToPhotoPage={false}>
+                <h1>Der Garten</h1>
             </Photo>
-            <p className="background-cyan">Diese Seite befindet sich noch im Aufbau, aber hier schon einmal einige Impressionen:</p>
             <Grid>
+                <TextCard width={800} height={810}>
+                    <p>Die Havel Alm steht auf ei&shy;nem ca. 1000m² grossen Grund&shy;stück direkt am Ortseingang von Kratzeburg.</p>
+                </TextCard>
+                <Photo props={photos.Garten__Der_Sumpf_hinter_dem_Haus_von_oben} />
                 <Photo props={photos.Ansichten__Das_Haus_von_oben_2} />
-                <Photo props={photos.Ansichten__Das_Haus_von_oben_4} />
                 <TextCard width={760} height={810}>
                     <Image src={PlanGrundstück} alt={'Havel Alm Kratzeburg Plan Grundstück'}
                         unoptimized style={{ width: '100%', height: 'auto' }}
                     /></TextCard>
+                <Photo props={photos.Ansichten__Das_Haus_von_oben_4} />
             </Grid>
             <Grid>
-                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_1} />
+                <TextCard width={500} height={400}>
+                    <p>Auf der von der Strasse abgewandten Seite ist eine ca 100m² gro&shy;ße Terrasse:</p>
+                </TextCard>
                 <Photo props={photos.Garten__Terrasse_1} />
                 <Photo props={photos.Garten__Terrasse_2} />
-                <Photo props={photos.Garten__Der_Sumpf_hinter_dem_Haus_von_oben} />
-                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} />
+            </Grid>
+            <Grid>
+                <TextCard width={1000} height={400} backgroundCyan={true}>
+                    <p>Von der Terrasse habt ihr einen zu jeder Jahreszeit wunderschönen Blick auf einen Sumpf und dahinter einige Weiden:</p>
+                </TextCard>
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
+
+                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_1} />
+                <Photo props={photos.Garten__Schafe_auf_der_Weide_hinter_dem_Grundstueck}/>
+                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_3} />
+                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2} />
+
+            </Grid>
+            <Grid>
                 <Photo props={photos.Garten__Wegweiser_vor_dem_Haus} />
-                <Photo props={photos.Ansichten__Ansicht_von_der_Strasse_im_Winter}/>
+                <Photo props={photos.Ansichten__Ansicht_von_der_Strasse_im_Winter} />
+
+            </Grid>
+            <Grid>
+                <Photo props={photos.Garten__Hochbeet_1} />
+                <Photo props={photos.Garten__Hochbeet_2} />
+                <Photo props={photos.Garten__Hochbeet_3} />
+                <Photo props={photos.Garten__Hochbeet_4} />
+                <Photo props={photos.Garten__Hochbeet_5} />
+                <Photo props={photos.Garten__Hochbeet_6} />
+                <Photo props={photos.Garten__Hochbeet_7} />
             </Grid>
 
 
