@@ -57,7 +57,7 @@ export default function Home() {
             <Grid>
                 <TextCard width={2000} height={1000} backgroundCyan={true}>
                     <p style={{backgroundColor:'white'}}>Die Havel Alm hat einen ca. 1000m² grossen Garten. Von der ca. 100m² grossen Terrasse habt ihr einen wundervollen Blick  auf einen Sumpf/ eine Weide.</p>
-                    <p>Hier findet ihr mehr <Link prefetch={false} href='/der-garten'>Eindrücke von unserem Grundstück</Link>.</p>
+                    <p>Hier findet ihr mehr <Link prefetch={false} href='/rund-um-das-haus'>Eindrücke von unserem Grundstück</Link>.</p>
                 </TextCard>
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
                 <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} />

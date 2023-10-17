@@ -8,8 +8,8 @@ import PlanGrundstück from '@/public/grundrisse/Plan Grundstück.svg';
 import Image from "next/image";
 import TextCard from "@/components/card/textCard";
 
-const title = "Der Garten"
-const description = "Rund um das Haus"
+const title = "Rund um das Haus"
+const description = "Die direkte Umgebung der Havel Alm"
 
 export const metadata: Metadata = getMetaData(title, description)
 
@@ -18,7 +18,7 @@ export default function Home() {
         <>
 
             <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} priority={true} linkToPhotoPage={false}>
-                <h1>Der Garten</h1>
+                <h1 className="color-cyan">{title}</h1>
             </Photo>
             <Grid>
                 <TextCard width={800} height={810}>
@@ -34,14 +34,14 @@ export default function Home() {
             </Grid>
             <Grid>
                 <TextCard width={500} height={400}>
-                    <p>Auf der von der Strasse abgewandten Seite ist eine ca 100m² gro&shy;ße Terrasse:</p>
+                    <p>Auf der von der Strasse abgewandten Seite ist eine ca 100m² gro&shy;ße Terrasse.</p>
                 </TextCard>
                 <Photo props={photos.Garten__Terrasse_1} />
                 <Photo props={photos.Garten__Terrasse_2} />
             </Grid>
             <Grid>
                 <TextCard width={1000} height={400} backgroundCyan={true}>
-                    <p>Von der Terrasse habt ihr einen zu jeder Jahreszeit wunderschönen Blick auf einen Sumpf und dahinter einige Weiden:</p>
+                    <p>Von der Terrasse habt ihr einen zu jeder Jahreszeit wunderschönen Blick auf einen Sumpf und dahinter einige Weiden.</p>
                 </TextCard>
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
 
@@ -52,6 +52,7 @@ export default function Home() {
 
             </Grid>
             <Grid>
+                <Photo props={photos.Ansichten__Dorfeingang_von_Kratzeburg} />
                 <Photo props={photos.Garten__Wegweiser_vor_dem_Haus} />
                 <Photo props={photos.Ansichten__Ansicht_von_der_Strasse_im_Winter} />
 

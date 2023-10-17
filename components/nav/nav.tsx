@@ -16,7 +16,7 @@ interface Map {
 const defaultLinks: Map = {
     '/': 'Start',
     '/das-haus': 'Innen',
-    '/der-garten': 'Aussen',
+    '/rund-um-das-haus': 'Aussen',
     '/preise-und-buchung': 'Buchung',
     '/kratzeburg': 'Kratzeburg',
     // '/making-of': 'Making-of',
