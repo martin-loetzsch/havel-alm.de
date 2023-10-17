@@ -46,23 +46,38 @@ export default function Home() {
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
 
                 <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_1} />
-                <Photo props={photos.Garten__Schafe_auf_der_Weide_hinter_dem_Grundstueck}/>
+                <Photo props={photos.Garten__Schafe_auf_der_Weide_hinter_dem_Grundstueck} />
                 <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_3} />
                 <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2} />
 
             </Grid>
             <Grid>
+                <TextCard width={1000} height={1200} backgroundCyan={true}>
+                    <p>Vor dem Haus verläuft die Dorf&shy;straße. Diese ist manchmal laut, ist aber auch keine Durchs&shy;gangs&shy;straße (sie ended 3 Dörfer weiter).</p>
+                </TextCard>
                 <Photo props={photos.Ansichten__Dorfeingang_von_Kratzeburg} />
+            </Grid>
+            <Grid>
+                <TextCard width={1100} height={300}>
+                    <p>Der <a href="https://bike-berlin-copenhagen.com/">Fernradweg Berlin-Kopenhagen</a> führt direkt am Haus vorbei.</p>
+
+                </TextCard>
                 <Photo props={photos.Garten__Wegweiser_vor_dem_Haus} />
                 <Photo props={photos.Ansichten__Ansicht_von_der_Strasse_im_Winter} />
 
             </Grid>
             <Grid>
+                <TextCard width={2000} height={700} backgroundCyan={true}>
+                    <p>In drei Hochbeeten wachsen Salat, Tomaten, Bohnen, Mangold, Gewürze und mehr.</p>
+                    <p>Bedient euch sehr gerne daraus wenn wir nicht da sind.</p>
+                </TextCard>
                 <Photo props={photos.Garten__Hochbeet_1} />
+            </Grid>
+            <Grid>
                 <Photo props={photos.Garten__Hochbeet_2} />
                 <Photo props={photos.Garten__Hochbeet_3} />
-                <Photo props={photos.Garten__Hochbeet_4} />
                 <Photo props={photos.Garten__Hochbeet_5} />
+                <Photo props={photos.Garten__Hochbeet_4} />
                 <Photo props={photos.Garten__Hochbeet_6} />
                 <Photo props={photos.Garten__Hochbeet_7} />
             </Grid>
