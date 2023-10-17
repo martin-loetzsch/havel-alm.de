@@ -41,7 +41,7 @@ export default function Home() {
             </Grid>
             <Grid>
                 <TextCard width={1000} height={400} backgroundCyan={true}>
-                    <p>Von der Terrasse habt ihr einen zu jeder Jahreszeit wunderschönen Blick auf einen Sumpf und dahinter einige Weiden.</p>
+                    <p>Von der Terrasse habt ihr zu jeder Jahreszeit einen wunderschönen Blick auf einen Sumpf und dahinter einige Weiden.</p>
                 </TextCard>
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
 
@@ -53,7 +53,7 @@ export default function Home() {
             </Grid>
             <Grid>
                 <TextCard width={1000} height={1200} backgroundCyan={true}>
-                    <p>Vor dem Haus verläuft die Dorf&shy;straße. Diese ist manchmal laut, ist aber auch keine Durchs&shy;gangs&shy;straße (sie ended 3 Dörfer weiter).</p>
+                    <p>Vor dem Haus verläuft die Dorf&shy;straße. Diese ist manchmal laut, ist aber auch keine Durchs&shy;gangs&shy;straße (sie ended drei Dörfer weiter).</p>
                 </TextCard>
                 <Photo props={photos.Ansichten__Dorfeingang_von_Kratzeburg} />
             </Grid>
@@ -83,7 +83,7 @@ export default function Home() {
             </Grid>
 
 
-            <Nav verticalOffsetInVWs={20} />
+            <Nav verticalOffsetInVWs={34} />
         </>
     )
 }
