@@ -33,8 +33,8 @@ export default function Home() {
                 <Photo props={photos.Ansichten__Das_Haus_von_oben_4} />
             </Grid>
             <Grid>
-                <TextCard width={500} height={600}>
-                    <p>Auf der von der Strasse abgewandten Seite ist eine ca 100m² gro&shy;ße Terrasse.</p>
+                <TextCard width={800} height={600}>
+                    <p>Auf der von der Strasse ab&shy;gewandten Seite ist eine ca. 100m² gro&shy;ße Terrasse.</p>
                 </TextCard>
                 <Photo props={photos.Garten__Terrasse_1} />
                 <Photo props={photos.Garten__Terrasse_2} />

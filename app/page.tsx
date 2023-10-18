@@ -36,7 +36,7 @@ export default function Home() {
 
             <Grid>
                 <Photo props={photos.Ansichten__Das_Haus_vom_Garten_aus_Mai_2023} />
-                <Photo props={photos.Ansichten__Das_Haus_von_oben_3}/>
+                <Photo props={photos.Ansichten__Das_Haus_von_oben_3} />
                 <Photo props={photos.Haus__Gastraum__Gastraum_I} />
             </Grid>
             <div>
@@ -48,15 +48,29 @@ export default function Home() {
 
             <Grid>
                 <Photo props={photos.Haus__Gastraum__Sofa_1} />
-                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_II} />
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_1} />
-                <TextCard width={500} height={800} backgroundCyan={true}>
+            </Grid>
+            <TextCard width={500} height={800} backgroundCyan={true}>
                     <p><Link href='/das-haus' prefetch={false}>Hier findet ihr alle Infos zu unserem Haus.</Link></p>
                 </TextCard>
+            <Grid>
+                <TextCard width={900} height={1000} backgroundCyan={true}>
+                    <p style={{ background: 'white' }}>Durch den fast exklusiven Einsatz von ökologischen Bau&shy;stoffen (Holz, Lehm, Hanf & Asphalt) ist das Haus sehr gut für Allergiker geeignet.</p>
+                    <p>Deswegen sind Haustiere bei uns leider nicht erlaubt.</p>
+
+                </TextCard>
+                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_II} />
+
+            </Grid>
+            <Grid>
+                <TextCard width={1000} height={1000}>
+                    <p>Eure Kinder hin&shy;ge&shy;gen sind sehr willkom&shy;men (wir ha&shy;ben selbst drei). Sie wer&shy;den sich bei uns wohlfühlen.</p>
+                </TextCard>
+                <Photo props={photos.Garten__Bobby_Cars} />
             </Grid>
             <Grid>
                 <TextCard width={2000} height={1000} backgroundCyan={true}>
-                    <p style={{backgroundColor:'white'}}>Die Havel Alm hat einen ca. 1000m² grossen Garten. Von der ca. 100m² grossen Terrasse habt ihr einen wundervollen Blick  auf einen Sumpf/ eine Weide.</p>
+                    <p style={{ backgroundColor: 'white' }}>Die Havel Alm hat einen ca. 1000m² grossen Garten. Von der ca. 100m² grossen Terrasse habt ihr einen wundervollen Blick  auf einen Sumpf/ eine Weide.</p>
                     <p>Hier findet ihr mehr <Link prefetch={false} href='/rund-um-das-haus'>Eindrücke von unserem Grundstück</Link>.</p>
                 </TextCard>
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />

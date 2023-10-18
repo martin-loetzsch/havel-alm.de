@@ -64,6 +64,17 @@ export default function Home() {
 
                 <Photo props={photos.Kratzeburg__Kuehe_auf_der_Weide_in_Richtung_Pieverstorf_2} />
                 <Photo props={photos.Kratzeburg__Radweg_in_Richtung_Pieverstorf} />
+                <Photo props={photos.Kratzeburg__Wiesen_zwischen_Havelquelle_und_Ankershagen}/>
+                <Photo props={photos.Kratzeburg__Weg_zwischen_Pieverstorf_und_Dambeck_2}/>
+                <Photo props={photos.Kratzeburg__Strand_am_Kaebelicksee}/>
+                <Photo props={photos.Kratzeburg__Kuehe_am_Granziner_See}/>
+                <Photo props={photos.Kratzeburg__Der_Kaebelicksee_von_oben}/>
+                <Photo props={photos.Kratzeburg__Bahnhof_Kratzeburg_1}/>
+                <Photo props={photos.Kratzeburg__Bahnhof_Kratzeburg_2}/>
+                <Photo props={photos.Kratzeburg__Badestelle_beim_Familienferienpark_Dambeck}/>
+                <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee}/>
+                <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_3}/>
+                <Photo props={photos.Kratzeburg__Am_Dambecker_See}/>
             </Grid>
 
             <Nav verticalOffsetInVWs={20} />
