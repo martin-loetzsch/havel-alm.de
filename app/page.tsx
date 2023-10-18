@@ -23,9 +23,9 @@ export default function Home() {
                 <div style={{ top: '47vw' }}>
                     <blockquote>68 Meter über Normalhöhennull</blockquote>
                     <blockquote>An der Quelle der Havel</blockquote>
-                    <blockquote>80 Minuten von Berlin per Regionalexpress</blockquote>
+                    <blockquote>80 min von Berlin per Regionalexpress</blockquote>
                 </div>
-                <VerticallyAlignedDiv percentageOfViewWidth={151}>
+                <VerticallyAlignedDiv percentageOfViewWidth={150}>
                     <blockquote>Das Ferienhaus für</blockquote>
                     <blockquote> - Urlaube in grösseren Gruppen</blockquote>
                     <blockquote> - Familientreffen</blockquote>
@@ -35,27 +35,32 @@ export default function Home() {
 
 
             <Grid>
+                <TextCard width={1350} height={1000}>
+                    <p>Die Havel Alm ist ein 2023 eröffne&shy;tes Ferien&shy;haus in Kratzeburg. Auf 200m² gibt es 6 Doppel&shy;zim&shy;mer, davon 5 mit zusätz&shy;lich&shy;em Hochbett. Es können also bis zu 12 Personen plus 5 Kinder übernachten.</p>
+                </TextCard>
                 <Photo props={photos.Ansichten__Das_Haus_vom_Garten_aus_Mai_2023} />
-                <Photo props={photos.Ansichten__Das_Haus_von_oben_3} />
-                <Photo props={photos.Haus__Gastraum__Gastraum_I} />
             </Grid>
-            <div>
-                <blockquote>200m², 6 Doppelzimmer, davon 5 mit zusätzlichem Hochbett</blockquote>
-                <blockquote>Für bis zu 12 Erwachsene plus Kinder</blockquote>
-                <blockquote>3 Bäder, grosser Gastraum, 100m² Terrasse, modern eingerichtete Küche</blockquote>
-                <blockquote>90 Mbps Internet, WLAN im ganzen Haus</blockquote>
-            </div>
 
             <Grid>
-                <Photo props={photos.Haus__Gastraum__Sofa_1} />
-                <Photo props={photos.Haus__Flur_DG__Flur_DG_1} />
-            </Grid>
-            <TextCard width={500} height={800} backgroundCyan={true}>
-                    <p><Link href='/das-haus' prefetch={false}>Hier findet ihr alle Infos zu unserem Haus.</Link></p>
+                <Photo props={photos.Haus__Gastraum__Gastraum_I} />
+                <TextCard width={650} height={1000} backgroundCyan={true}>
+                    <p>Es gibt 3 Bäder, einen grossen Gastraum, eine umfang&shy;reich ausge&shy;stattete Küche, eine sehr gut klingende Musikanlage sowie 100 Mbps WLAN im ganzen Haus.</p>
                 </TextCard>
+            </Grid>
             <Grid>
-                <TextCard width={900} height={1000} backgroundCyan={true}>
-                    <p style={{ background: 'white' }}>Durch den fast exklusiven Einsatz von ökologischen Bau&shy;stoffen (Holz, Lehm, Hanf & Asphalt) ist das Haus sehr gut für Allergiker geeignet.</p>
+                <TextCard width={1000} height={1000} >
+                    <p style={{ background: 'white' }}>Bei der ökologischen Sanierung des Hauses haben wir uns  auf sehr wenige Formen und Materialien (Eschen&shy;holz, Lehm und Asphalt) beschränkt.</p>
+                    <p>Die Architektur wirkt dadurch sehr minimal, grosszügig und beruhigend.</p>
+                </TextCard>
+                <Photo props={photos.Haus__Flur_DG__Flur_DG_1} />
+                <Photo props={photos.Haus__Gastraum__Sofa_1} />
+                <TextCard width={400} height={1000} backgroundCyan={true}>
+                    <p>Hier findet ihr <Link href='/das-haus' prefetch={false}>alle Infos zu den Räumen und der Ausstat&shy;tung des Hauses</Link>.</p>
+                </TextCard>
+            </Grid>
+            <Grid>
+                <TextCard width={750} height={1000} backgroundCyan={true}>
+                    <p style={{ background: 'white' }}>Durch den fast exklusiven Einsatz von ökologischen Bau&shy;stoffen und Textilien ist das Haus sehr gut für Allergiker geeignet.</p>
                     <p>Deswegen sind Haustiere bei uns leider nicht erlaubt.</p>
 
                 </TextCard>
@@ -74,8 +79,9 @@ export default function Home() {
                     <p>Hier findet ihr mehr <Link prefetch={false} href='/rund-um-das-haus'>Eindrücke von unserem Grundstück</Link>.</p>
                 </TextCard>
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
-                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} />
                 <Photo props={photos.Garten__Terrasse_1} />
+                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} />
+                <Photo props={photos.Ansichten__Das_Haus_von_oben_3} />
             </Grid>
             <Grid>
                 <TextCard width={400} height={1000} backgroundCyan={true}>

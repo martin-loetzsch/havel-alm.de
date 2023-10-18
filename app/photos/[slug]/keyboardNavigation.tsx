@@ -22,7 +22,7 @@ export const KeyboardNavigation: FunctionComponent<KeyboardNavigationProps> = (
 
         const navigateNext = () => {
             if (linkOnRightArrow) {
-                console.log('navigateNext', linkOnRightArrow)
+                //console.log('navigateNext', linkOnRightArrow)
                 router.push(linkOnRightArrow, {forceOptimisticNavigation:true})
             }
         }
