@@ -50,7 +50,7 @@ export default function Home() {
             <Grid>
                 <TextCard width={1000} height={1000} >
                     <p style={{ background: 'white' }}>Bei der ökologischen Sanierung des Hauses haben wir uns  auf sehr wenige Formen und Materialien (Eschen&shy;holz, Lehm und Asphalt) beschränkt.</p>
-                    <p>Die Architektur wirkt dadurch sehr minimal, grosszügig und beruhigend.</p>
+                    <p>Die Architektur wirkt dadurch sehr minimal, grosszügig und ruhig.</p>
                 </TextCard>
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_1} />
                 <Photo props={photos.Haus__Gastraum__Sofa_1} />
@@ -80,7 +80,8 @@ export default function Home() {
                 </TextCard>
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
                 <Photo props={photos.Garten__Terrasse_1} />
-                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} />
+                <Photo props={photos.Haus__Blick_auf_die_Terasse} />
+                {/* <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} /> */}
                 <Photo props={photos.Ansichten__Das_Haus_von_oben_3} />
             </Grid>
             <Grid>
