@@ -7,7 +7,7 @@ import sys
 
 import exifread
 from PIL import Image
-
+from multiprocessing.pool import ThreadPool
 
 class Photo ():
     """Intermediate presentation for generating javascript output"""
@@ -38,8 +38,8 @@ class Photo ():
 
 photos_dir = pathlib.Path('./public/photos')
 
-photos = []
-for path in photos_dir.glob('**/*.[jJ][pP][gG]'):
+
+def parse_image(path:pathlib.Path) -> Photo:
     print(path)
     relative_file_name = str(path)[len(str(photos_dir)) + 1:]
     js_variable_name = relative_file_name[:-4].translate(''.maketrans({
@@ -81,14 +81,20 @@ for path in photos_dir.glob('**/*.[jJ][pP][gG]'):
         image.save(buffered, format="PNG")
         blur_data_url = 'data:image/jpeg;base64,' + base64.b64encode(buffered.getvalue()).decode("utf-8")
 
-    photos.append(Photo(js_variable_name=js_variable_name,
+    return Photo(js_variable_name=js_variable_name,
                         src=f'/photos/{relative_file_name}',
                         title=path.stem,
                         slug=slug,
                         width=width,
                         height=height,
                         created_at=timestamp,
-                        blur_data_url= blur_data_url))
+                        blur_data_url= blur_data_url)
+
+
+photo_paths = list(photos_dir.glob('**/*.[jJ][pP][gG]'))
+
+with ThreadPool(16) as pool:
+    photos=pool.map(parse_image, photo_paths)
 
 # sort by date
 photos.sort(key=lambda p: p.created_at,reverse=True)
