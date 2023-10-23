@@ -15,7 +15,7 @@ export const metadata: Metadata = getMetaData(title, description)
 const prices: { [key: string]: number[] } = {
     'Neben&shy;saison': [450, 390, 330, 290, 260],
     'Haupt&shy;saison': [600, 520, 450, 390, 340],
-    'Feier&shy;tage': [850, 850, 790, 680, 590, 520]
+    'Feier&shy;tage': [850, 790, 680, 590, 520]
 }
 
 
