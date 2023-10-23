@@ -17,22 +17,22 @@ export const metadata: Metadata = getMetaData(title, description)
 export default function Home() {
     return (
         <>
-            
+
             <Photo props={photos.Ansichten__Das_Haus_vom_Garten_aus_Mai_2023} priority={true}>
                 <h1 className='color-cyan'>Das Haus</h1>
             </Photo>
             <Grid>
-                <TextCard width={3000} height={2000} backgroundCyan={true}>
-                    <p>Die Havel Alm wurde ca. 1900 als Stallgebäude am Ortseingang von Kratzeburg errichtet. 2021 übernahmen wir das bis dahin als Cafe genutzte Haus und bauten es bis Mai 2023 ökologisch zu einem Ferien- und Seminarhaus um.</p>
+                <TextCard width={3000} height={2000}>
+                    <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60m² grosser Gastraum mit Blick auf eine Weide, die Küche, ein Arbeits&shy;zimmer, zwei Bäder sowie ein 12m² grosses Doppelzimmer.</p>
                 </TextCard>
-                <Photo props={photos.Ansichten__Blick_von_der_Strasse_Februar_2023} />
-            </Grid>
-            <Grid>
-                <Photo props={photos.Haus__Gastraum__Eingang} />
                 <Photo props={photos.Haus__Gastraum__Gastraum_I} />
+                <Photo props={photos.Haus__Gastraum__Eingang} />
+                <Photo props={photos.Haus__Gastraum__Sofa_1}/>
+                <Photo props={photos.Haus__Gastraum__Sofa_2} />
+                
             </Grid>
 
-            <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60m² grosser Gastraum mit Blick auf eine Weide, die Küche, ein Arbeitszimmer, zwei Bäder sowie ein 12m² grosses Doppelzimmer.</p>
+
 
             <Image src={grundrissEG} alt={'Havel Alm Kratzeburg Grundriss Erdgeschoss'}
                 unoptimized style={{ width: '100%', height: 'auto' }}
@@ -43,10 +43,6 @@ export default function Home() {
                 </Card>
                 <Photo props={photos.Haus__Gastraum__Gastraum_II} />
                 <Photo props={photos.Haus__Gastraum__Gastraum_III} />
-                <Photo props={photos.Haus__Gastraum__Sofa_1} className='color-cyan'>
-                    <p>Das Sofa mit Blick auf den Garten</p>
-                </Photo>
-                <Photo props={photos.Haus__Gastraum__Sofa_2} />
             </Grid>
 
             <Grid>
@@ -69,12 +65,13 @@ export default function Home() {
             </Grid>
 
             <Grid>
-                <Card width={700} height={1000} backgroundCyan={true}>
-                    <p>In der hinteren Ecke des Hauses gibt es ein 8m² grosses <b>Arbeitszimmer</b> mit Sofa.</p>
+                <Card width={1000} height={1000} backgroundCyan={true}>
+                    <p>In der hinteren Ecke des Hauses gibt es ein 8m² grosses <b>Arbeitszimmer</b> mit einem Sofa.</p>
+                    <p>Hier kann im Notfall auch geschlafen werden (Fenster zur Strasse).</p>
                 </Card>
+                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_3} />
                 <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_1} />
                 <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_2} />
-                <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_3} />
             </Grid>
             <p>Im Erdgeschoss gibt es zwei <b>Bäder</b>, eines davon mit Dusche und eins mit einer Badewanne.</p>
             <Grid>
@@ -86,8 +83,8 @@ export default function Home() {
                 <Card width={900} height={1000} backgroundCyan={true}>
                     <p>Über eine breite Treppe glangt man in das <b>Dachge&shy;schoss</b>.</p>
                 </Card>
-                <Photo props={photos.Haus__Treppe__Treppe_2} />
                 <Photo props={photos.Haus__Treppe__Treppe_1} />
+                <Photo props={photos.Haus__Treppe__Treppe_2} />
                 <Photo props={photos.Haus__Treppe__Treppe_3} />
 
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_1} />
@@ -122,7 +119,7 @@ export default function Home() {
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_4} />
 
             </Grid>
-            <Nav verticalOffsetInVWs={58}/>
+            <Nav verticalOffsetInVWs={58} />
         </>
     )
 }

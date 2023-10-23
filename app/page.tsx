@@ -80,7 +80,7 @@ export default function Home() {
                 </TextCard>
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
                 <Photo props={photos.Garten__Terrasse_1} />
-                <Photo props={photos.Haus__Blick_auf_die_Terasse} />
+                <Photo props={photos.Haus__Gastraum__Blick_auf_die_Terasse} />
                 {/* <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} /> */}
                 <Photo props={photos.Ansichten__Das_Haus_von_oben_3} />
             </Grid>
