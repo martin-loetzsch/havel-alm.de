@@ -11,10 +11,10 @@ build:
 	pnpm install
 	pnpm run build
 
-process-images:
+rebuild-images:
 	python3 process_images.py
-	rm -rvf .next/cache/images
-	npm run dev
+	rm -rf .next/cache/images
+	pnpm run dev
 
 find-unused-images:
 	diff --color <(pnpm exec next build 2>&1 1>/dev/null | grep '^photos' | sort | uniq) <(cd public && find photos -type f | grep -v '.DS_Store' | sort) || true

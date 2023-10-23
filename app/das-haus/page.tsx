@@ -50,12 +50,12 @@ export default function Home() {
             </Grid>
 
             <Grid>
-                <Card width={1500} height={1000} backgroundCyan={true}>
-                    <p>In der komplett ausgestat&shy;teten <b>Küche</b> kann für viele Personen gekocht werden.</p>
+                <Card width={1550} height={1000} backgroundCyan={true}>
+                    <p>In der komplett ausge&shy;stat&shy;teten <b>Küche</b> kann für viele Personen gekocht werden.</p>
                     <p>Es gibt einen grossen Induktionsherd, zwei Back&shy;öfen, einen Kühl&shy;schrank, eine Spülmaschine sowie eine Kaffemaschine.</p>
                 </Card>
-                <Photo props={photos.Haus__Kueche__Kueche_1} />
                 <Photo props={photos.Haus__Kueche__Kueche_3} />
+                <Photo props={photos.Haus__Kueche__Kueche_1} />
                 <Photo props={photos.Haus__Kueche__Kueche_4} />
             </Grid>
             <Grid>

@@ -40,7 +40,7 @@ photos_dir = pathlib.Path('./public/photos')
 
 
 def parse_image(path:pathlib.Path) -> Photo:
-    print(path)
+    # print(path)
     relative_file_name = str(path)[len(str(photos_dir)) + 1:]
     js_variable_name = relative_file_name[:-4].translate(''.maketrans({
             ' ': '_',
