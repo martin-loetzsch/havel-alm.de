@@ -21,12 +21,12 @@ const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
     const gridItems: Array<GridItem> = children.map((child) => {
         const width = child.props['data-width']
         const height = child.props['data-height']
-        const isTextCard = child.props['data-is-text-card']
+        const isCard = child.props['data-is-text-card']
 
-        if (!width || !height || isTextCard==null) {
+        if (!width || !height || isCard==null) {
             throw Error('Child passed to <Grid> did not contain "data-width", "data-height" and "data-is-text-card" props')
         }
-        return { width: width, height: height, isTextCard: isTextCard, element: child }
+        return { width: width, height: height, isCard: isCard, element: child }
     })
 
 
@@ -59,7 +59,7 @@ const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
                             <div key={itemIndex}
                                 className={styles.item}
                                 style={{
-                                    ...(row.length > 1 || !gridItem.isTextCard? {
+                                    ...(row.length > 1 || !gridItem.isCard? {
 
                                         width: calcWidth("100%", width, itemIndex, spacing, windowWidth),
                                         //height: `${height - spacing*2}px`,

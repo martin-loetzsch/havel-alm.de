@@ -1,4 +1,4 @@
-import { default as TextCard } from '@/components/card/textCard';
+import Card from '@/components/card/card';
 import Grid from "@/components/grid/grid";
 import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
@@ -31,7 +31,7 @@ export default function Home() {
             <p>Ihr könnt die Havel Alm über <a href="https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5361182">FeWo-Direkt</a> buchen (dort seht ihr auch unsere Verfügbarkeiten).</p>
             <p>Oder ihr schreibt uns eine Email an <a href="mailto:info@havel-alm.de">info@havel-alm.de</a>, dann gelten diese Preise:</p>
             <Grid>
-                <TextCard width={1000} height={heightPricingTable} backgroundCyan={true}>
+                <Card width={1000} height={heightPricingTable} backgroundCyan={true}>
                     <p style={{ marginBottom: '2vw' }}>Preis pro Nacht</p>
                     <table style={{ textAlign: 'left' }}>
                         <thead>
@@ -61,12 +61,12 @@ export default function Home() {
                             }
                         </tbody>
                     </table>
-                </TextCard>
-                <TextCard width={350} height={heightPricingTable} backgroundCyan={false}>
+                </Card>
+                <Card width={350} height={heightPricingTable} backgroundCyan={false}>
                     <p>&sup1;September bis Juni</p>
                     <p>&sup2;Juli & August + Brückentage</p>
                     <p>&sup3;Ostern, Himmel&shy;fahrt, Pfingsten, Weihnachten, Neu&shy;jahr</p>
-                </TextCard>
+                </Card>
             </Grid>
             <p>Zum Übernachtungspreis kommt eine <strong>Endreinigungs&shy;ge&shy;bühr</strong> von 250€ hinzu (ja das ist hoch, deckt aber nicht die Kosten).</p>
             <p>Enthalten sind Betwäsche, Handtücher, Kafee, Strom (auch für Waschmaschine & Trockner) sowie alle sonstigen Nebenkosten.</p>

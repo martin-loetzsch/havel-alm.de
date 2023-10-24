@@ -1,4 +1,4 @@
-import { default as Card, default as TextCard } from '@/components/card/textCard';
+import Card from '@/components/card/card';
 import Grid from "@/components/grid/grid";
 import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
@@ -22,9 +22,9 @@ export default function Home() {
                 <h1 className='color-cyan'>Das Haus</h1>
             </Photo>
             <Grid>
-                <TextCard width={3000} height={2000}>
+                <Card width={3000} height={2000}>
                     <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60m² großer Gastraum mit Blick auf eine Weide, die Küche, ein Arbeits&shy;zimmer, zwei Bäder sowie ein 12m² großes Doppelzimmer.</p>
-                </TextCard>
+                </Card>
                 <Photo props={photos.Haus__Gastraum__Gastraum_I} />
                 <Photo props={photos.Haus__Gastraum__Eingang} />
                 <Photo props={photos.Haus__Gastraum__Sofa_1}/>

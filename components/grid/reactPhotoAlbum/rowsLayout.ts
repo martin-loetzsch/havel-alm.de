@@ -14,7 +14,7 @@ import ratio from './ratio'
 export interface GridItem {
     width: number
     height: number
-    isTextCard: boolean
+    isCard: boolean
     element: ReactElement
 }
 
