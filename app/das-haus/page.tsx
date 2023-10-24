@@ -23,7 +23,7 @@ export default function Home() {
             </Photo>
             <Grid>
                 <TextCard width={3000} height={2000}>
-                    <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60m² grosser Gastraum mit Blick auf eine Weide, die Küche, ein Arbeits&shy;zimmer, zwei Bäder sowie ein 12m² grosses Doppelzimmer.</p>
+                    <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60m² großer Gastraum mit Blick auf eine Weide, die Küche, ein Arbeits&shy;zimmer, zwei Bäder sowie ein 12m² großes Doppelzimmer.</p>
                 </TextCard>
                 <Photo props={photos.Haus__Gastraum__Gastraum_I} />
                 <Photo props={photos.Haus__Gastraum__Eingang} />
@@ -48,7 +48,7 @@ export default function Home() {
             <Grid>
                 <Card width={1550} height={1000} backgroundCyan={true}>
                     <p>In der komplett ausge&shy;stat&shy;teten <b>Küche</b> kann für viele Personen gekocht werden.</p>
-                    <p>Es gibt einen grossen Induktionsherd, zwei Back&shy;öfen, einen Kühl&shy;schrank, eine Spülmaschine sowie eine Kaffemaschine.</p>
+                    <p>Es gibt einen großen Induktionsherd, zwei Back&shy;öfen, einen Kühl&shy;schrank, eine Spülmaschine sowie eine Kaffemaschine.</p>
                 </Card>
                 <Photo props={photos.Haus__Kueche__Kueche_3} />
                 <Photo props={photos.Haus__Kueche__Kueche_1} />
@@ -56,8 +56,8 @@ export default function Home() {
             </Grid>
             <Grid>
                 <Card width={700} height={1000}>
-                    <p>Neben dem Eingang liegt das 12m² grosse <b>Zimmer 1</b>.</p>
-                    <p>Vom 200x180 cm grossen Doppelbett hat man einen Blick auf die Weide hinter dem Grundstück.</p>
+                    <p>Neben dem Eingang liegt das 12m² große <b>Zimmer 1</b>.</p>
+                    <p>Vom 200x180 cm großen Doppelbett hat man einen Blick auf die Weide hinter dem Grundstück.</p>
                 </Card>
                 <Photo props={photos.Haus__Zimmer_1__Zimmer_1_I} />
                 <Photo props={photos.Haus__Zimmer_1__Zimmer_1_II} />
@@ -65,9 +65,9 @@ export default function Home() {
             </Grid>
 
             <Grid>
-                <Card width={1000} height={1000} backgroundCyan={true}>
-                    <p>In der hinteren Ecke des Hauses gibt es ein 8m² grosses <b>Arbeitszimmer</b> mit einem Sofa.</p>
-                    <p>Hier kann im Notfall auch geschlafen werden (Fenster zur Strasse).</p>
+                <Card width={1400} height={1000} backgroundCyan={true}>
+                    <p>In der hinteren Ecke des Hauses gibt es ein 8m² grosses <b>Arbeits&shy;zimmer</b> mit einem Sofa.</p>
+                    <p>Hier könnte im Notfall auch geschlafen werden (Achtung: Fenster zur Strasse).</p>
                 </Card>
                 <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_3} />
                 <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_1} />
@@ -119,7 +119,7 @@ export default function Home() {
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_4} />
 
             </Grid>
-            <Nav verticalOffsetInVWs={58} />
+            <Nav verticalOffsetInVWs={20} />
         </>
     )
 }

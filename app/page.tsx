@@ -43,8 +43,8 @@ export default function Home() {
 
             <Grid>
                 <Photo props={photos.Haus__Gastraum__Gastraum_I} />
-                <TextCard width={650} height={1000} backgroundCyan={true}>
-                    <p>Es gibt 3 Bäder, einen grossen Gastraum, eine umfang&shy;reich ausge&shy;stattete Küche, eine sehr gut klingende Musikanlage sowie 100 Mbps WLAN im ganzen Haus.</p>
+                <TextCard width={1100} height={1000} backgroundCyan={true}>
+                    <p>Es gibt 3 Bäder, ein&shy;en grossen Gast&shy;raum, eine umfang&shy;reich ausge&shy;stattete Küche, eine sehr gut klingende Musik&shy;anlage sowie 100 Mbps WLAN im ganzen Haus.</p>
                 </TextCard>
             </Grid>
             <Grid>
