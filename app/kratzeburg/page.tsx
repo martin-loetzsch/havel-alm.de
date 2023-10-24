@@ -52,7 +52,7 @@ export default function Home() {
                     <p>Auch 700 Meter von der Havel Alm entfernt liegt die Badestelle am <strong>Käbelicksee</strong>, einem der saubersten Seen in Mecklenburg-Vorpommern.</p>
                 </Card>
                 <Photo props={photos.Kratzeburg__Strand_am_Kaebelicksee} />
-                <Photo props={photos.Kratzeburg__Badestelle_am_Käbelicksee_im_Winter} />
+                <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_im_Winter} />
                 <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_2} />
             </Grid>
             <p>Weitere Impressionen aus der Umgebung:</p>
