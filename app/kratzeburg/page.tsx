@@ -5,6 +5,8 @@ import getMetaData from '@/components/utils/getMetaData';
 import type { Metadata } from 'next';
 import Nav from '../../components/nav/nav'
 import VerticallyAlignedDiv from "@/components/utils/verticallyAlignedDiv";
+import { useMemo } from "react";
+import dynamic from 'next/dynamic';
 
 const title = "Kratzeburg"
 const description = "Radfahren, wandern und paddeln im Müritz-Nationalpark"
@@ -12,18 +14,31 @@ const description = "Radfahren, wandern und paddeln im Müritz-Nationalpark"
 export const metadata: Metadata = getMetaData(title, description)
 
 export default function Home() {
+    const Map = useMemo(() => dynamic(
+        () => import('./map'),
+        {
+            //loading: () => <p>A map is loading</p>,
+            ssr: false
+        }
+    ), [])
+
     return (
         <>
             <Photo props={photos.Kratzeburg__Kratzeburg_von_oben}>
                 <h1 className='color-cyan'>Kratzeburg</h1>
                 <VerticallyAlignedDiv percentageOfViewWidth={43}>
-                    <p className="color-cyan" style={{marginLeft:'1vw',textAlign:'center'}}>Havel Alm<br/>↓</p>
+                    <p className="color-cyan" style={{ marginLeft: '1vw', textAlign: 'center' }}>Havel Alm<br />↓</p>
                 </VerticallyAlignedDiv>
             </Photo>
             <p>
                 <a href="http://www.kratzeburg.de/">Kratzeburg</a> liegt inmitten der Mecklenburgischen Seen&shy;platte und ist der ideale Ausgangspunkt für <a href="http://www.kratzeburg.de/kultur-und-freizeitangebote/rad-wasser-und-wanderwege">Wanderun&shy;gen, Radtouren und Paddeltouren</a> durch den <a href="https://www.mueritz-nationalpark.de">Müritz-Nationalpark</a>.
             </p>
-            <p className='background-cyan'>Diese Unterseite befindet sich noch im Aufbau, doch hier schon einmal einige Eindrücke aus der Umgebung der Havel Alm:</p>
+            <div style={{
+                width: '100%', height: '80vh',
+                backgroundColor: '#eeeeee'
+            }}>
+                <Map />
+            </div>
             <Grid>
                 <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_im_Winter}>
 
@@ -64,17 +79,17 @@ export default function Home() {
 
                 <Photo props={photos.Kratzeburg__Kuehe_auf_der_Weide_in_Richtung_Pieverstorf_2} />
                 <Photo props={photos.Kratzeburg__Radweg_in_Richtung_Pieverstorf} />
-                <Photo props={photos.Kratzeburg__Wiesen_zwischen_Havelquelle_und_Ankershagen}/>
-                <Photo props={photos.Kratzeburg__Weg_zwischen_Pieverstorf_und_Dambeck_2}/>
-                <Photo props={photos.Kratzeburg__Strand_am_Kaebelicksee}/>
-                <Photo props={photos.Kratzeburg__Kuehe_am_Granziner_See}/>
-                <Photo props={photos.Kratzeburg__Der_Kaebelicksee_von_oben}/>
-                <Photo props={photos.Kratzeburg__Bahnhof_Kratzeburg_1}/>
-                <Photo props={photos.Kratzeburg__Bahnhof_Kratzeburg_2}/>
-                <Photo props={photos.Kratzeburg__Badestelle_beim_Familienferienpark_Dambeck}/>
-                <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee}/>
-                <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_3}/>
-                <Photo props={photos.Kratzeburg__Am_Dambecker_See}/>
+                <Photo props={photos.Kratzeburg__Wiesen_zwischen_Havelquelle_und_Ankershagen} />
+                <Photo props={photos.Kratzeburg__Weg_zwischen_Pieverstorf_und_Dambeck_2} />
+                <Photo props={photos.Kratzeburg__Strand_am_Kaebelicksee} />
+                <Photo props={photos.Kratzeburg__Kuehe_am_Granziner_See} />
+                <Photo props={photos.Kratzeburg__Der_Kaebelicksee_von_oben} />
+                <Photo props={photos.Kratzeburg__Bahnhof_Kratzeburg_1} />
+                <Photo props={photos.Kratzeburg__Bahnhof_Kratzeburg_2} />
+                <Photo props={photos.Kratzeburg__Badestelle_beim_Familienferienpark_Dambeck} />
+                <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee} />
+                <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_3} />
+                <Photo props={photos.Kratzeburg__Am_Dambecker_See} />
             </Grid>
 
             <Nav verticalOffsetInVWs={20} />
