@@ -21,7 +21,7 @@ export default function Home() {
                 </VerticallyAlignedDiv>
             </Photo>
             <p>
-                <a href="http://www.kratzeburg.de/">Kratzeburg</a> liegt inmitten der Mecklenburgischen Seenplatte und ist der ideale Ausgangspunkt für Ausflüge in den <a href="https://www.mueritz-nationalpark.de">Müritz-Nationalpark</a>.
+                <a href="http://www.kratzeburg.de/">Kratzeburg</a> liegt inmitten der Mecklenburgischen Seen&shy;platte und ist der ideale Ausgangspunkt für <a href="http://www.kratzeburg.de/kultur-und-freizeitangebote/rad-wasser-und-wanderwege">Wanderun&shy;gen, Radtouren und Paddeltouren</a> durch den <a href="https://www.mueritz-nationalpark.de">Müritz-Nationalpark</a>.
             </p>
             <p className='background-cyan'>Diese Unterseite befindet sich noch im Aufbau, doch hier schon einmal einige Eindrücke aus der Umgebung der Havel Alm:</p>
             <Grid>
