@@ -40,18 +40,24 @@ export default function Home() {
             }}>
                 <Map />
             </div>
-            <p>Kratzeburg ist exzellent per Bahn erreichbar. Wir haben selbst kein Auto und nutzen dasd Auto nur in Ausnahmefällen.</p>
-            <p>Vom Bahnhof zur Havel Alm sind es 700 Meter.</p>
+            <p>Kratzeburg ist <a href="https://www.bahnhof.de/kratzeburg/ankunft">sehr gut per Bahn erreichbar</a>. Wir reisen selbst fast immer mit der Bahn aus Berlin an (wir haben kein eigen&shy;es Auto) und können das meistens empfehlen.</p>
+            <p className="background-cyan">Vom Bahnhof zur Havel Alm sind es 700 Meter.</p>
+            <Grid>
+                <Photo props={photos.Kratzeburg__Bahnhof_Kratzeburg_1} />
+                <Photo props={photos.Kratzeburg__Bahnhof_Kratzeburg_2} />
+
+            </Grid>
             <Grid>
                 <Card width={700} height={1000}>
-                    <p>700 Meter von der Havel Alm entfernt liegt die Badestelle am <strong>Käbelicksee</strong>, einem der saubersten Seen in Mecklenburg-Vorpommern.</p>
+                    <p>Auch 700 Meter von der Havel Alm entfernt liegt die Badestelle am <strong>Käbelicksee</strong>, einem der saubersten Seen in Mecklenburg-Vorpommern.</p>
                 </Card>
                 <Photo props={photos.Kratzeburg__Strand_am_Kaebelicksee} />
                 <Photo props={photos.Kratzeburg__Badestelle_am_Käbelicksee_im_Winter} />
                 <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_2} />
             </Grid>
+            <p>Weitere Impressionen aus der Umgebung:</p>
             <Grid>
-            <Photo props={photos.Kratzeburg__Badestelle_beim_Familienferienpark_Dambeck} />
+                <Photo props={photos.Kratzeburg__Badestelle_beim_Familienferienpark_Dambeck} />
 
                 <Photo props={photos.Kratzeburg__Auf_dem_zugefrorenen_Kaebelicksee} />
                 <Photo props={photos.Kratzeburg__Langlauf_Ski_fahren_auf_dem_Kaebelicksee} />
@@ -91,8 +97,6 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Wiesen_zwischen_Havelquelle_und_Ankershagen} />
                 <Photo props={photos.Kratzeburg__Weg_zwischen_Pieverstorf_und_Dambeck_2} />
                 <Photo props={photos.Kratzeburg__Kuehe_am_Granziner_See} />
-                <Photo props={photos.Kratzeburg__Bahnhof_Kratzeburg_1} />
-                <Photo props={photos.Kratzeburg__Bahnhof_Kratzeburg_2} />
                 <Photo props={photos.Kratzeburg__Am_Dambecker_See} />
             </Grid>
 
