@@ -58,12 +58,14 @@ export default function Home() {
                 <Photo props={photos.Ansichten__Dorfeingang_von_Kratzeburg} />
             </Grid>
             <Grid>
-                <TextCard width={1100} height={300}>
+                <Photo props={photos.Garten__Almauftrieb_April_2023} />
+                <Photo props={photos.Ansichten__Ansicht_von_der_Strasse_im_Winter} />
+                <Photo props={photos.Garten__Wegweiser_vor_dem_Haus} />
+
+                <TextCard width={750} height={1000}>
                     <p>Der <a href="https://bike-berlin-copenhagen.com/">Fernradweg Berlin-Kopenhagen</a> führt direkt am Haus vorbei.</p>
 
                 </TextCard>
-                <Photo props={photos.Garten__Wegweiser_vor_dem_Haus} />
-                <Photo props={photos.Ansichten__Ansicht_von_der_Strasse_im_Winter} />
 
             </Grid>
             <Grid>
