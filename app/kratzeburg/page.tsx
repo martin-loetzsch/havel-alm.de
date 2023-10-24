@@ -34,7 +34,7 @@ export default function Home() {
                 <a href="http://www.kratzeburg.de/">Kratzeburg</a> liegt inmitten der Mecklenburgischen Seen&shy;platte und ist der ideale Ausgangspunkt für <a href="http://www.kratzeburg.de/kultur-und-freizeitangebote/rad-wasser-und-wanderwege">Wanderun&shy;gen, Radtouren und Paddeltouren</a> durch den <a href="https://www.mueritz-nationalpark.de">Müritz-Nationalpark</a>.
             </p>
             <div style={{
-                width: '100%', height: '80vh',
+                width: '100%', height: '85vh',
                 backgroundColor: '#eeeeee'
             }}>
                 <Map />
