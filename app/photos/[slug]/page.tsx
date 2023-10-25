@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     if (!photo) {
         return {}
     }
-    const title = photo.title + ' | Havel Alm Kratzeburg'
+    const title = photo.title
     const description = `Foto ${photo.width} x ${photo.height} Pixel, aufgenommen am `
         + new Intl.DateTimeFormat("de").format(photo.createdAt)
         + ' , lizenziert unter CC BY 4.0'
