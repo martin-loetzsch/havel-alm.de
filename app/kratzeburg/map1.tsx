@@ -7,7 +7,8 @@ import "leaflet/dist/leaflet.css";
 // import "leaflet-defaulticon-compatibility";
 // import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 
-const Map: FunctionComponent = () => {
+
+const Map1: FunctionComponent = () => {
     // Implement the component logic here
     return (
         // https://www.openstreetmap.org/#map=14/53.4269/12.9467&layers=P
@@ -26,4 +27,5 @@ const Map: FunctionComponent = () => {
     )
 }
 
-export default Map;
+export default Map1
+

@@ -15,13 +15,8 @@ const description = "Radfahren, wandern und paddeln im Müritz-Nationalpark"
 export const metadata: Metadata = getMetaData(title, description)
 
 export default function Home() {
-    const Map = useMemo(() => dynamic(
-        () => import('./map'),
-        {
-            //loading: () => <p>A map is loading</p>,
-            ssr: false
-        }
-    ), [])
+    const Map1 = useMemo(() => dynamic( () => import('./map1'), {ssr: false} ), [])
+    const Map2 = useMemo(() => dynamic( () => import('./map2'), {ssr: false} ), [])
 
     return (
         <>
@@ -38,7 +33,7 @@ export default function Home() {
                 width: '100%', height: '85vh',
                 backgroundColor: '#eeeeee'
             }}>
-                <Map />
+                <Map1 />
             </div>
             <p>Kratzeburg ist <a href="https://www.bahnhof.de/kratzeburg/ankunft">sehr gut per Bahn erreichbar</a>. Wir reisen selbst fast immer mit der Bahn aus Berlin an (wir haben kein eigen&shy;es Auto) und können das meistens empfehlen.</p>
             <p className="background-cyan">Vom Bahnhof zur Havel Alm sind es 700 Meter.</p>
@@ -55,6 +50,9 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_im_Winter} />
                 <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_2} />
             </Grid>
+            <div style={{ width: '100%', height: '85vh', backgroundColor: '#eeeeee' }}>
+                <Map2 />
+            </div>
             <p>Weitere Impressionen aus der Umgebung:</p>
             <Grid>
                 <Photo props={photos.Kratzeburg__Badestelle_beim_Familienferienpark_Dambeck} />
