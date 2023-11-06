@@ -69,7 +69,7 @@ export default function Home() {
                 </Card>
             </Grid>
             <p>Zum Übernachtungspreis kommt eine <strong>Endreinigungs&shy;ge&shy;bühr</strong> von 250€ hinzu (ja das ist hoch, deckt aber nicht die Kosten).</p>
-            <p>Enthalten sind Betwäsche, Handtücher, Kafee, Strom (auch für Waschmaschine & Trockner) sowie alle sonstigen Nebenkosten.</p>
+            <p>Enthalten sind Bettwäsche, Handtücher, Kafee, Strom (auch für Waschmaschine & Trockner) sowie alle sonstigen Nebenkosten.</p>
             <p>E-Autos können nach Abspache aufgeladen werden.</p>
             <div className='background-cyan'>
                 <p>Wenn ihr direkt über uns bucht, könnt ihr bis zwei Monate vor Anreise eure Buchung <strong>kostenlos stornieren</strong>.</p>
