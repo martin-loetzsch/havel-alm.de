@@ -28,11 +28,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         return {}
     }
     const title = photo.title
+    
     const description = `Foto ${photo.width} x ${photo.height} Pixel, aufgenommen am `
         + new Intl.DateTimeFormat("de").format(photo.createdAt)
         + ' , lizenziert unter CC BY 4.0'
 
     return {
+        metadataBase: new URL('https://havel-alm.de'),
         title: title,
         description: description,
         authors: [{ name: 'Havel Alm', url: 'https://havel-alm.de' }],
