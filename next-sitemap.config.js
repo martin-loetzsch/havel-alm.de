@@ -4,7 +4,7 @@ let exclude = ['/gaeste', '/gaeste/*', '/making-of', '/photos/20*', '/photos/all
 module.exports = {
   siteUrl: 'https://havel-alm.de',
   changefreq: 'daily',
-  exclude: exclude,
+  exclude: exclude.concat(['/photos/*']),
   priority: 0.7,
   sitemapSize: 20000,
   generateIndexSitemap: false,
