@@ -76,7 +76,7 @@ export default function Home() {
                 <p>Bei Buchung überweist ihr 50% des Preises, der zweite Teil ist 2 Monate vor Anreise fällig (den wir dann leider nicht mehr erstatten können).</p>
                 <p>Bei der Buchung über Portale gelten die dort hinterlegten Stornierungsbedingungen.</p>
             </div>
-            <Photo props={photos.Kratzeburg__Der_zugefrorene_Kaebelicksee} />
+            <Photo props={photos.Kratzeburg__Der_zugefrorene_Kaebelicksee} ><></></Photo>
 
             <Nav verticalOffsetInVWs={20} />
         </>

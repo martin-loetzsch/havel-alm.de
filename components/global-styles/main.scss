@@ -12,6 +12,7 @@ h1,
 h2,
 h3,
 p,
+small,
 th,
 td,
 blockquote {
@@ -52,6 +53,13 @@ p, th, td {
   padding-bottom: 1vw;
 }
 
+small {
+  @include font-regular;
+  font-size: 2.5vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+
+}
 
 a {
   text-decoration: underline;

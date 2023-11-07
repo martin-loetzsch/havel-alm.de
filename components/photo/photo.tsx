@@ -61,7 +61,7 @@ export const Photo: FunctionComponent<PhotoComponentProps> = (
         >
             {image}
             <div className={styles.children + ' ' + className}>
-                {children}
+                {children ? children : <small className='color-cyan'>{props.title}</small>}
             </div>
         </div>
     )
