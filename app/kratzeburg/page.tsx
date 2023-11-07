@@ -77,7 +77,7 @@ export default function Home() {
             <Grid>
                 <Card width={600} height={1000}>
                     <p>Rund um Kratzeburg kann man auch wunderbar <strong>wandern</strong>.</p>
-                    <p>Hier sind Empfehlungen für kürzere Runden direkt von der Havel Alm aus:</p>
+                    <p>Hier sind drei Empfehlungen für kürzere Runden direkt von der Havel Alm aus:</p>
                 </Card>
                 <Card width={1300} height={1000}>
                     <KomootMap tourId="1369563806" />
@@ -100,10 +100,13 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Wanderweg_am_Granziner_See} />
                 <Photo props={photos.Kratzeburg__Wiesen_zwischen_Havelquelle_und_Ankershagen} />
                 <Photo props={photos.Kratzeburg__Kuehe_am_Granziner_See} />
+
+                <Photo props={photos.Kratzeburg__Auf_dem_Schaeferberg__96m__zwischen_Pieverstorf_und_Hartwigsdorf} />
+
             </Grid>
             <Grid>
-            <Card width={1400} height={1000}>
-                <p>Im Herbst sind die Wälder rund um Kratzeburg voller <strong>Pilze</strong>.</p>
+                <Card width={1400} height={1000}>
+                    <p>Im Herbst sind die Wälder rund um Kratzeburg voller <strong>Pilze</strong>.</p>
                 </Card>
                 <Photo props={photos.Kratzeburg__Pilze_suchen_bei_Pieverstorf} />
                 {/* <Photo props={photos.Kratzeburg__Pilze_suchen_bei_Pieverstorf_1} /> */}
@@ -117,9 +120,6 @@ export default function Home() {
             <p>Weitere Impressionen aus der Umgebung:</p>
             <Grid>
 
-                <Photo props={photos.Kratzeburg__Auf_dem_zugefrorenen_Kaebelicksee} />
-                <Photo props={photos.Kratzeburg__Langlauf_Ski_fahren_auf_dem_Kaebelicksee} />
-                <Photo props={photos.Kratzeburg__Der_zugefrorene_Kaebelicksee} />
 
 
                 <Photo props={photos.Kratzeburg__Zwischen_Dambeck_und_Havelquelle} />
@@ -131,15 +131,26 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_1} />
                 <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_2} />
                 <Photo props={photos.Kratzeburg__Zwischen_Liepen_und_Klein_Vielen} />
-                <Photo props={photos.Kratzeburg__Auf_dem_Schaeferberg__96m__zwischen_Pieverstorf_und_Hartwigsdorf} />
 
 
-                <Photo props={photos.Kratzeburg__Der_Wald_hinter_dem_Haus} />
-                <Photo props={photos.Kratzeburg__Am_Roethsee_zwischen_Dambeck_und_Kratzeburg} />
+            </Grid>
+            <Grid>
+                <Card width={1200} height={1000}>
+                    <p>Durch das Mikroklima der Müritz ist es in Kratzeburg im <strong>Winter</strong> kälter ist als in anderen Gegenden Mecklenburgs. </p>
+                    <p>Die Seen frieren regelmässig zu und in den letzten Wintern konnte man immer einige Tage Langlaufski fahren.</p>
+                </Card>
+                <Photo props={photos.Kratzeburg__Langlauf_Ski_fahren_auf_dem_Kaebelicksee} />
+            </Grid>
+            <Grid>
+                <Photo props={photos.Kratzeburg__Auf_dem_zugefrorenen_Kaebelicksee} />
+                <Photo props={photos.Kratzeburg__Der_zugefrorene_Kaebelicksee} />
+
                 <Photo props={photos.Kratzeburg__Kuehe_auf_der_Weide_in_Richtung_Pieverstorf_1} />
 
                 <Photo props={photos.Kratzeburg__Kuehe_auf_der_Weide_in_Richtung_Pieverstorf_2} />
                 <Photo props={photos.Kratzeburg__Radweg_in_Richtung_Pieverstorf} />
+                <Photo props={photos.Kratzeburg__Der_Wald_hinter_dem_Haus} />
+                <Photo props={photos.Kratzeburg__Am_Roethsee_zwischen_Dambeck_und_Kratzeburg} />
             </Grid>
 
             <Nav verticalOffsetInVWs={20} />
