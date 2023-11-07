@@ -95,8 +95,8 @@ export default function Home() {
 
                 <Photo props={photos.Kratzeburg__Zwischen_Dambeck_und_Havelquelle} />
                 <Photo props={photos.Kratzeburg__Weg_von_Dambeck_nach_Bornhof_2} />
-                <Photo props={photos.Kratzeburg__Weg_von_Dambeck_nach_Bornhof_1} />
                 <Photo props={photos.Kratzeburg__Weg_von_Dambeck_nach_Bornhof_3} />
+                <Photo props={photos.Kratzeburg__Weg_von_Dambeck_nach_Bornhof_1} />
                 <Photo props={photos.Kratzeburg__Weg_nach_Dambeck} />
 
                 <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_1} />
