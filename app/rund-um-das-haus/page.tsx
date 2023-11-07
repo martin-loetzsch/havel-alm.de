@@ -53,7 +53,7 @@ export default function Home() {
             </Grid>
             <Grid>
                 <Card width={1000} height={1200} backgroundCyan={true}>
-                    <p>Vor dem Haus verläuft die Dorf&shy;straße. Diese ist manchmal laut, ist aber auch keine Durchs&shy;gangs&shy;straße (sie ended drei Dörfer weiter).</p>
+                    <p>Vor dem Haus verläuft die Dorf&shy;straße. Diese ist manchmal laut, ist aber auch keine Durchs&shy;gangs&shy;straße (sie endet drei Dörfer weiter).</p>
                 </Card>
                 <Photo props={photos.Ansichten__Dorfeingang_von_Kratzeburg} />
             </Grid>
