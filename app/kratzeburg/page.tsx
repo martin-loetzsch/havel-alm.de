@@ -15,8 +15,8 @@ const description = "Radfahren, wandern und paddeln im Müritz-Nationalpark"
 export const metadata: Metadata = getMetaData(title, description)
 
 export default function Home() {
-    const Map1 = useMemo(() => dynamic( () => import('./map1'), {ssr: false} ), [])
-    const Map2 = useMemo(() => dynamic( () => import('./map2'), {ssr: false} ), [])
+    const Map1 = useMemo(() => dynamic(() => import('./map1'), { ssr: false }), [])
+    const Map2 = useMemo(() => dynamic(() => import('./map2'), { ssr: false }), [])
 
     return (
         <>
@@ -44,18 +44,25 @@ export default function Home() {
             </Grid>
             <Grid>
                 <Card width={700} height={1000}>
-                    <p>Auch 700 Meter von der Havel Alm entfernt liegt die Badestelle am <strong>Käbelicksee</strong>, einem der saubersten Seen in Mecklenburg-Vorpommern.</p>
+                    <p>Auch 700 Meter von der Havel Alm entfernt liegt die <a href="https://maps.app.goo.gl/1WCvxehzFn4qvtKi8">Badestelle am <strong>Käbelicksee</strong></a>, einem der saubersten Seen in Mecklenburg-Vorpommern.</p>
                 </Card>
                 <Photo props={photos.Kratzeburg__Strand_am_Kaebelicksee} />
                 <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_im_Winter} />
                 <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_2} />
+            </Grid>
+            <Grid>
+                <Card width={1000} height={1000}>
+                    <p>Weitere tolle Badestellen gibt es am <a href="https://maps.app.goo.gl/i1eaAKU1xhMYVwrA9">Mühlensee</a> (ca 6km entfernt, an der Havelquelle) und am Röthsee im <a href="https://maps.app.goo.gl/WZew9ZV92FK2P7EB8">Familienferienpark Dambeck</a> (ca. 3km entfernt).</p>
+                </Card>
+                <Photo props={photos.Kratzeburg__Badestelle_am_Muehlensee__an_der_Havelquelle_} />
+                <Photo props={photos.Kratzeburg__Badestrand_mit_Steg_am_Dambecker_See} />
+                <Photo props={photos.Kratzeburg__Badestelle_beim_Familienferienpark_Dambeck} />
             </Grid>
             <div style={{ width: '100%', height: '85vh', backgroundColor: '#eeeeee' }}>
                 <Map2 />
             </div>
             <p>Weitere Impressionen aus der Umgebung:</p>
             <Grid>
-                <Photo props={photos.Kratzeburg__Badestelle_beim_Familienferienpark_Dambeck} />
 
                 <Photo props={photos.Kratzeburg__Auf_dem_zugefrorenen_Kaebelicksee} />
                 <Photo props={photos.Kratzeburg__Langlauf_Ski_fahren_auf_dem_Kaebelicksee} />
@@ -75,8 +82,6 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Weg_von_Dambeck_nach_Bornhof_1} />
                 <Photo props={photos.Kratzeburg__Weg_von_Dambeck_nach_Bornhof_2} />
                 <Photo props={photos.Kratzeburg__Weg_von_Dambeck_nach_Bornhof_3} />
-                <Photo props={photos.Kratzeburg__Badestelle_am_Muehlensee__an_der_Havelquelle_} />
-                <Photo props={photos.Kratzeburg__Badestrand_mit_Steg_am_Dambecker_See} />
 
                 <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_1} />
                 <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_2} />
