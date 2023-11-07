@@ -16,6 +16,11 @@ type GridProps = {
 const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
     const windowWidth = useWindowWidth()
 
+    if (children == undefined) {
+        console.warn('Warning: no children passed to <Grid>')
+        return <></>
+    }
+
     children = Array.isArray(children) ? children : [children]
 
     const gridItems: Array<GridItem> = children.map((child) => {
