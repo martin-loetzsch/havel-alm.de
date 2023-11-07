@@ -21,7 +21,7 @@ export default function Home() {
 
     return (
         <>
-            <Photo props={photos.Kratzeburg__Kratzeburg_von_oben}>
+            <Photo props={photos.Kratzeburg__Kratzeburg_von_oben} priority={true}>
                 <h1 className='color-cyan'>Kratzeburg</h1>
                 <VerticallyAlignedDiv percentageOfViewWidth={43}>
                     <p className="color-cyan" style={{ marginLeft: '1vw', textAlign: 'center' }}>Havel Alm<br />↓</p>
