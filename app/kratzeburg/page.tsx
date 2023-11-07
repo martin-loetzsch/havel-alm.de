@@ -101,6 +101,16 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Wiesen_zwischen_Havelquelle_und_Ankershagen} />
                 <Photo props={photos.Kratzeburg__Kuehe_am_Granziner_See} />
             </Grid>
+            <Grid>
+            <Card width={1400} height={1000}>
+                <p>Im Herbst sind die Wälder rund um Kratzeburg voller <strong>Pilze</strong>.</p>
+                </Card>
+                <Photo props={photos.Kratzeburg__Pilze_suchen_bei_Pieverstorf} />
+                {/* <Photo props={photos.Kratzeburg__Pilze_suchen_bei_Pieverstorf_1} /> */}
+                <Photo props={photos.Kratzeburg__Pilze} />
+
+
+            </Grid>
             <div style={{ width: '100%', height: '85vh', backgroundColor: '#eeeeee' }}>
                 <Map2 />
             </div>
@@ -111,9 +121,6 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Langlauf_Ski_fahren_auf_dem_Kaebelicksee} />
                 <Photo props={photos.Kratzeburg__Der_zugefrorene_Kaebelicksee} />
 
-
-                <Photo props={photos.Kratzeburg__Pilze_suchen_bei_Pieverstorf_1} />
-                <Photo props={photos.Kratzeburg__Pilze_suchen_bei_Pieverstorf_2} />
 
                 <Photo props={photos.Kratzeburg__Zwischen_Dambeck_und_Havelquelle} />
                 <Photo props={photos.Kratzeburg__Weg_nach_Dambeck} />
