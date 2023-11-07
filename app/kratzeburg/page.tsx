@@ -61,7 +61,7 @@ export default function Home() {
             </Grid>
             <Grid>
                 <Card width={2000} height={1000}>
-                    <p>Von Kratzeburg aus kann man wunderbar durch motorbootfreie Seen und kleine Kanäle die Havel entlang paddeln.</p>
+                    <p>Von Kratzeburg aus kann man durch traumhafte motorbootfreie Seen und kleine Kanäle die Havel entlang paddeln.</p>
                 </Card>
                 <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel_kurz_vor_Babke} />
             </Grid>
@@ -74,9 +74,41 @@ export default function Home() {
                 </Card>
 
             </Grid>
+            <p>Radfahrer kommen in Kratzeburg voll auf ihre Kosten. </p>
+            <p>Direkt vor dem Haus verläuft der <a href="https://www.bike-berlin-copenhagen.com/de/content/bike-berlin-copenhagen">Radfernweg Berlin-Kopenhagen</a>, der <a href="https://www.reiseland-brandenburg.de/aktivitaeten-erlebnisse/aktiv-natur/radfahren/radfernwege/havel-radweg/">Havel Radweg</a> sowie eine Menge lokaler Radwege.</p>
+
+            <div style={{ width: '100%', height: '85vh', backgroundColor: '#eeeeee' }}>
+                <Map2 />
+            </div>
+            <p className="background-cyan">Wir empfehlen besonders Touren durch die unwirklich anmutenden Endmoränen nördlich von Kratzeburg:</p>
+            <Grid>
+                <Card width={1000} height={1000}>
+                    <KomootMap tourId="1369883922" />
+                </Card>
+                <Card width={1000} height={1000}>
+                    <KomootMap tourId="1369867633" />
+                </Card>
+            </Grid>
+            <Grid>
+
+
+
+                <Photo props={photos.Kratzeburg__Zwischen_Dambeck_und_Havelquelle} />
+                <Photo props={photos.Kratzeburg__Weg_von_Dambeck_nach_Bornhof_2} />
+                <Photo props={photos.Kratzeburg__Weg_von_Dambeck_nach_Bornhof_1} />
+                <Photo props={photos.Kratzeburg__Weg_von_Dambeck_nach_Bornhof_3} />
+                <Photo props={photos.Kratzeburg__Weg_nach_Dambeck} />
+
+                <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_1} />
+                <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_2} />
+                <Photo props={photos.Kratzeburg__Zwischen_Liepen_und_Klein_Vielen} />
+
+
+            </Grid>
+
             <Grid>
                 <Card width={600} height={1000}>
-                    <p>Rund um Kratzeburg kann man auch wunderbar <strong>wandern</strong>.</p>
+                    <p>Rund um Kratzeburg kann man zudem auch wunderbar <strong>wandern</strong>.</p>
                     <p>Hier sind drei Empfehlungen für kürzere Runden direkt von der Havel Alm aus:</p>
                 </Card>
                 <Card width={1300} height={1000}>
@@ -111,26 +143,6 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Pilze_suchen_bei_Pieverstorf} />
                 {/* <Photo props={photos.Kratzeburg__Pilze_suchen_bei_Pieverstorf_1} /> */}
                 <Photo props={photos.Kratzeburg__Pilze} />
-
-
-            </Grid>
-            <div style={{ width: '100%', height: '85vh', backgroundColor: '#eeeeee' }}>
-                <Map2 />
-            </div>
-            <p>Weitere Impressionen aus der Umgebung:</p>
-            <Grid>
-
-
-
-                <Photo props={photos.Kratzeburg__Zwischen_Dambeck_und_Havelquelle} />
-                <Photo props={photos.Kratzeburg__Weg_nach_Dambeck} />
-                <Photo props={photos.Kratzeburg__Weg_von_Dambeck_nach_Bornhof_1} />
-                <Photo props={photos.Kratzeburg__Weg_von_Dambeck_nach_Bornhof_2} />
-                <Photo props={photos.Kratzeburg__Weg_von_Dambeck_nach_Bornhof_3} />
-
-                <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_1} />
-                <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_2} />
-                <Photo props={photos.Kratzeburg__Zwischen_Liepen_und_Klein_Vielen} />
 
 
             </Grid>
