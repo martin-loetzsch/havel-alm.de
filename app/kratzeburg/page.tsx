@@ -51,12 +51,27 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_2} />
             </Grid>
             <Grid>
-                <Card width={1000} height={1000}>
-                    <p>Weitere tolle Badestellen gibt es am <a href="https://maps.app.goo.gl/i1eaAKU1xhMYVwrA9">Mühlensee</a> (ca 6km entfernt, an der Havelquelle) und am Röthsee im <a href="https://maps.app.goo.gl/WZew9ZV92FK2P7EB8">Familienferienpark Dambeck</a> (ca. 3km entfernt).</p>
+                <Card width={850} height={1000}>
+                    <p>Weitere tolle Bade&shy;stellen gibt es am <a href="https://maps.app.goo.gl/i1eaAKU1xhMYVwrA9">Mühlensee</a> (ca 6km entfernt, an der Havel&shy;quelle) und am Röthsee im <a href="https://maps.app.goo.gl/WZew9ZV92FK2P7EB8">Familienferien&shy;park Dambeck</a> (ca. 3km entfernt).</p>
                 </Card>
                 <Photo props={photos.Kratzeburg__Badestelle_am_Muehlensee__an_der_Havelquelle_} />
                 <Photo props={photos.Kratzeburg__Badestrand_mit_Steg_am_Dambecker_See} />
                 <Photo props={photos.Kratzeburg__Badestelle_beim_Familienferienpark_Dambeck} />
+            </Grid>
+            <Grid>
+                <Card width={2000} height={1000}>
+                    <p>Von Kratzeburg aus kann man wunderbar durch motorbootfreie Seen und kleine Kanäle die Havel entlang paddeln.</p>
+                </Card>
+                <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel_kurz_vor_Babke} />
+                </Grid>
+                <Grid>
+                <Photo props={photos.Kratzeburg__Auf_der_Havel_bei_Granzin} />
+                <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel} />
+                <Photo props={photos.Kratzeburg__Boottransport_Kanu_Hecht}/>
+                <Card width={2100} height={1000} backgroundCyan={true}>
+                    <p>Boote könnt ihr ausleihen bei <a href="https://maps.app.goo.gl/rPLZsK6edNstqsJw9">Kanu Hecht</a> (in Dalmsdorf, 1,2km entfernt). Die holen euch nach Absprache auch mit den Booten von weiter havelabwärts wieder ab.</p>
+                </Card>
+                
             </Grid>
             <div style={{ width: '100%', height: '85vh', backgroundColor: '#eeeeee' }}>
                 <Map2 />
@@ -68,9 +83,6 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Langlauf_Ski_fahren_auf_dem_Kaebelicksee} />
                 <Photo props={photos.Kratzeburg__Der_zugefrorene_Kaebelicksee} />
 
-                <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel} />
-                <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel_kurz_vor_Babke} />
-                <Photo props={photos.Kratzeburg__Auf_der_Havel_bei_Granzin} />
 
                 <Photo props={photos.Kratzeburg__Wanderweg_am_Granziner_See} />
                 <Photo props={photos.Kratzeburg__Wanderweg_Richtung_Pieverstorf} />
