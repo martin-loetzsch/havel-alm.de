@@ -82,10 +82,10 @@ export default function Home() {
             </div>
             <p className="background-cyan">Wir empfehlen besonders Touren durch die unwirklich anmutenden Endmoränen nördlich von Kratzeburg:</p>
             <Grid>
-                <Card width={1000} height={1000}>
+                <Card width={1000} height={1200} keepAspectRatioOnMobile={true}>
                     <KomootMap tourId="1369883922" />
                 </Card>
-                <Card width={1000} height={1000}>
+                <Card width={1000} height={1200} keepAspectRatioOnMobile={true}>
                     <KomootMap tourId="1369867633" />
                 </Card>
             </Grid>
@@ -111,13 +111,13 @@ export default function Home() {
                     <p>Rund um Kratzeburg kann man zudem auch wunderbar <strong>wandern</strong>.</p>
                     <p>Hier sind drei Empfehlungen für kürzere Runden direkt von der Havel Alm aus:</p>
                 </Card>
-                <Card width={1300} height={1000}>
+                <Card width={1300} height={1000} keepAspectRatioOnMobile={true}>
                     <KomootMap tourId="1369563806" />
                 </Card>
-                <Card width={1000} height={1000}>
+                <Card width={1000} height={1000}  keepAspectRatioOnMobile={true}>
                     <KomootMap tourId="1369641350" />
                 </Card>
-                <Card width={1000} height={1000}>
+                <Card width={1000} height={1000} keepAspectRatioOnMobile={true}>
                     <KomootMap tourId="1369631263" />
                 </Card>
             </Grid>
@@ -141,7 +141,6 @@ export default function Home() {
                     <p>Im Herbst sind die Wälder rund um Kratzeburg voller <strong>Pilze</strong>.</p>
                 </Card>
                 <Photo props={photos.Kratzeburg__Pilze_suchen_bei_Pieverstorf} />
-                {/* <Photo props={photos.Kratzeburg__Pilze_suchen_bei_Pieverstorf_1} /> */}
                 <Photo props={photos.Kratzeburg__Pilze} />
 
 

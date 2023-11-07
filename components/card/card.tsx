@@ -5,6 +5,7 @@ import { FunctionComponent, ReactNode } from 'react'
 type CardProps = {
     width: number,
     height: number,
+    keepAspectRatioOnMobile?: boolean,
     backgroundCyan?: boolean,
     children: ReactNode
 }
@@ -12,13 +13,14 @@ type CardProps = {
 const Card: FunctionComponent<CardProps> = ({
     width,
     height,
+    keepAspectRatioOnMobile=false,
     backgroundCyan=false,
     children
 }): JSX.Element => {
     return (
         <div data-width={width} 
             data-height={height} 
-            data-is-text-card={true}
+            data-keep-aspect-ratio-on-mobile={keepAspectRatioOnMobile}
             style={{height:'100%'}}
             className={`${styles.container} ${backgroundCyan?'background-cyan':''}`}
             >

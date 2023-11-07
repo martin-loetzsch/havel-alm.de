@@ -53,7 +53,12 @@ export const Photo: FunctionComponent<PhotoComponentProps> = (
     }
 
     return (
-        <div data-width={props.width} data-height={props.height} data-is-text-card={false} className={styles.container}>
+        <div
+            data-width={props.width}
+            data-height={props.height}
+            data-keep-aspect-ratio-on-mobile={true}
+            className={styles.container}
+        >
             {image}
             <div className={styles.children + ' ' + className}>
                 {children}

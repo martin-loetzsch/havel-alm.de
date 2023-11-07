@@ -26,12 +26,17 @@ const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
     const gridItems: Array<GridItem> = children.map((child) => {
         const width = child.props['data-width']
         const height = child.props['data-height']
-        const isCard = child.props['data-is-text-card']
+        const keepAspectRatioOnMobile = child.props['data-keep-aspect-ratio-on-mobile']
 
-        if (!width || !height || isCard==null) {
-            throw Error('Child passed to <Grid> did not contain "data-width", "data-height" and "data-is-text-card" props')
+        if (!width || !height || keepAspectRatioOnMobile===null) {
+            throw Error('Child passed to <Grid> did not contain "data-width", "data-height" and "data-keep-aspect-ratio-on-mobile" props')
         }
-        return { width: width, height: height, isCard: isCard, element: child }
+        return { 
+            width: width, 
+            height: height, 
+            keepAspectRatioOnMobile: keepAspectRatioOnMobile, 
+            element: child 
+        }
     })
 
 
@@ -64,7 +69,7 @@ const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
                             <div key={itemIndex}
                                 className={styles.item}
                                 style={{
-                                    ...(row.length > 1 || !gridItem.isCard? {
+                                    ...(row.length > 1 || gridItem.keepAspectRatioOnMobile? {
 
                                         width: calcWidth("100%", width, itemIndex, spacing, windowWidth),
                                         //height: `${height - spacing*2}px`,
