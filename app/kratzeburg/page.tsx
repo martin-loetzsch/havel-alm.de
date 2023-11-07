@@ -8,6 +8,7 @@ import VerticallyAlignedDiv from "@/components/utils/verticallyAlignedDiv";
 import { useMemo } from "react";
 import dynamic from 'next/dynamic';
 import Card from "@/components/card/card";
+import KomootMap from "./komootMap";
 
 const title = "Kratzeburg"
 const description = "Radfahren, wandern und paddeln im Müritz-Nationalpark"
@@ -63,15 +64,42 @@ export default function Home() {
                     <p>Von Kratzeburg aus kann man wunderbar durch motorbootfreie Seen und kleine Kanäle die Havel entlang paddeln.</p>
                 </Card>
                 <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel_kurz_vor_Babke} />
-                </Grid>
-                <Grid>
+            </Grid>
+            <Grid>
                 <Photo props={photos.Kratzeburg__Auf_der_Havel_bei_Granzin} />
                 <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel} />
-                <Photo props={photos.Kratzeburg__Boottransport_Kanu_Hecht}/>
+                <Photo props={photos.Kratzeburg__Boottransport_Kanu_Hecht} />
                 <Card width={2100} height={1000} backgroundCyan={true}>
                     <p>Boote könnt ihr ausleihen bei <a href="https://maps.app.goo.gl/rPLZsK6edNstqsJw9">Kanu Hecht</a> (in Dalmsdorf, 1,2km entfernt). Die holen euch nach Absprache auch mit den Booten von weiter havelabwärts wieder ab.</p>
                 </Card>
-                
+
+            </Grid>
+            <Grid>
+                <Card width={600} height={1000}>
+                    <p>Rund um Kratzeburg kann man auch wunderbar <strong>wandern</strong>.</p>
+                    <p>Hier sind Empfehlungen für kürzere Runden direkt von der Havel Alm aus:</p>
+                </Card>
+                <Card width={1300} height={1000}>
+                    <KomootMap tourId="1369563806" />
+                </Card>
+                <Card width={1000} height={1000}>
+                    <KomootMap tourId="1369641350" />
+                </Card>
+                <Card width={1000} height={1000}>
+                    <KomootMap tourId="1369631263" />
+                </Card>
+            </Grid>
+            <Grid>
+                <Photo props={photos.Kratzeburg__Wanderweg_Richtung_Pieverstorf} />
+                <Photo props={photos.Kratzeburg__Am_Dambecker_See} />
+                <Photo props={photos.Kratzeburg__Hochsitz_am_Dambecker_See} />
+
+                <Photo props={photos.Kratzeburg__Weg_zwischen_Pieverstorf_und_Kratzeburg} />
+                <Photo props={photos.Kratzeburg__Weg_zwischen_Pieverstorf_und_Dambeck_2} />
+
+                <Photo props={photos.Kratzeburg__Wanderweg_am_Granziner_See} />
+                <Photo props={photos.Kratzeburg__Wiesen_zwischen_Havelquelle_und_Ankershagen} />
+                <Photo props={photos.Kratzeburg__Kuehe_am_Granziner_See} />
             </Grid>
             <div style={{ width: '100%', height: '85vh', backgroundColor: '#eeeeee' }}>
                 <Map2 />
@@ -84,8 +112,6 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Der_zugefrorene_Kaebelicksee} />
 
 
-                <Photo props={photos.Kratzeburg__Wanderweg_am_Granziner_See} />
-                <Photo props={photos.Kratzeburg__Wanderweg_Richtung_Pieverstorf} />
                 <Photo props={photos.Kratzeburg__Pilze_suchen_bei_Pieverstorf_1} />
                 <Photo props={photos.Kratzeburg__Pilze_suchen_bei_Pieverstorf_2} />
 
@@ -100,8 +126,6 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Zwischen_Liepen_und_Klein_Vielen} />
                 <Photo props={photos.Kratzeburg__Auf_dem_Schaeferberg__96m__zwischen_Pieverstorf_und_Hartwigsdorf} />
 
-                <Photo props={photos.Kratzeburg__Weg_zwischen_Pieverstorf_und_Kratzeburg} />
-                <Photo props={photos.Kratzeburg__Hochsitz_am_Dambecker_See} />
 
                 <Photo props={photos.Kratzeburg__Der_Wald_hinter_dem_Haus} />
                 <Photo props={photos.Kratzeburg__Am_Roethsee_zwischen_Dambeck_und_Kratzeburg} />
@@ -109,10 +133,6 @@ export default function Home() {
 
                 <Photo props={photos.Kratzeburg__Kuehe_auf_der_Weide_in_Richtung_Pieverstorf_2} />
                 <Photo props={photos.Kratzeburg__Radweg_in_Richtung_Pieverstorf} />
-                <Photo props={photos.Kratzeburg__Wiesen_zwischen_Havelquelle_und_Ankershagen} />
-                <Photo props={photos.Kratzeburg__Weg_zwischen_Pieverstorf_und_Dambeck_2} />
-                <Photo props={photos.Kratzeburg__Kuehe_am_Granziner_See} />
-                <Photo props={photos.Kratzeburg__Am_Dambecker_See} />
             </Grid>
 
             <Nav verticalOffsetInVWs={20} />
