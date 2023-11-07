@@ -53,7 +53,7 @@ export default function Home() {
             </Grid>
             <Grid>
                 <Card width={850} height={1000}>
-                    <p>Weitere tolle Bade&shy;stellen gibt es am <a href="https://maps.app.goo.gl/i1eaAKU1xhMYVwrA9">Mühlensee</a> (ca 6km entfernt, an der Havel&shy;quelle) und am Röthsee im <a href="https://maps.app.goo.gl/WZew9ZV92FK2P7EB8">Familienferien&shy;park Dambeck</a> (ca. 3km entfernt).</p>
+                    <p>Weitere tolle Bade&shy;stellen gibt es am <a href="https://maps.app.goo.gl/i1eaAKU1xhMYVwrA9">Mühlensee</a> (ca. 6 km entfernt, an der Havel&shy;quelle) und am Röthsee im <a href="https://maps.app.goo.gl/WZew9ZV92FK2P7EB8">Familienferien&shy;park Dambeck</a> (ca. 3 km entfernt).</p>
                 </Card>
                 <Photo props={photos.Kratzeburg__Badestelle_am_Muehlensee__an_der_Havelquelle_} />
                 <Photo props={photos.Kratzeburg__Badestrand_mit_Steg_am_Dambecker_See} />
@@ -70,7 +70,7 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel} />
                 <Photo props={photos.Kratzeburg__Boottransport_Kanu_Hecht} />
                 <Card width={2100} height={1000} backgroundCyan={true}>
-                    <p>Boote könnt ihr ausleihen bei <a href="https://maps.app.goo.gl/rPLZsK6edNstqsJw9">Kanu Hecht</a> (in Dalmsdorf, 1,2km entfernt). Die holen euch nach Absprache auch mit den Booten von weiter havelabwärts wieder ab.</p>
+                    <p>Boote könnt ihr ausleihen bei <a href="https://maps.app.goo.gl/rPLZsK6edNstqsJw9">Kanu Hecht</a> (in Dalmsdorf, 1,2 km entfernt). Die holen euch nach Absprache auch mit den Booten von weiter havelabwärts wieder ab.</p>
                 </Card>
 
             </Grid>
