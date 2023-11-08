@@ -1,13 +1,12 @@
+import Card from "@/components/card/card";
 import Grid from "@/components/grid/grid";
+import LeafletMap from "@/components/map/leafletMap";
 import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
 import getMetaData from '@/components/utils/getMetaData';
-import type { Metadata } from 'next';
-import Nav from '../../components/nav/nav'
 import VerticallyAlignedDiv from "@/components/utils/verticallyAlignedDiv";
-import { useMemo } from "react";
-import dynamic from 'next/dynamic';
-import Card from "@/components/card/card";
+import type { Metadata } from 'next';
+import Nav from '../../components/nav/nav';
 import KomootMap from "./komootMap";
 
 const title = "Kratzeburg"
@@ -16,9 +15,6 @@ const description = "Radfahren, wandern und paddeln im Müritz-Nationalpark"
 export const metadata: Metadata = getMetaData(title, description)
 
 export default function Home() {
-    const Map1 = useMemo(() => dynamic(() => import('./map1'), { ssr: false }), [])
-    const Map2 = useMemo(() => dynamic(() => import('./map2'), { ssr: false }), [])
-
     return (
         <>
             <Photo props={photos.Kratzeburg__Kratzeburg_von_oben} priority={true}>
@@ -30,12 +26,7 @@ export default function Home() {
             <p>
                 <a href="http://www.kratzeburg.de/">Kratzeburg</a> liegt inmitten der Mecklenburgischen Seen&shy;platte und ist der ideale Ausgangspunkt für <a href="http://www.kratzeburg.de/kultur-und-freizeitangebote/rad-wasser-und-wanderwege">Wanderun&shy;gen, Radtouren und Paddeltouren</a> durch den <a href="https://www.mueritz-nationalpark.de">Müritz-Nationalpark</a>.
             </p>
-            <div style={{
-                width: '100%', height: '85vh',
-                backgroundColor: '#eeeeee'
-            }}>
-                <Map1 />
-            </div>
+            <LeafletMap type='openTopoMap' lat={53.4352} lon={12.9467} height='80vh' />
             <p>Kratzeburg ist <a href="https://www.bahnhof.de/kratzeburg/ankunft">sehr gut per Bahn erreichbar</a>. Wir reisen selbst fast immer mit der Bahn aus Berlin an (wir haben kein eigen&shy;es Auto) und können das meistens empfehlen.</p>
             <p className="background-cyan">Vom Bahnhof zur Havel Alm sind es 700 Meter.</p>
             <Grid>
@@ -77,9 +68,8 @@ export default function Home() {
             <p>Radfahrer kommen in Kratzeburg voll auf ihre Kosten. </p>
             <p>Direkt vor dem Haus verläuft der <a href="https://www.bike-berlin-copenhagen.com/de/content/bike-berlin-copenhagen">Radfernweg Berlin-Kopenhagen</a>, der <a href="https://www.reiseland-brandenburg.de/aktivitaeten-erlebnisse/aktiv-natur/radfahren/radfernwege/havel-radweg/">Havel Radweg</a> sowie eine Menge lokaler Radwege.</p>
 
-            <div style={{ width: '100%', height: '85vh', backgroundColor: '#eeeeee' }}>
-                <Map2 />
-            </div>
+            <LeafletMap type="openCycleMap" lat={53.4352} lon={12.9467} height="80vh" />
+
             <p className="background-cyan">Wir empfehlen besonders Touren durch die unwirklich anmutenden Endmoränen nördlich von Kratzeburg:</p>
             <Grid>
                 <Card width={1000} height={1200} keepAspectRatioOnMobile={true}>
