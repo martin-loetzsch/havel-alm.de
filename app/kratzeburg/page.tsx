@@ -17,7 +17,7 @@ export const metadata: Metadata = getMetaData(title, description)
 export default function Home() {
     return (
         <>
-            <Photo props={photos.Kratzeburg__Kratzeburg_von_oben} priority={true}>
+            <Photo props={photos.Kratzeburg__Kratzeburg_von_oben} priority={true} linkToPhotoPage={false}>
                 <h1 className='color-cyan'>Kratzeburg</h1>
                 <VerticallyAlignedDiv percentageOfViewWidth={43}>
                     <p className="color-cyan" style={{ marginLeft: '1vw', textAlign: 'center' }}>Havel Alm<br />↓</p>
@@ -105,7 +105,7 @@ export default function Home() {
                 <Card width={1300} height={1000} keepAspectRatioOnMobile={true}>
                     <KomootMap tourId="1369563806" />
                 </Card>
-                <Card width={1000} height={1000}  keepAspectRatioOnMobile={true}>
+                <Card width={1000} height={1000} keepAspectRatioOnMobile={true}>
                     <KomootMap tourId="1369641350" />
                 </Card>
                 <Card width={1000} height={1000} keepAspectRatioOnMobile={true}>
