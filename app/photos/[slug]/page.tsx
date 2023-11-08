@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import Nav from '../../../components/nav/nav';
 import KeyboardNavigation from "./keyboardNavigation";
 import styles from './page.module.scss';
+import LeafletMap from '@/components/map/leafletMap';
 
 type PageParams = {
     slug: string
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         return {}
     }
     const title = photo.title
-    
+
     const description = `Foto ${photo.width} x ${photo.height} Pixel, aufgenommen am `
         + new Intl.DateTimeFormat("de").format(photo.createdAt)
         + ' , lizenziert unter CC BY 4.0'
@@ -113,6 +114,15 @@ export default function Page({ params }: PageProps) {
                     href="https://havel-alm.de" property="cc:attributionName"
                     rel="cc:attributionURL">havel-alm.de</a>)
             </p>
+            {photo.lat && photo.lon &&
+                <LeafletMap 
+                type="openStreetMapHot" 
+                lat={photo.lat} 
+                lon={photo.lon} 
+                height='50vw'
+                addMarkerAtCenter={true}
+                />
+            }
             <KeyboardNavigation
                 linkOnLeftArrow={previousPhotoLink}
                 linkOnRightArrow={nextPhotoLink} />
