@@ -48,7 +48,7 @@ export const Photo: FunctionComponent<PhotoComponentProps> = (
     }
 
     // print the path of the image during build to help detecting unused images
-    if (printSrcPathDuringBuild) {
+    if (printSrcPathDuringBuild && process.env.PRINT_IMAGE_PATHS) {
         process.stderr.write(props.src.slice(1) + '\n')
     }
 

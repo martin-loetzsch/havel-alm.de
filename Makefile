@@ -17,7 +17,7 @@ rebuild-images:
 	pnpm run dev
 
 find-unused-images:
-	diff --color <(pnpm exec next build 2>&1 1>/dev/null | grep '^photos' | sort | uniq) <(cd public && find photos -type f | grep -v '.DS_Store' | sort) || true
+	diff --color <(PRINT_IMAGE_PATHS=TRUE pnpm exec next build 2>&1 1>/dev/null | grep '^photos' | sort | uniq) <(cd public && find photos -type f | grep -v '.DS_Store' | sort) || true
 
 clean:
 	rm -rvf .next node_modules
