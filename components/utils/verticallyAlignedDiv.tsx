@@ -1,5 +1,5 @@
 /**
- * Verticall center a div based on view width
+ * Vertically center a div based on view width
  */
 
 'use client'
