@@ -9,17 +9,21 @@ import exifread
 from PIL import Image
 from multiprocessing.pool import ThreadPool
 
+
 class Photo ():
     """Intermediate presentation for generating javascript output"""
+
     def __init__(self,
                  js_variable_name: str,
                  src: str,
                  title: str,
                  slug: str,
-                 width:int,
+                 width: int,
                  height: int,
                  created_at: datetime.datetime,
                  blur_data_url: str,
+                 lat: float = None,
+                 lon: float = None,
                  previous_photo_slug: str = None,
                  next_photo_slug: str = None
                  ) -> None:
@@ -31,32 +35,33 @@ class Photo ():
         self.height = height
         self.created_at = created_at
         self.blur_data_url = blur_data_url
+        self.lat = lat
+        self.lon = lon
         self.previous_photo_slug = previous_photo_slug
         self.next_photo_slug = next_photo_slug
-
 
 
 photos_dir = pathlib.Path('./public/photos')
 
 
-def parse_image(path:pathlib.Path) -> Photo:
+def parse_image(path: pathlib.Path) -> Photo:
     # print(path)
     relative_file_name = str(path)[len(str(photos_dir)) + 1:]
     js_variable_name = relative_file_name[:-4].translate(''.maketrans({
-            ' ': '_',
-            '.': '_',
-            '-': '_',
-            ')': '_',
-            '(': '_',
-            '/': '__',
-            'ä': 'ae',
-            'Ä': 'Ae',
-            'ü': 'ue',
-            'Ü': 'Ue',
-            'ö': 'oe',
-            'Ö': 'Oe'
-        }
-        ))
+        ' ': '_',
+        '.': '_',
+        '-': '_',
+        ')': '_',
+        '(': '_',
+        '/': '__',
+        'ä': 'ae',
+        'Ä': 'Ae',
+        'ü': 'ue',
+        'Ü': 'Ue',
+        'ö': 'oe',
+        'Ö': 'Oe'
+    }
+    ))
 
     if js_variable_name[0].isdigit():
         js_variable_name = '_' + js_variable_name
@@ -64,10 +69,23 @@ def parse_image(path:pathlib.Path) -> Photo:
     slug = path.stem.replace(' ', '-').lower()
 
     with path.open('rb') as f:
-        if exif_date := exifread.process_file(f).get('EXIF DateTimeOriginal'):
-            timestamp = datetime.datetime.strptime(str(exif_date), '%Y:%m:%d %H:%M:%S')
+        exif_data = exifread.process_file(f, details=False)
+        if exif_date := exif_data.get('EXIF DateTimeOriginal'):
+            timestamp = datetime.datetime.strptime(
+                str(exif_date), '%Y:%m:%d %H:%M:%S')
         else:
-            timestamp = datetime.datetime.fromtimestamp(os.stat(path).st_birthtime)
+            timestamp = datetime.datetime.fromtimestamp(
+                os.stat(path).st_birthtime)
+
+        def parse_exif_gps_value(exif_field):
+            if exif_gps_value := exif_data.get(exif_field):
+                degrees, minutes, seconds = exif_gps_value.values
+                return degrees + minutes/60.0 + seconds/3600.0
+            else:
+                return None
+
+        lat, lon = parse_exif_gps_value(
+            'GPS GPSLatitude'), parse_exif_gps_value('GPS GPSLongitude')
 
     with Image.open(path) as image:
         # extract diments
@@ -80,31 +98,34 @@ def parse_image(path:pathlib.Path) -> Photo:
         # image.show()
         buffered = io.BytesIO()
         image.save(buffered, format="PNG")
-        blur_data_url = 'data:image/jpeg;base64,' + base64.b64encode(buffered.getvalue()).decode("utf-8")
+        blur_data_url = 'data:image/jpeg;base64,' + \
+            base64.b64encode(buffered.getvalue()).decode("utf-8")
 
     return Photo(js_variable_name=js_variable_name,
-                        src=f'/photos/{relative_file_name}',
-                        title=path.stem,
-                        slug=slug,
-                        width=width,
-                        height=height,
-                        created_at=timestamp,
-                        blur_data_url= blur_data_url)
+                 src=f'/photos/{relative_file_name}',
+                 title=path.stem,
+                 slug=slug,
+                 width=width,
+                 height=height,
+                 created_at=timestamp,
+                 blur_data_url=blur_data_url,
+                 lat=lat,
+                 lon=lon)
 
 
 photo_paths = list(photos_dir.glob('**/*.[jJ][pP][gG]'))
 
 with ThreadPool(16) as pool:
-    photos=pool.map(parse_image, photo_paths)
+    photos = pool.map(parse_image, photo_paths)
 
 # sort by date
-photos.sort(key=lambda p: p.created_at,reverse=True)
+photos.sort(key=lambda p: p.created_at, reverse=True)
 
 # assign previous and next photo
 for i, photo in enumerate(photos):
-    if i>0:
+    if i > 0:
         photo.previous_photo_slug = photos[i-1].slug
-    if i<len(photos) - 1:
+    if i < len(photos) - 1:
         photo.next_photo_slug = photos[i+1].slug
 
 # write javascript file
@@ -122,6 +143,8 @@ export class PhotoProps{
         public height: number,
         public createdAt: Date,
         public blurDataUrl: string,
+        public lat: number | undefined,
+        public lon: number | undefined,
         public slugPreviousPhoto: string | undefined,
         public slugNextPhoto: string | undefined)
     {}
@@ -130,7 +153,7 @@ export class PhotoProps{
 export const photos = {''', file=output)
 
     for photo in photos:
-        print(f'''    {photo.js_variable_name}: new PhotoProps('{photo.src}', '{photo.title}', '{photo.slug}', {photo.width}, {photo.height}, new Date('{photo.created_at}'), '{photo.blur_data_url}', {"'" + photo.previous_photo_slug + "'" if photo.previous_photo_slug else 'undefined'}, {"'" + photo.next_photo_slug + "'" if photo.next_photo_slug else 'undefined'}),''', file=output)
+        print(f'''    {photo.js_variable_name}: new PhotoProps('{photo.src}', '{photo.title}', '{photo.slug}', {photo.width}, {photo.height}, new Date('{photo.created_at}'), '{photo.blur_data_url}', {photo.lat or 'undefined'}, {photo.lon or 'undefined'}, {"'" + photo.previous_photo_slug + "'" if photo.previous_photo_slug else 'undefined'}, {"'" + photo.next_photo_slug + "'" if photo.next_photo_slug else 'undefined'}),''', file=output)
 
     print(f'''}}
 
@@ -140,7 +163,7 @@ export const photosBySlug: {{[Key: string]: PhotoProps}} = {{
 ''', file=output)
 
     for photo in photos:
-        print(f'''    '{photo.slug}': photos.{photo.js_variable_name},''', file=output)
+        print(
+            f'''    '{photo.slug}': photos.{photo.js_variable_name},''', file=output)
 
-    print(f'''}}''',file=output)
-
+    print(f'''}}''', file=output)
