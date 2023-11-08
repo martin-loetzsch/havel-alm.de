@@ -59,6 +59,7 @@ export default function Home() {
             <Grid>
                 <Photo props={photos.Kratzeburg__Auf_der_Havel_bei_Granzin} />
                 <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel} />
+                <Photo props={photos.Kratzeburg__Kanu_fahren_auf_dem_Kaebelicksee} />
                 <Photo props={photos.Kratzeburg__Boottransport_Kanu_Hecht} />
                 <Card width={2100} height={1000} backgroundCyan={true}>
                     <p>Boote könnt ihr ausleihen bei <a href="https://maps.app.goo.gl/rPLZsK6edNstqsJw9">Kanu Hecht</a> (in Dalmsdorf, 1,2 km entfernt). Die holen euch nach Absprache auch mit den Booten von weiter havelabwärts wieder ab.</p>
