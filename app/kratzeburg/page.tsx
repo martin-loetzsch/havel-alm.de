@@ -54,7 +54,7 @@ export default function Home() {
                 <Card width={2000} height={1000}>
                     <p>Von Kratzeburg aus kann man durch traumhafte motorbootfreie Seen und kleine Kanäle die Havel entlang paddeln.</p>
                 </Card>
-                <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel_kurz_vor_Babke} />
+                <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel_kurz_vor_Blankenfoerde} />
             </Grid>
             <Grid>
                 <Photo props={photos.Kratzeburg__Auf_der_Havel_bei_Granzin} />
