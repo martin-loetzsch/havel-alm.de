@@ -100,10 +100,14 @@ def parse_image(path: pathlib.Path) -> Photo:
         image.save(buffered, format="PNG")
         blur_data_url = 'data:image/jpeg;base64,' + \
             base64.b64encode(buffered.getvalue()).decode("utf-8")
+        
+    title = path.stem
+    if title.split('_')[-1].isdigit():
+        title = ''.join(title.split('_')[:-1])
 
     return Photo(js_variable_name=js_variable_name,
                  src=f'/photos/{relative_file_name}',
-                 title=path.stem,
+                 title=title,
                  slug=slug,
                  width=width,
                  height=height,

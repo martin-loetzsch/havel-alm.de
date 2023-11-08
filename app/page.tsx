@@ -42,7 +42,7 @@ export default function Home() {
             </Grid>
 
             <Grid>
-                <Photo props={photos.Haus__Gastraum__Gastraum_I} />
+                <Photo props={photos.Haus__Gastraum__Gastraum_1} />
                 <Card width={1100} height={1000} backgroundCyan={true}>
                     <p>Es gibt 3 Bäder, ein&shy;en grossen Gast&shy;raum, eine umfang&shy;reich ausge&shy;stattete Küche, eine sehr gut klingende Musik&shy;anlage sowie 100 Mbps WLAN im ganzen Haus.</p>
                 </Card>
@@ -64,7 +64,7 @@ export default function Home() {
                     <p>Deswegen sind Haustiere bei uns leider nicht erlaubt.</p>
 
                 </Card>
-                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_II} />
+                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_2} />
 
             </Grid>
             <Grid>
@@ -89,7 +89,7 @@ export default function Home() {
                     <p style={{ backgroundColor: 'white' }}>Wir vermie&shy;ten keine ein&shy;zel&shy;nen Zimmer, sondern nur das ganze Haus und die&shy;ses für min&shy;des&shy;tens zwei Nächte.</p>
                     <p>Alle Infos dazu findet ihr auf <Link href={{ pathname: '/preise-und-buchung' }} prefetch={false}>un&shy;ser&shy;er Seite zu Preisen und Buch&shy;ung</Link>.</p>
                 </Card>
-                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_I} />
+                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_1} />
             </Grid>
             <Grid>
                 <Card width={1950} height={1000} backgroundCyan={true}>

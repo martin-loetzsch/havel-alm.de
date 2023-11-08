@@ -25,7 +25,7 @@ export default function Home() {
                 <Card width={3000} height={2000}>
                     <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60m² großer Gastraum mit Blick auf eine Weide, die Küche, ein Arbeits&shy;zimmer, zwei Bäder sowie ein 12m² großes Doppelzimmer.</p>
                 </Card>
-                <Photo props={photos.Haus__Gastraum__Gastraum_I} />
+                <Photo props={photos.Haus__Gastraum__Gastraum_1} />
                 <Photo props={photos.Haus__Gastraum__Eingang} />
                 <Photo props={photos.Haus__Gastraum__Sofa_1}/>
                 <Photo props={photos.Haus__Gastraum__Sofa_2} />
@@ -41,8 +41,8 @@ export default function Home() {
                 <Card width={650} height={1000} >
                     <p>An drei Ess&shy;tischen finden bis zu 20 Personen Platz.</p>
                 </Card>
-                <Photo props={photos.Haus__Gastraum__Gastraum_II} />
-                <Photo props={photos.Haus__Gastraum__Gastraum_III} />
+                <Photo props={photos.Haus__Gastraum__Gastraum_2} />
+                <Photo props={photos.Haus__Gastraum__Gastraum_3} />
             </Grid>
 
             <Grid>
@@ -59,9 +59,9 @@ export default function Home() {
                     <p>Neben dem Eingang liegt das 12m² große <b>Zimmer 1</b>.</p>
                     <p>Vom 200x180 cm großen Doppelbett hat man einen Blick auf die Weide hinter dem Grundstück.</p>
                 </Card>
-                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_I} />
-                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_II} />
-                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_III} />
+                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_1} />
+                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_2} />
+                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_3} />
             </Grid>
 
             <Grid>
@@ -75,9 +75,9 @@ export default function Home() {
             </Grid>
             <p>Im Erdgeschoss gibt es zwei <b>Bäder</b>, eines davon mit Dusche und eins mit einer Badewanne.</p>
             <Grid>
-                <Photo props={photos.Haus__Bad_2__Bad_2_I} />
-                <Photo props={photos.Haus__Bad_2__Bad_2_II} />
-                <Photo props={photos.Haus__Bad_2__Bad_2_III} />
+                <Photo props={photos.Haus__Bad_2__Bad_2_1} />
+                <Photo props={photos.Haus__Bad_2__Bad_2_2} />
+                <Photo props={photos.Haus__Bad_2__Bad_2_3} />
             </Grid>
             <Grid>
                 <Card width={900} height={1000} backgroundCyan={true}>
@@ -98,18 +98,18 @@ export default function Home() {
             <p>Im Dachgeschoss gibt es <b>5</b> nahezu identische Kammern (<b>Zimmer 2 bis 6</b>). Jedes der Zimmer hat ein Doppelbett (200x140cm) sowie ein Hochbett (200x70cm) für Kinder.</p>
             <p><b>Achtung!</b> Die Doppelbetten ist nur von einer Seite zugänglich, d.h. darin übernachtende Personen sollten sich gut kennen.</p>
             <Grid>
-                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_I} />
-                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_II} />
-                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_III} />
-                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_IV} />
+                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_1} />
+                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_2} />
+                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_3} />
+                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_4} />
             </Grid>
             <Grid>
                 <Card width={500} height={1000}>
                     <p>Im Obergeschoss befindet sich auch ein drittes Bad mit Dusche.</p>
                 </Card>
-                <Photo props={photos.Haus__Bad_3__Bad_3_II} />
-                <Photo props={photos.Haus__Bad_3__Bad_3_I} />
-                <Photo props={photos.Haus__Bad_3__Bad_3_III} />
+                <Photo props={photos.Haus__Bad_3__Bad_3_2} />
+                <Photo props={photos.Haus__Bad_3__Bad_3_1} />
+                <Photo props={photos.Haus__Bad_3__Bad_3_3} />
             </Grid>
             <Grid>
                 <Card width={2000} height={1000}>
