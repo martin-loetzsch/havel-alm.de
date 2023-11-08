@@ -98,7 +98,7 @@ export default function Home() {
                 </Card>
                 <Photo props={photos.Kratzeburg__Wanderweg_Richtung_Pieverstorf} />
                 <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_1} />
-                <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel_kurz_vor_Babke} />
+                <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel_kurz_vor_Blankenfoerde} />
             </Grid>
             <p>Ihr habt Fragen? Ruft uns an oder schreibt uns eine Mail.</p>
             <p>Ausserdem sind wir an vielen Wochenenden in Kratzeburg, gerne zeigen wir euch dann unser Haus.</p>
