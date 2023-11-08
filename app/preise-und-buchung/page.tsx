@@ -63,18 +63,18 @@ export default function Home() {
                     </table>
                 </Card>
                 <Card width={350} height={heightPricingTable} backgroundCyan={false}>
-                    <p>&sup1;September bis Juni</p>
-                    <p>&sup2;Juli & August + Brückentage</p>
-                    <p>&sup3;Ostern, Himmel&shy;fahrt, Pfingsten, Weihnachten, Neu&shy;jahr</p>
+                    <small>&sup1;September bis Juni</small>
+                    <small>&sup2;Juli & August + Brückentage</small>
+                    <small>&sup3;Ostern, Himmel&shy;fahrt, Pfingsten, Weihnachten, Neu&shy;jahr</small>
                 </Card>
             </Grid>
-            <p>Zum Übernachtungspreis kommt eine <strong>Endreinigungs&shy;ge&shy;bühr</strong> von 250€ hinzu (ja das ist hoch, deckt aber nicht die Kosten).</p>
-            <p>Enthalten sind Bettwäsche, Handtücher, Kaffee, Strom (auch für Waschmaschine & Trockner) sowie alle sonstigen Nebenkosten.</p>
-            <p>E-Autos können nach Abspache aufgeladen werden.</p>
+            <p>Zum Übernachtungspreis kommt eine <strong>Endreinigungs&shy;ge&shy;bühr</strong> von 250€ hinzu.</p>
+            <p>Enthalten sind Bettwäsche, Handtü&shy;cher, Kaffee, Strom (auch für Wasch&shy;maschine & Trockner) sowie alle sonstigen Nebenkosten.</p>
+            <p>E-Autos können nach Abspache auf&shy;geladen werden.</p>
             <div className='background-cyan'>
                 <p>Wenn ihr direkt über uns bucht, könnt ihr bis zwei Monate vor Anreise eure Buchung <strong>kostenlos stornieren</strong>.</p>
                 <p>Bei Buchung überweist ihr 50% des Preises, der zweite Teil ist 2 Monate vor Anreise fällig (den wir dann leider nicht mehr erstatten können).</p>
-                <p>Bei der Buchung über Portale gelten die dort hinterlegten Stornierungsbedingungen.</p>
+                <p>Bei der Buchung über Portale gelten die dort hinterlegten Stornierungs&shy;bedingungen.</p>
             </div>
             <Photo props={photos.Kratzeburg__Der_zugefrorene_Kaebelicksee} ><></></Photo>
 

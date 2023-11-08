@@ -55,7 +55,7 @@ export default function Home() {
                 <Photo props={photos.Haus__Flur_DG__Flur_DG_1} />
                 <Photo props={photos.Haus__Gastraum__Sofa_1} />
                 <Card width={400} height={1000} backgroundCyan={true}>
-                    <p>Hier findet ihr <Link href='/das-haus' prefetch={false}>alle Infos zu den Räumen und der Ausstat&shy;tung des Hauses</Link>.</p>
+                    <p>Hier findet ihr <Link href='/das-haus' prefetch={false}>alle Infos zu den Räu&shy;men und der Ausstat&shy;tung des Hauses</Link>.</p>
                 </Card>
             </Grid>
             <Grid>
@@ -69,7 +69,7 @@ export default function Home() {
             </Grid>
             <Grid>
                 <Card width={1000} height={1000}>
-                    <p>Eure Kinder hin&shy;ge&shy;gen sind sehr willkom&shy;men (wir ha&shy;ben selbst drei). Sie wer&shy;den sich bei uns wohlfühlen.</p>
+                    <p>Eure Kinder hin&shy;ge&shy;gen sind sehr will&shy;kom&shy;men (wir ha&shy;ben selbst drei). Sie wer&shy;den sich bei uns wohlfühlen.</p>
                 </Card>
                 <Photo props={photos.Garten__Bobby_Cars} />
             </Grid>
@@ -93,7 +93,7 @@ export default function Home() {
             </Grid>
             <Grid>
                 <Card width={1950} height={1000} backgroundCyan={true}>
-                    <p style={{ backgroundColor: 'white' }}>Kratzeburg ist ein idyllisches Dorf inmitten vom Müritz-Nationalpark. Es ist umgeben von von klaren Seen und dichten Wäldern und bietet unzählige Möglichkeiten zum Wandern, Radfahren und Paddeln. </p>
+                    <p style={{ backgroundColor: 'white' }}>Kratzeburg ist ein idyllisches Dorf inmitten vom Müritz-Nationalpark. Es ist umgeben von von klaren Seen und dichten Wäldern und bietet unzählige Möglichkeiten zum Wandern, Radfah&shy;ren und Paddeln. </p>
                     <p><Link prefetch={false} href="/kratzeburg">Lest hier mehr über die Umgebung der Havel Alm</Link>.</p>
                 </Card>
                 <Photo props={photos.Kratzeburg__Wanderweg_Richtung_Pieverstorf} />
@@ -101,7 +101,7 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel_kurz_vor_Blankenfoerde} />
             </Grid>
             <p>Ihr habt Fragen? Ruft uns an oder schreibt uns eine Mail.</p>
-            <p>Ausserdem sind wir an vielen Wochenenden in Kratzeburg, gerne zeigen wir euch dann unser Haus.</p>
+            <p>Ausserdem sind wir an vielen Wochen&shy;enden in Kratzeburg, gerne zeigen wir euch dann unser Haus.</p>
 
             <Nav verticalOffsetInVWs={30} />
         </>

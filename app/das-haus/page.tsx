@@ -47,8 +47,8 @@ export default function Home() {
 
             <Grid>
                 <Card width={1550} height={1000} backgroundCyan={true}>
-                    <p>In der komplett ausge&shy;stat&shy;teten <b>Küche</b> kann für viele Personen gekocht werden.</p>
-                    <p>Es gibt einen großen Induktionsherd, zwei Back&shy;öfen, einen Kühl&shy;schrank, eine Spülmaschine sowie eine Kaffemaschine.</p>
+                    <p>In der komplett ausge&shy;stat&shy;teten <b>Küche</b> kann für viele Personen gekocht wer&shy;den.</p>
+                    <p>Es gibt einen großen Induktionsherd, zwei Back&shy;öfen, einen Kühl&shy;schrank, eine Spülmaschine sowie eine Kaffema&shy;schine.</p>
                 </Card>
                 <Photo props={photos.Haus__Kueche__Kueche_3} />
                 <Photo props={photos.Haus__Kueche__Kueche_1} />
@@ -96,7 +96,7 @@ export default function Home() {
             />
 
             <p>Im Dachgeschoss gibt es <b>5</b> nahezu identische Kammern (<b>Zimmer 2 bis 6</b>). Jedes der Zimmer hat ein Doppelbett (200x140cm) sowie ein Hochbett (200x70cm) für Kinder.</p>
-            <p><b>Achtung!</b> Die Doppelbetten ist nur von einer Seite zugänglich, d.h. darin übernachtende Personen sollten sich gut kennen.</p>
+            <p><b>Achtung!</b> Die Doppelbetten ist nur von einer Seite zugänglich, d.h. darin über&shy;nachtende Personen sollten sich gut kennen.</p>
             <Grid>
                 <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_1} />
                 <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_2} />

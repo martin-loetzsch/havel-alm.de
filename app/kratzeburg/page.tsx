@@ -24,10 +24,10 @@ export default function Home() {
                 </VerticallyAlignedDiv>
             </Photo>
             <p>
-                <a href="http://www.kratzeburg.de/">Kratzeburg</a> liegt inmitten der Mecklenburgischen Seen&shy;platte und ist der ideale Ausgangspunkt für <a href="http://www.kratzeburg.de/kultur-und-freizeitangebote/rad-wasser-und-wanderwege">Wanderun&shy;gen, Radtouren und Paddeltouren</a> durch den <a href="https://www.mueritz-nationalpark.de">Müritz-Nationalpark</a>.
+                <a href="http://www.kratzeburg.de/">Kratzeburg</a> liegt inmitten der Meck&shy;lenburgischen Seen&shy;platte und ist der ideale Ausgangspunkt für <a href="http://www.kratzeburg.de/kultur-und-freizeitangebote/rad-wasser-und-wanderwege">Wanderun&shy;gen, Radtouren und Paddeltouren</a> durch den <a href="https://www.mueritz-nationalpark.de">Müritz-Nationalpark</a>.
             </p>
-            <LeafletMap type='openTopoMap' lat={53.4352} lon={12.9467} height='80vh' />
-            <p>Kratzeburg ist <a href="https://www.bahnhof.de/kratzeburg/ankunft">sehr gut per Bahn erreichbar</a>. Wir reisen selbst fast immer mit der Bahn aus Berlin an (wir haben kein eigen&shy;es Auto) und können das meistens empfehlen.</p>
+            <LeafletMap type='openTopoMap' lat={53.4352} lon={12.9467} height='70vh' />
+            <p>Kratzeburg ist <a href="https://www.bahnhof.de/kratzeburg/ankunft">sehr gut per Bahn er&shy;reichbar</a>. Wir reisen selbst fast immer mit der Bahn aus Berlin an (wir haben kein eigen&shy;es Auto) und können das meistens empfehlen.</p>
             <p className="background-cyan">Vom Bahnhof zur Havel Alm sind es 700 Meter.</p>
             <Grid>
                 <Photo props={photos.Kratzeburg__Bahnhof_Kratzeburg_1} />
@@ -62,16 +62,16 @@ export default function Home() {
                 <Photo props={photos.Kratzeburg__Kanu_fahren_auf_dem_Kaebelicksee} />
                 <Photo props={photos.Kratzeburg__Boottransport_Kanu_Hecht} />
                 <Card width={2100} height={1000} backgroundCyan={true}>
-                    <p>Boote könnt ihr ausleihen bei <a href="https://maps.app.goo.gl/rPLZsK6edNstqsJw9">Kanu Hecht</a> (in Dalmsdorf, 1,2 km entfernt). Die holen euch nach Absprache auch mit den Booten von weiter havelabwärts wieder ab.</p>
+                    <p>Boote könnt ihr ausleihen bei <a href="https://maps.app.goo.gl/rPLZsK6edNstqsJw9">Kanu Hecht</a> (in Dalmsdorf, 1,2 km entfernt). Die holen euch nach Absprache auch mit den Booten von weiter havelab&shy;wärts wieder ab.</p>
                 </Card>
 
             </Grid>
             <p>Radfahrer kommen in Kratzeburg voll auf ihre Kosten. </p>
-            <p>Direkt vor dem Haus verläuft der <a href="https://www.bike-berlin-copenhagen.com/de/content/bike-berlin-copenhagen">Radfernweg Berlin-Kopenhagen</a>, der <a href="https://www.reiseland-brandenburg.de/aktivitaeten-erlebnisse/aktiv-natur/radfahren/radfernwege/havel-radweg/">Havel Radweg</a> sowie eine Menge lokaler Radwege.</p>
+            <p>Direkt vor dem Haus verläuft der <a href="https://www.bike-berlin-copenhagen.com/de/content/bike-berlin-copenhagen">Rad&shy;fernweg Berlin-Kopenhagen</a>, der <a href="https://www.reiseland-brandenburg.de/aktivitaeten-erlebnisse/aktiv-natur/radfahren/radfernwege/havel-radweg/">Havel Radweg</a> sowie eine Menge lokaler Rad&shy;wege.</p>
 
-            <LeafletMap type="openCycleMap" lat={53.4352} lon={12.9467} height="80vh" />
+            <LeafletMap type="openCycleMap" lat={53.4352} lon={12.9467} height="70vh" />
 
-            <p className="background-cyan">Wir empfehlen besonders Touren durch die unwirklich anmutenden Endmoränen nördlich von Kratzeburg:</p>
+            <p className="background-cyan">Wir empfehlen besonders Touren durch die unwirklich anmutenden Endmo&shy;rä&shy;nen nördlich von Kratzeburg:</p>
             <Grid>
                 <Card width={1000} height={1200} keepAspectRatioOnMobile={true}>
                     <KomootMap tourId="1369883922" />
