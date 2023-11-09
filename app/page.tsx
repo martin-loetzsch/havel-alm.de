@@ -93,7 +93,7 @@ export default function Home() {
             </Grid>
             <Grid>
                 <Card width={1950} height={1000} backgroundCyan={true}>
-                    <p style={{ backgroundColor: 'white' }}>Kratzeburg ist ein idyllisches Dorf inmitten vom Müritz-Nationalpark. Es ist umgeben von von klaren Seen und dichten Wäldern und bietet unzählige Möglichkeiten zum Wandern, Radfah&shy;ren und Paddeln. </p>
+                    <p style={{ backgroundColor: 'white' }}>Kratzeburg ist ein idyllisches Dorf inmitten vom Müritz-Nationalpark. Es ist umgeben von klaren Seen und dichten Wäldern und bietet unzählige Möglichkeiten zum Wandern, Radfah&shy;ren und Paddeln. </p>
                     <p><Link prefetch={false} href="/kratzeburg">Lest hier mehr über die Umgebung der Havel Alm</Link>.</p>
                 </Card>
                 <Photo props={photos.Kratzeburg__Wanderweg_Richtung_Pieverstorf} />
