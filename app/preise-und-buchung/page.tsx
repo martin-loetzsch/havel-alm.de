@@ -28,7 +28,7 @@ export default function Home() {
             <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_2} linkToPhotoPage={false} priority={true} quality={100}>
                 <h1 className='color-cyan'>Preise und Buchung</h1>
             </Photo>
-            <p>Ihr könnt die Havel Alm über <a href="https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5361182">FeWo-Direkt</a> buchen (dort seht ihr auch unsere Verfügbarkeiten).</p>
+            <p>Ihr könnt die Havel Alm über <a href="https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5361182">FeWo-Direkt</a> oder <a href="https://www.airbnb.de/rooms/907993973485938482">AirBnB</a> buchen (dort seht ihr auch unsere Verfügbarkeiten).</p>
             <p>Oder ihr schreibt uns eine Email an <a href="mailto:info@havel-alm.de">info@havel-alm.de</a>, dann gelten diese Preise:</p>
             <Grid>
                 <Card width={1000} height={heightPricingTable} backgroundCyan={true}>
