@@ -25,8 +25,8 @@ export default function Home() {
                 <Card width={3000} height={2000}>
                     <p>Im <b>Erdgeschoss</b> des Hauses befindet sich ein 60m² großer Gastraum mit Blick auf eine Weide, die Küche, ein Arbeits&shy;zimmer, zwei Bäder sowie ein 12m² großes Doppelzimmer.</p>
                 </Card>
-                <Photo props={photos.Haus__Gastraum__Gastraum_1} />
-                <Photo props={photos.Haus__Gastraum__Eingang} />
+                <Photo props={photos.Haus__Gastraum__Gastraum_1} priority={true}/>
+                <Photo props={photos.Haus__Gastraum__Eingang} priority={true}/>
                 <Photo props={photos.Haus__Gastraum__Sofa_1}/>
                 <Photo props={photos.Haus__Gastraum__Sofa_2} />
                 
