@@ -1,6 +1,6 @@
 import Nav from '@/app/components/nav/nav';
 import Photo from '@/app/(photos)/photo';
-import photos from '@/app/(photos)/photos';
+import photos from '@/app/(photos)/processedPhotos';
 
 function NotFoundPage() {
 

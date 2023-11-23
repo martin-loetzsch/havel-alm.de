@@ -1,5 +1,5 @@
 import Photo from "@/app/(photos)/photo";
-import photos, { photosBySlug } from "@/app/(photos)/photos";
+import photos, { photosBySlug } from "@/app/(photos)/processedPhotos";
 import type { Metadata } from 'next';
 import Link from "next/link";
 import { notFound } from "next/navigation";

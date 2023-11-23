@@ -1,6 +1,6 @@
 import Grid from "@/app/components/grid/grid";
 import Photo from '@/app/(photos)/photo';
-import photosBySlug from '@/app/(photos)/photos';
+import photosBySlug from '@/app/(photos)/processedPhotos';
 import getMetaData from '@/app/lib/getMetaData';
 import type { Metadata } from 'next';
 import Nav from '../../../components/nav/nav';

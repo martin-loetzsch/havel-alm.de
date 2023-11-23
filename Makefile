@@ -11,8 +11,8 @@ build:
 	pnpm install
 	pnpm run build
 
-rebuild-images:
-	python3 process_images.py
+rebuild-photos:
+	python3 process_photos.py
 	rm -rf .next/cache/images
 	pnpm run dev
 

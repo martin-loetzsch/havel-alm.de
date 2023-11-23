@@ -2,7 +2,7 @@ import Card from '@/app/components/card/card';
 import Grid from "@/app/components/grid/grid";
 import Nav from '@/app/components/nav/nav';
 import Photo from '@/app/(photos)/photo';
-import photos from '@/app/(photos)/photos';
+import photos from '@/app/(photos)/processedPhotos';
 import getMetaData from '@/app/lib/getMetaData';
 import VerticallyAlignedDiv from '@/app/lib/verticallyAlignedDiv';
 import type { Metadata } from 'next';
