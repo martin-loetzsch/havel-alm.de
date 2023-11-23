@@ -1,5 +1,5 @@
-import Nav from '@/components/nav/nav';
-import getMetaData from '@/components/utils/getMetaData';
+import Nav from '@/app/components/nav/nav';
+import getMetaData from '@/app/lib/getMetaData';
 import type { Metadata } from 'next';
 
 const title = "Gäste"

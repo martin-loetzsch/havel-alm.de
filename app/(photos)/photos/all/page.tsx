@@ -1,7 +1,7 @@
-import Grid from "@/components/grid/grid";
-import Photo from '@/components/photo/photo';
-import photosBySlug from '@/components/photos';
-import getMetaData from '@/components/utils/getMetaData';
+import Grid from "@/app/components/grid/grid";
+import Photo from '@/app/(photos)/photo';
+import photosBySlug from '@/app/(photos)/photos';
+import getMetaData from '@/app/lib/getMetaData';
 import type { Metadata } from 'next';
 import Nav from '../../../components/nav/nav';
 

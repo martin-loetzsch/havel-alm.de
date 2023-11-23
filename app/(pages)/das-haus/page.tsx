@@ -1,9 +1,9 @@
-import Card from '@/components/card/card';
-import Grid from "@/components/grid/grid";
-import Nav from '@/components/nav/nav';
-import Photo from '@/components/photo/photo';
-import photos from '@/components/photos';
-import getMetaData from '@/components/utils/getMetaData';
+import Card from '@/app/components/card/card';
+import Grid from "@/app/components/grid/grid";
+import Nav from '@/app/components/nav/nav';
+import Photo from '@/app/(photos)/photo';
+import photos from '@/app/(photos)/photos';
+import getMetaData from '@/app/lib/getMetaData';
 import grundrissDG from '@/public/grundrisse/Grundriss DG.svg';
 import grundrissEG from '@/public/grundrisse/Grundriss EG.svg';
 import type { Metadata } from 'next';

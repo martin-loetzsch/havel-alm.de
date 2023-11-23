@@ -1,12 +1,12 @@
-import Photo from "@/components/photo/photo";
-import photos, { photosBySlug } from "@/components/photos";
+import Photo from "@/app/(photos)/photo";
+import photos, { photosBySlug } from "@/app/(photos)/photos";
 import type { Metadata } from 'next';
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Nav from '../../../components/nav/nav';
 import KeyboardNavigation from "./keyboardNavigation";
 import styles from './page.module.scss';
-import LeafletMap from '@/components/map/leafletMap';
+import LeafletMap from '@/app/components/map/leafletMap';
 
 type PageParams = {
     slug: string

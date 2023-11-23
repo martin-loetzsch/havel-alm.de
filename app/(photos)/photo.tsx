@@ -2,7 +2,7 @@ import styles from './photo.module.scss'
 
 import Image from "next/image"
 import { FunctionComponent } from 'react'
-import { PhotoProps } from '../photos'
+import { PhotoProps } from './photos'
 import Link from "next/link";
 
 export type PhotoComponentProps = {

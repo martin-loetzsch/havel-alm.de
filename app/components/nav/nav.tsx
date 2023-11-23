@@ -5,7 +5,7 @@ import styles from './nav.module.scss'
 
 import { usePathname } from 'next/navigation'
 import { FunctionComponent, useEffect, useState } from 'react'
-import useWindowWidth from '../utils/useWindowWidth'
+import useWindowWidth from '../../lib/useWindowWidth'
 
 
 interface Map {
