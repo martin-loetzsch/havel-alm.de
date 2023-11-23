@@ -1,7 +1,7 @@
 import Card from '@/components/card/card';
+import Nav from '@/components/nav/nav';
 import getMetaData from '@/components/utils/getMetaData';
 import type { Metadata } from 'next';
-import Nav from '@/components/nav/nav';
 
 const title = "Making-of"
 const description = "Über die Entstehung des Hauses"

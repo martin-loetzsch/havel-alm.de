@@ -1,12 +1,12 @@
 import Card from '@/components/card/card';
 import Grid from "@/components/grid/grid";
+import Nav from '@/components/nav/nav';
 import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
 import getMetaData from '@/components/utils/getMetaData';
 import VerticallyAlignedDiv from '@/components/utils/verticallyAlignedDiv';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Nav from '../components/nav/nav';
 
 const title = "Havel Alm Kratzeburg"
 const description = "68 Meter über Normalhöhennull, an der Quelle der Havel, 80 Minuten von Berlin per Regionalexpress"

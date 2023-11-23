@@ -1,6 +1,6 @@
+import Nav from '@/components/nav/nav';
 import getMetaData from '@/components/utils/getMetaData';
 import type { Metadata } from 'next';
-import Nav from '../../components/nav/nav';
 
 const title = "Gäste"
 const description = "Informationen für euren Aufenthalt"

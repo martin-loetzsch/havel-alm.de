@@ -1,13 +1,13 @@
 import Card from "@/components/card/card";
 import Grid from "@/components/grid/grid";
+import KomootMap from "@/components/map/komootMap";
 import LeafletMap from "@/components/map/leafletMap";
+import Nav from '@/components/nav/nav';
 import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
 import getMetaData from '@/components/utils/getMetaData';
 import VerticallyAlignedDiv from "@/components/utils/verticallyAlignedDiv";
 import type { Metadata } from 'next';
-import Nav from '../../components/nav/nav';
-import KomootMap from "../../components/map/komootMap";
 
 const title = "Kratzeburg"
 const description = "Radfahren, wandern und paddeln im Müritz-Nationalpark"

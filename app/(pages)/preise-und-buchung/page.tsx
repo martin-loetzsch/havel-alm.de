@@ -1,10 +1,10 @@
 import Card from '@/components/card/card';
 import Grid from "@/components/grid/grid";
+import Nav from '@/components/nav/nav';
 import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
 import getMetaData from '@/components/utils/getMetaData';
 import type { Metadata } from 'next';
-import Nav from '../../components/nav/nav';
 
 const title = "Preise und Buchung"
 const description = "Verfügbarkeiten, Buchungsoptionen & Konditionen"

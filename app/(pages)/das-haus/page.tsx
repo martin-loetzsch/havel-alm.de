@@ -1,5 +1,6 @@
 import Card from '@/components/card/card';
 import Grid from "@/components/grid/grid";
+import Nav from '@/components/nav/nav';
 import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
 import getMetaData from '@/components/utils/getMetaData';
@@ -7,7 +8,6 @@ import grundrissDG from '@/public/grundrisse/Grundriss DG.svg';
 import grundrissEG from '@/public/grundrisse/Grundriss EG.svg';
 import type { Metadata } from 'next';
 import Image from "next/image";
-import Nav from '../../components/nav/nav';
 
 const title = "Das Haus"
 const description = "Alle Zimmer, die Ausstattung & Grundrisse"

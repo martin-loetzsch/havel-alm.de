@@ -1,12 +1,12 @@
+import Card from "@/components/card/card";
 import Grid from "@/components/grid/grid";
+import Nav from '@/components/nav/nav';
 import Photo from '@/components/photo/photo';
 import photos from '@/components/photos';
 import getMetaData from '@/components/utils/getMetaData';
-import type { Metadata } from 'next';
-import Nav from '../../components/nav/nav';
 import PlanGrundstück from '@/public/grundrisse/Plan Grundstück.svg';
+import type { Metadata } from 'next';
 import Image from "next/image";
-import Card from "@/components/card/card";
 
 const title = "Rund um das Haus"
 const description = "Die direkte Umgebung der Havel Alm"

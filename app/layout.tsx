@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import '../components/global-styles/main.scss'
+import '@/components/global-styles/main.scss'
 import styles from './layout.module.scss'
 
 export default function RootLayout({
