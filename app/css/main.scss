@@ -16,7 +16,8 @@ small,
 th,
 td,
 blockquote {
-  @include text-margins
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 th:not(:last-child), td:not(:last-child) {
