@@ -1,4 +1,4 @@
-import Card from "@/app/components/card/card";
+import Card from "@/app/components/grid/card";
 import Grid from "@/app/components/grid/grid";
 import KomootMap from "@/app/components/map/komootMap";
 import LeafletMap from "@/app/components/map/leafletMap";
@@ -6,7 +6,7 @@ import Nav from '@/app/components/nav/nav';
 import Photo from '@/app/(photos)/photo';
 import photos from '@/app/(photos)/processedPhotos';
 import getMetaData from '@/app/lib/getMetaData';
-import VerticallyAlignedDiv from "@/app/lib/verticallyAlignedDiv";
+import VerticallyAlignedDiv from "@/app/components/grid/verticallyAlignedDiv";
 import type { Metadata } from 'next';
 
 const title = "Kratzeburg"

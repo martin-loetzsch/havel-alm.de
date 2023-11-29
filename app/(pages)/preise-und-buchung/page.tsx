@@ -1,4 +1,4 @@
-import Card from '@/app/components/card/card';
+import Card from '@/app/components/grid/card';
 import Grid from "@/app/components/grid/grid";
 import Nav from '@/app/components/nav/nav';
 import Photo from '@/app/(photos)/photo';

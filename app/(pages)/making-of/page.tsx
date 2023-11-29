@@ -1,4 +1,4 @@
-import Card from '@/app/components/card/card';
+import Card from '@/app/components/grid/card';
 import Nav from '@/app/components/nav/nav';
 import getMetaData from '@/app/lib/getMetaData';
 import type { Metadata } from 'next';
