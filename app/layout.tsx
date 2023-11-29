@@ -2,13 +2,31 @@ import { ReactNode } from 'react'
 import '@/app/css/main.scss'
 import styles from './layout.module.scss'
 
+import localFont from 'next/font/local'
+
+const lexendDecaBold = localFont({
+  src: './fonts/lexend-deca-latin-600-normal.woff2',
+  variable: '--lexend-deca-bold',
+  weight: '600',
+  style: 'normal',
+  display: 'block',
+})
+
+const lexendDecaRegular = localFont({
+  src: './fonts/lexend-deca-latin-300-normal.woff2',
+  variable: '--lexend-deca-regular',
+  weight: '300',
+  style: 'normal',
+  display: 'block',
+})
+
 export default function RootLayout({
   children,
 }: {
   children: ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${lexendDecaBold.variable} ${lexendDecaRegular.variable}`}>
       <head />
       <body>
         <div className={styles.container}>

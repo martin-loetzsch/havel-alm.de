@@ -2,7 +2,7 @@
 @import "./vars.scss";
 
 body {
-  @include font-regular;
+  font-family: var(--lexend-deca-regular);
   margin: 0px;
   overflow: overlay;
 }
@@ -24,7 +24,7 @@ th:not(:last-child), td:not(:last-child) {
 }
 
 h1 {
-  @include font-bold;
+  font-family: var(--lexend-deca-bold);
   font-size: 17vw;
   margin-left: -0.9vw;
   padding-top: 2.5vw;
@@ -32,7 +32,7 @@ h1 {
 }
 
 h2 {
-  @include font-bold;
+  font-family: var(--lexend-deca-bold);
   font-size: 7vw;
   padding-top: 2vw;
   padding-bottom: 2vw;
@@ -40,21 +40,21 @@ h2 {
 
 h3,
 blockquote {
-  @include font-bold;
+  font-family: var(--lexend-deca-bold);
   font-size: 4.5vw;
   padding-top: 1.5vw;
   padding-bottom: 2vw;
 }
 
 p, th, td {
-  @include font-regular;
+  font-family: var(--lexend-deca-regular);
   font-size: 3.5vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
 }
 
 small {
-  @include font-regular;
+  font-family: var(--lexend-deca-regular);
   display: block;
   font-size: 2.5vw;
   padding-top: 1vw;
@@ -78,7 +78,7 @@ a {
 }
 
 b, strong {
-  @include font-bold;
+  font-family: var(--lexend-deca-bold);
 }
 
 

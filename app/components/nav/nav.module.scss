@@ -59,7 +59,7 @@
 
 .nav a, .nav p {
   display: block;
-  @include font-regular;
+  font-family: var(--lexend-deca-regular);
   font-size: 6vw;
   padding:0px;
   padding-bottom: 1vw;
