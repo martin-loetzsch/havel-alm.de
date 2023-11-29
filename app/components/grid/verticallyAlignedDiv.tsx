@@ -7,7 +7,7 @@
 
 import { FunctionComponent, ReactElement } from 'react'
 
-import useWindowWidth from './useWindowWidth'
+import useWindowWidth from '../../lib/useWindowWidth'
 import styles from './verticallyAlignedDiv.module.scss'
 
 type VerticallyAlignedDivProps = {
