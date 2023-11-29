@@ -1,16 +1,16 @@
 'use client'
 
-import Link from 'next/link'
 
-import { FunctionComponent, useEffect, useState } from 'react'
-
+import { usePathname } from 'next/navigation';
+import { FunctionComponent, useEffect } from 'react';
 
 
 const Tracking: FunctionComponent = (): JSX.Element => {
+    const pathname = usePathname();
 
     useEffect(() => {
-        console.log('Tracking')
-    }, []);
+        console.log('Tracking', pathname)
+    }, [pathname]);
 
 
     return <></>
