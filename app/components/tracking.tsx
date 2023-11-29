@@ -1,13 +1,16 @@
 'use client'
 
-import { usePathname } from 'next/navigation';
-import { FunctionComponent, useEffect } from 'react';
+import { usePathname, useSearchParams } from 'next/navigation';
+import { FunctionComponent, use, useEffect } from 'react';
 
 const Tracking: FunctionComponent = (): JSX.Element => {
     const pathname = usePathname();
-
+    const searchParams = useSearchParams();
+useSearchParams
     useEffect(() => {
-        console.log('Tracking', pathname)
+        const searchParamsDict = Object.fromEntries(searchParams.entries())
+        const referrer = document.referrer
+        console.log('Tracking', pathname, searchParamsDict, referrer)
     }, [pathname]);
 
 
