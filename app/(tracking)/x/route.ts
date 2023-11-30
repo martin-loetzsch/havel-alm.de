@@ -8,8 +8,8 @@ export async function POST(request: NextRequest) {
  //   console.log()
     const body = await request.json()
     const event = {
-        pathname: body.pathname,
-        searchParams: body.searchParams,
+        body: body,
+        url: body.url,
         referrer: body.referrer,
         headers: Object.fromEntries(await request.headers.entries()),
         cookies: cookiesFlattened,
