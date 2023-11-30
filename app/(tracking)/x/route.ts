@@ -9,6 +9,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     const event = {
         ...body,
+        timestamp: new Date().toISOString(),
         // headers: Object.fromEntries(await request.headers.entries()),
         cookies: cookiesFlattened,
         userAgent: userAgent(request),
@@ -21,5 +22,6 @@ export async function POST(request: NextRequest) {
             longitude: request.headers.get('x-vercel-ip-longitude'),
         }
     }
-    return NextResponse.json(event)
+    console.log(event)
+    return NextResponse.json('ok')
 }

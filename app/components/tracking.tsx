@@ -1,5 +1,6 @@
 'use client'
 
+import { url } from 'inspector';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { FunctionComponent, useEffect, useState } from 'react';
 const sessionId = crypto.randomUUID()
@@ -44,10 +45,13 @@ const Tracking: FunctionComponent = (): JSX.Element => {
         }
 
         setHitCount(hitCount + 1)
+        const url = '/x'
 
-        fetch('/x', { method: 'POST', body: JSON.stringify(event) })
-            .then((response) => response.json())
-            .then((data) => console.log('tracking:', data))
+        if (navigator.sendBeacon) {
+            navigator.sendBeacon(url, JSON.stringify(event))
+        } else {
+            fetch(url, { body: JSON.stringify(event), method: 'POST', keepalive: true })
+        }
     }, [pathname, searchParams]);
 
 
