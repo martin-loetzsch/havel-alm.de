@@ -22,7 +22,6 @@
     "react-dom": "18.2.0",
     "react-leaflet": "^4.2.1",
     "sass": "^1.69.5",
-    "segment-protocol": "^1.0.1",
     "typescript": "5.2.2"
   },
   "devDependencies": {
