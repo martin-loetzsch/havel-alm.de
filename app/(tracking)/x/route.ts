@@ -11,9 +11,17 @@ export async function POST(request: NextRequest) {
         body: body,
         url: body.url,
         referrer: body.referrer,
-        headers: Object.fromEntries(await request.headers.entries()),
+        // headers: Object.fromEntries(await request.headers.entries()),
         cookies: cookiesFlattened,
         userAgent: userAgent(request),
+        geo: { 
+            ip: request.headers.get('x-forwarded-for'),
+            country: request.headers.get('x-vercel-ip-country'),
+            region: request.headers.get('x-vercel-ip-country-region'),
+            city: request.headers.get('x-vercel-ip-city'),
+            latitude: request.headers.get('x-vercel-ip-latitude'),
+            longitude: request.headers.get('x-vercel-ip-longitude'),
+        }
     }
     return NextResponse.json(event)
 }
