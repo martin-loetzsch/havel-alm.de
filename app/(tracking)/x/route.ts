@@ -8,9 +8,7 @@ export async function POST(request: NextRequest) {
  //   console.log()
     const body = await request.json()
     const event = {
-        body: body,
-        url: body.url,
-        referrer: body.referrer,
+        ...body,
         // headers: Object.fromEntries(await request.headers.entries()),
         cookies: cookiesFlattened,
         userAgent: userAgent(request),
