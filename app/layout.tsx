@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import '@/app/css/main.scss'
 import styles from './layout.module.scss'
-import Tracking from './components/tracking'
+import TrackingClient from './(tracking)/tracking'
 import localFont from 'next/font/local'
 
 const lexendDecaBold = localFont({
@@ -45,7 +45,7 @@ export default function RootLayout({
               <a href="tel:+49 178 6803711">+49 178 6803711</a>
             </p>
           </footer>
-          <Tracking />
+          <TrackingClient />
         </div>
       </body>
     </html>
