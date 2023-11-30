@@ -3,5 +3,12 @@ import { NextRequest, NextResponse } from "next/server"
 
 
 export async function POST(request: NextRequest) {
-    return NextResponse.json('hello')
+    console.log(request.geo)
+    const event = {
+        // headers: request.headers.get('headers'),
+        ip: request.ip || null,
+        geo: request.geo || null, 
+        cookies: Object.fromEntries(request.cookies)
+    }
+    return NextResponse.json(event)
 }

@@ -8,9 +8,16 @@ const Tracking: FunctionComponent = (): JSX.Element => {
     const searchParams = useSearchParams();
 useSearchParams
     useEffect(() => {
-        const searchParamsDict = Object.fromEntries(searchParams.entries())
-        const referrer = document.referrer
-        console.log('Tracking', pathname, searchParamsDict, referrer)
+        const event = {
+            searchParams: Object.fromEntries(searchParams.entries()),
+            pathname: pathname,
+            referrer: document.referrer,
+
+        }
+        
+        fetch('/x', {method: 'POST', body: JSON.stringify(event)})
+        .then((response) => response.json())
+        .then((data) => console.log(data))
     }, [pathname]);
 
 
