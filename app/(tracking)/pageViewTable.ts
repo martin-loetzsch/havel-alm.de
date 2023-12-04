@@ -13,7 +13,7 @@ export const PageViewTable = pgTable(
     cookies: jsonb('cookies').notNull().default("{}"),
     userAgent: jsonb('user_agent').notNull().default("{}"),
     geo: jsonb('geo').notNull().default("{}"),
-    internalRequest: boolean('internalRequest').notNull().default(false)
+    internalRequest: boolean('internal_request').notNull().default(false)
   })
 
   
