@@ -3,10 +3,9 @@
 import { usePathname } from 'next/navigation';
 import { FunctionComponent, useEffect, useState } from 'react';
 const sessionId = crypto.randomUUID()
-
+var hitCount = 0
 
 const TrackingClient: FunctionComponent = (): JSX.Element => {
-    const [hitCount, setHitCount] = useState(0)
     const pathname = usePathname()
 
 
@@ -42,7 +41,7 @@ const TrackingClient: FunctionComponent = (): JSX.Element => {
             referrer: hitCount == 0 ? parseUrl(document.referrer) : {},
         }
 
-        setHitCount(hitCount + 1)
+        hitCount=hitCount + 1
         const url = '/x'
 
         if (navigator.sendBeacon) {
@@ -50,7 +49,7 @@ const TrackingClient: FunctionComponent = (): JSX.Element => {
         } else {
             fetch(url, { body: JSON.stringify(event), method: 'POST', keepalive: true })
         }
-    }, [pathname, hitCount]);
+    }, [pathname]);
 
 
     return <></>
