@@ -1,4 +1,4 @@
-import { integer, pgEnum, pgTable, serial, timestamp, uniqueIndex, varchar, uuid, jsonb } from 'drizzle-orm/pg-core';
+import { boolean, integer, jsonb, pgTable, timestamp, uuid } from 'drizzle-orm/pg-core';
 
 
 export const PageViewTable = pgTable(
@@ -12,7 +12,8 @@ export const PageViewTable = pgTable(
     referrer: jsonb('referrer').notNull().default("{}"),
     cookies: jsonb('cookies').notNull().default("{}"),
     userAgent: jsonb('user_agent').notNull().default("{}"),
-    geo: jsonb('geo').notNull().default("{}")
+    geo: jsonb('geo').notNull().default("{}"),
+    internalRequest: boolean('internalRequest').notNull().default(false)
   })
 
   

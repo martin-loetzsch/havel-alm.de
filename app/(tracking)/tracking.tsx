@@ -33,15 +33,18 @@ const TrackingClient: FunctionComponent = (): JSX.Element => {
         const visitorId = localStorage.getItem('vid') || crypto.randomUUID()
         localStorage.setItem('vid', visitorId)
 
+        const internalRequest = localStorage.getItem('internalRequest') ? true : false
+
         const event = {
             visitorId: visitorId,
             sessionId: sessionId,
             hit: hitCount,
             url: parseUrl(document.URL),
             referrer: hitCount == 0 ? parseUrl(document.referrer) : {},
+            internalRequest: internalRequest,
         }
 
-        hitCount=hitCount + 1
+        hitCount = hitCount + 1
         const url = '/x'
 
         if (navigator.sendBeacon) {
