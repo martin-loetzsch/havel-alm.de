@@ -1,6 +1,6 @@
 'use client'
 
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { FunctionComponent, useEffect, useState } from 'react';
 const sessionId = crypto.randomUUID()
 
@@ -8,7 +8,6 @@ const sessionId = crypto.randomUUID()
 const TrackingClient: FunctionComponent = (): JSX.Element => {
     const [hitCount, setHitCount] = useState(0)
     const pathname = usePathname()
-    const searchParams = useSearchParams()
 
 
     const parseUrl = (url: string) => {
@@ -51,7 +50,7 @@ const TrackingClient: FunctionComponent = (): JSX.Element => {
         } else {
             fetch(url, { body: JSON.stringify(event), method: 'POST', keepalive: true })
         }
-    }, [pathname, searchParams, hitCount]);
+    }, [pathname, hitCount]);
 
 
     return <></>
