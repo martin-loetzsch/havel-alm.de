@@ -19,5 +19,8 @@ rebuild-photos:
 find-unused-images:
 	diff --color <(PRINT_IMAGE_PATHS=TRUE pnpm exec next build 2>&1 1>/dev/null | grep '^photos' | sort | uniq) <(cd public && find photos -type f | grep -v '.DS_Store' | sort) || true
 
+psql:
+	DISABLE_MAKESHELL psql "$(VERCEL_POSTGRESQL_URL)"
+
 clean:
 	rm -rvf .next node_modules
