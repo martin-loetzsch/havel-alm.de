@@ -1,10 +1,7 @@
 
 import type { Config } from 'drizzle-kit';
 
-const connection_string = process.env.POSTGRES_URL || ''
-if (!connection_string) {
-	throw new Error("Please set the POSTGRES_URL environment variable");
-}
+import { connection_string } from '@/app/lib/db';
 
 export default {
 	schema: ['./app/(tracking)/PageViewTable.ts'],
