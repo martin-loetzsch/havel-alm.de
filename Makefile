@@ -22,5 +22,8 @@ find-unused-images:
 psql:
 	DISABLE_MAKESHELL psql "$(VERCEL_POSTGRESQL_URL)"
 
+track-page_views:
+	DISABLE_MAKESHELL cat page_views.sql | psql -x "$(VERCEL_POSTGRESQL_URL)"
+
 clean:
 	rm -rvf .next node_modules
