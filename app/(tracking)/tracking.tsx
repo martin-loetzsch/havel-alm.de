@@ -51,7 +51,7 @@ const TrackingClient: FunctionComponent = (): JSX.Element => {
         } else {
             fetch(url, { body: JSON.stringify(event), method: 'POST', keepalive: true })
         }
-    }, [pathname, searchParams]);
+    }, [pathname, searchParams, hitCount]);
 
 
     return <></>
