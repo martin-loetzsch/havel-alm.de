@@ -1,3 +1,4 @@
+--- explain analyze
 select
     --visitor_id,
     min(timestamp) as timestamp,
