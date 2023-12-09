@@ -1,6 +1,8 @@
+-- get all sessions with their page views
+
 --- explain analyze
 select
-    --visitor_id,
+    visitor_id,
     min(timestamp) as timestamp,
     count(*) as hits,
     array_agg(url->>'pathname' order by hit asc) as pathnames,
