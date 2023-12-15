@@ -16,4 +16,17 @@ where
     and url ->> 'host' = 'havel-alm.de'
 group by
     visitor_id, session_id
-order by timestamp asc
+order by timestamp asc;
+
+
+SELECT
+    month,
+    count(*) as page_views,
+    count(distinct visitor_id) as visitors
+FROM (select to_char(timestamp, 'YYYY-MM') as month,
+              visitor_id
+     from page_view) t
+group by month
+order by month;
+
+
