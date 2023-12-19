@@ -18,6 +18,7 @@ group by
     visitor_id, session_id
 order by timestamp asc;
 
+\x
 
 SELECT
     month,
