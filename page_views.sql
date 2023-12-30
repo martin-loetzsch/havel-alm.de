@@ -31,7 +31,7 @@ group by
 order by
     timestamp asc;
 
-\ x
+\x
 
 SELECT
     month,
