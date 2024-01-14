@@ -64,13 +64,13 @@ export default function Home() {
                     </table>
                 </Card>
                 <Card width={350} height={heightPricingTable} backgroundCyan={false}>
-                    <small>&sup1;September bis Juni</small>
-                    <small>&sup2;Juli & August + Brückentage</small>
+                    <small>&sup1;September bis Mai</small>
+                    <small>&sup2;Juni bis August + Brückentage</small>
                     <small>&sup3;Ostern, Himmel&shy;fahrt, Pfingsten, Weihnachten, Neu&shy;jahr</small>
                 </Card>
             </Grid>
             <p>Zum Übernachtungspreis kommt eine <strong>Endreinigungs&shy;ge&shy;bühr</strong> von 300€ hinzu.</p>
-            <p>Enthalten sind Bettwäsche, Handtü&shy;cher, Kaffee, Strom (auch für Wasch&shy;maschine & Trockner) sowie alle sonstigen Nebenkosten.</p>
+            <p>Enthalten sind Bettwäsche, Handtü&shy;cher, Kaffee, Strom sowie alle sonstigen Nebenkosten.</p>
             <p>E-Autos können nach Abspache auf&shy;geladen werden.</p>
             <div className='background-cyan'>
                 <p>Wenn ihr direkt über uns bucht, könnt ihr bis zwei Monate vor Anreise eure Buchung <strong>kostenlos stornieren</strong>.</p>
