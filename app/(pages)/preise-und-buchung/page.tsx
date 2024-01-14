@@ -13,9 +13,9 @@ export const metadata: Metadata = getMetaData(title, description)
 
 
 const prices: { [key: string]: number[] } = {
-    'Neben&shy;saison': [450, 390, 330, 290, 260],
-    'Haupt&shy;saison': [650, 590, 520, 460, 410],
-    'Feier&shy;tage': [850, 790, 680, 590, 520]
+    'Neben&shy;saison': [500, 450, 400, 350, 300],
+    'Haupt&shy;saison': [800, 720, 640, 560, 480], 
+    'Feier&shy;tage': [1100, 990, 880, 770, 660]
 }
 
 
@@ -28,6 +28,7 @@ export default function Home() {
             <Photo props={photos.Kratzeburg__Badestelle_am_Kaebelicksee_2} linkToPhotoPage={false} priority={true} quality={100}>
                 <h1 className='color-cyan'>Preise und Buchung</h1>
             </Photo>
+            <p className='background-cyan'>Wir vermieten unser Haus an Gruppen von bis zu 12 Personen plus 5 Kinder. Die Mindestmietdauer ist 2 Nächte, in der Hauptsaison und an Feiertagen 4 Nächte. Haustiere sind nicht erlaubt.</p>
             <p>Ihr könnt die Havel Alm über <a href="https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5361182">FeWo-Direkt</a> oder <a href="https://www.airbnb.de/rooms/907993973485938482">AirBnB</a> buchen (dort seht ihr auch unsere Verfügbarkeiten).</p>
             <p>Oder ihr schreibt uns eine Email an <a href="mailto:info@havel-alm.de">info@havel-alm.de</a>, dann gelten diese Preise:</p>
             <Grid>
@@ -68,7 +69,7 @@ export default function Home() {
                     <small>&sup3;Ostern, Himmel&shy;fahrt, Pfingsten, Weihnachten, Neu&shy;jahr</small>
                 </Card>
             </Grid>
-            <p>Zum Übernachtungspreis kommt eine <strong>Endreinigungs&shy;ge&shy;bühr</strong> von 250€ hinzu.</p>
+            <p>Zum Übernachtungspreis kommt eine <strong>Endreinigungs&shy;ge&shy;bühr</strong> von 300€ hinzu.</p>
             <p>Enthalten sind Bettwäsche, Handtü&shy;cher, Kaffee, Strom (auch für Wasch&shy;maschine & Trockner) sowie alle sonstigen Nebenkosten.</p>
             <p>E-Autos können nach Abspache auf&shy;geladen werden.</p>
             <div className='background-cyan'>
