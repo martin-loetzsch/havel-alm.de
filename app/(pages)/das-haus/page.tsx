@@ -53,6 +53,10 @@ export default function Home() {
                 <Photo props={photos.Haus__Kueche__Kueche_3} />
                 <Photo props={photos.Haus__Kueche__Kueche_1} />
                 <Photo props={photos.Haus__Kueche__Kueche_4} />
+                <Photo props={photos.Haus__Kueche__Backöfen} />
+                <Photo props={photos.Haus__Kueche__Geschirr_1} />
+                <Photo props={photos.Haus__Kueche__Geschirr_2} />
+                
             </Grid>
             <Grid>
                 <Card width={700} height={1000}>
