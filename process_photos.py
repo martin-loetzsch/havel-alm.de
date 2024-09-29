@@ -22,6 +22,7 @@ class Photo ():
                  height: int,
                  created_at: datetime.datetime,
                  blur_data_url: str,
+                 image_artist: str = None,
                  lat: float = None,
                  lon: float = None,
                  previous_photo_slug: str = None,
@@ -35,6 +36,7 @@ class Photo ():
         self.height = height
         self.created_at = created_at
         self.blur_data_url = blur_data_url
+        self.image_artist = image_artist
         self.lat = lat
         self.lon = lon
         self.previous_photo_slug = previous_photo_slug
@@ -70,6 +72,7 @@ def parse_image(path: pathlib.Path) -> Photo:
 
     with path.open('rb') as f:
         exif_data = exifread.process_file(f, details=False)
+        image_artist = exif_data.get('Image Artist')
         if exif_date := exif_data.get('EXIF DateTimeOriginal'):
             timestamp = datetime.datetime.strptime(
                 str(exif_date), '%Y:%m:%d %H:%M:%S')
@@ -113,6 +116,7 @@ def parse_image(path: pathlib.Path) -> Photo:
                  height=height,
                  created_at=timestamp,
                  blur_data_url=blur_data_url,
+                 image_artist=image_artist,
                  lat=lat,
                  lon=lon)
 
@@ -147,6 +151,7 @@ export class PhotoProps{
         public height: number,
         public createdAt: Date,
         public blurDataUrl: string,
+        public photo_artist: string,
         public lat: number | undefined,
         public lon: number | undefined,
         public slugPreviousPhoto: string | undefined,
@@ -157,7 +162,7 @@ export class PhotoProps{
 export const photos = {''', file=output)
 
     for photo in photos:
-        print(f'''    {photo.js_variable_name}: new PhotoProps('{photo.src}', '{photo.title}', '{photo.slug}', {photo.width}, {photo.height}, new Date('{photo.created_at}'), '{photo.blur_data_url}', {photo.lat or 'undefined'}, {photo.lon or 'undefined'}, {"'" + photo.previous_photo_slug + "'" if photo.previous_photo_slug else 'undefined'}, {"'" + photo.next_photo_slug + "'" if photo.next_photo_slug else 'undefined'}),''', file=output)
+        print(f'''    {photo.js_variable_name}: new PhotoProps('{photo.src}', '{photo.title}', '{photo.slug}', {photo.width}, {photo.height}, new Date('{photo.created_at}'), '{photo.blur_data_url}', '{photo.image_artist}', {photo.lat or 'undefined'}, {photo.lon or 'undefined'}, {"'" + photo.previous_photo_slug + "'" if photo.previous_photo_slug else 'undefined'}, {"'" + photo.next_photo_slug + "'" if photo.next_photo_slug else 'undefined'}),''', file=output)
 
     print(f'''}}
 
