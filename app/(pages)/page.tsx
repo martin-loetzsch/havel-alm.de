@@ -36,7 +36,8 @@ export default function Home() {
 
             <Grid>
                 <Card width={1420} height={1000}>
-                    <p>Die Havel Alm ist eine zum Ferien&shy;haus um&shy;ge&shy;baute ehe&shy;malige Sche&shy;une in Kratzeburg, einem
+                    <p>Die Havel Alm ist eine zum Ferien&shy;haus um&shy;ge&shy;baute ehe&shy;malige Scheu&shy;ne in
+                        Kratzeburg, einem
                         idyllischen Dorf inmitten vom Müritz-Nationalpark.</p>
                 </Card>
                 <Photo props={photos.Ansichten__Das_Haus_vom_Garten_aus}/>
@@ -49,21 +50,28 @@ export default function Home() {
             <Grid>
                 <Photo props={photos.Haus__Gastraum__Gastraum_1}/>
                 <Card width={1800} height={1000} backgroundCyan={true}>
-                    <p>Das Haus hat 3 Bäder, ein&shy;en grossen Gast&shy;raum und eine umfang&shy;reich ausge&shy;stattete
-                        Küche. Es gibt 6 Doppel­zim­mer, davon 5 mit zusätz­lich­em Hochbett. Es können also bis zu <strong>12 Personen plus 5 Kinder</strong> übernachten.</p>
+                    <p>Das Haus ein&shy;en grossen Gast&shy;raum, eine umfang&shy;reich aus&shy;ge&shy;stattete
+                        Küche und 3 Bäder. Es gibt 6 Doppel­zim­mer, davon 5 mit zusätz­lich­em Hochbett. Es können also
+                        bis zu <strong>12 Personen plus 5 Kinder</strong> übernachten.</p>
                 </Card>
             </Grid>
             <Grid>
                 <Photo props={photos.Haus__Gastraum__Gastraum_2}/>
                 <Photo props={photos.Haus__Kueche__Küche_3}/>
+                <Photo props={photos.Haus__Zimmer_DG__Kammer_Dachgeschoss_1}/>
             </Grid>
             <Grid>
-                <Card width={1000} height={1000}>
-                    <p style={{background: 'white'}}>Bei der ökologischen Sanierung des Hauses haben wir uns auf sehr
-                        wenige Formen und Materialien (Eschen&shy;holz, Lehm und Asphalt) beschränkt.</p>
-                    <p>Die Architektur wirkt dadurch sehr minimal, grosszügig und ruhig.</p>
+                <Card width={900} height={1000}>
+                    <p style={{background: 'white'}}>Freunde guter Archi&shy;tektur wer&shy;den die ruhige
+                        Formen&shy;sprache und eine
+                        klare Beschrän&shy;kung auf drei Mate&shy;rialien (Lehm, Eschen­holz und Asphalt) schätzen.</p>
                 </Card>
-                <Photo props={photos.Haus__Flur_DG__Flur_DG_1}/>
+                <Photo props={photos.Haus__Gastraum__Eingansbereich_1}>{' '}</Photo>
+                <Photo props={photos.Haus__Flur_DG__Flur_Dachgeschoss_2}/>
+                <Photo props={photos.Haus__Treppe__Treppe_2}/>
+                <Photo props={photos.Haus__Gastraum__Esstisch_1}/>
+            </Grid>
+            <Grid>
                 <Photo props={photos.Haus__Gastraum__Sofa_1}/>
                 <Card width={400} height={1000} backgroundCyan={true}>
                     <p>Hier findet ihr <Link href='/das-haus' prefetch={false}>alle Infos zu den Räu&shy;men und der
@@ -72,7 +80,7 @@ export default function Home() {
             </Grid>
             <Grid>
                 <Card width={750} height={1000} backgroundCyan={true}>
-                    <p style={{background: 'white'}}>Durch den fast exklusiven Einsatz von ökologischen Bau&shy;stoffen
+                    <p style={{background: 'white'}}>Durch den Einsatz von ökologischen Bau&shy;stoffen
                         und Textilien ist das Haus sehr gut für Allergiker geeignet.</p>
                     <p>Deswegen sind Haustiere bei uns leider nicht erlaubt.</p>
 
@@ -108,7 +116,7 @@ export default function Home() {
                                                             prefetch={false}>un&shy;ser&shy;er Seite zu Preisen und
                         Buch&shy;ung</Link>.</p>
                 </Card>
-                <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_1}/>
+                <Photo props={photos.Haus__Zimmer_DG__Kammer_Dachgeschoss_1}/>
             </Grid>
             <Grid>
                 <Card width={1950} height={1000} backgroundCyan={true}>
