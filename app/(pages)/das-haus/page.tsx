@@ -18,7 +18,7 @@ export default function Home() {
     return (
         <>
 
-            <Photo props={photos.Ansichten__Das_Haus_vom_Garten_aus_Mai_2023} priority={true}>
+            <Photo props={photos.Ansichten__Das_Haus_vom_Garten_aus} priority={true}>
                 <h1 className='color-cyan'>Das Haus</h1>
             </Photo>
             <Grid>
