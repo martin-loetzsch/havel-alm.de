@@ -55,6 +55,7 @@ export default function Home() {
             </Grid>
             <Grid>
                 <Photo props={photos.Haus__Gastraum__Gastraum_2}/>
+                <Photo props={photos.Haus__Kueche__Küche_3}/>
             </Grid>
             <Grid>
                 <Card width={1000} height={1000}>
