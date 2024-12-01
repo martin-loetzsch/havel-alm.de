@@ -11,4 +11,4 @@ Install dependencies with `pnpm install`.
 
 Run the dev server with `pnpm run dev`.
 
-Create a production build with `pnmp run build`.
+Create a production build with `pnpm run build`.
