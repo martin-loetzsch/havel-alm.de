@@ -72,20 +72,21 @@ export default function Home() {
                 <Photo props={photos.Haus__Gastraum__Esstisch_1}/>
             </Grid>
             <Grid>
+                <Photo props={photos.Haus__Eingang__Eingang_1}/>
                 <Photo props={photos.Haus__Gastraum__Sofa_1}/>
-                <Card width={400} height={1000} backgroundCyan={true}>
-                    <p>Hier findet ihr <Link href='/das-haus' prefetch={false}>alle Infos zu den Räu&shy;men und der
-                        Ausstat&shy;tung des Hauses</Link>.</p>
+                <Card width={800} height={1000} backgroundCyan={true}>
+                    <p><Link href='/das-haus' prefetch={false}>Hier findet ihr alle Infos zu den Räu&shy;men und der
+                        Ausstat&shy;tung unseres Hauses</Link>.</p>
                 </Card>
             </Grid>
             <Grid>
-                <Card width={750} height={1000} backgroundCyan={true}>
-                    <p style={{background: 'white'}}>Durch den Einsatz von ökologischen Bau&shy;stoffen
+                <Card width={780} height={1000} backgroundCyan={true}>
+                    <p style={{background: 'white'}}>Durch den Ein&shy;satz von ökologischen Bau&shy;stoffen
                         und Textilien ist das Haus sehr gut für Allergiker geeignet.</p>
-                    <p>Deswegen sind Haustiere bei uns leider nicht erlaubt.</p>
+                    <p>Deswegen sind Haustiere bei uns leider auch nicht erlaubt.</p>
 
                 </Card>
-                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_2}/>
+                <Photo props={photos.Haus__Zimmer_1__Zimmer_1_3}/>
 
             </Grid>
             <Grid>
@@ -99,8 +100,8 @@ export default function Home() {
                 <Card width={2000} height={1000} backgroundCyan={true}>
                     <p style={{backgroundColor: 'white'}}>Die Havel Alm hat einen ca. 1000m² grossen Garten. Von der ca.
                         100m² grossen Terrasse habt ihr einen wundervollen Blick auf einen Sumpf/ eine Weide.</p>
-                    <p>Hier findet ihr mehr <Link prefetch={false} href='/rund-um-das-haus'>Eindrücke von unserem
-                        Grundstück</Link>.</p>
+                    <p><Link prefetch={false} href='/rund-um-das-haus'>Hier findet ihr mehr Eindrücke von unserem
+                        Garten</Link>.</p>
                 </Card>
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter}/>
                 <Photo props={photos.Garten__Terrasse_1}/>
