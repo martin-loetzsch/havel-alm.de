@@ -36,8 +36,8 @@ export default function Home() {
                 <Card width={800} height={600}>
                     <p>Auf der von der Strasse ab&shy;gewandten Seite ist eine ca. 100m² gro&shy;ße Terrasse.</p>
                 </Card>
-                <Photo props={photos.Garten__Terrasse_1} />
-                <Photo props={photos.Garten__Terrasse_2} />
+                <Photo props={photos.Garten__Terrasse_3} />
+                <Photo props={photos.Garten__Terrasse_4} />
             </Grid>
             <Grid>
                 <Card width={1000} height={400} backgroundCyan={true}>
