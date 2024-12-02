@@ -57,7 +57,7 @@ export default function Home() {
             </Grid>
             <Grid>
                 <Photo props={photos.Haus__Gastraum__Gastraum_2}/>
-                <Photo props={photos.Haus__Kueche__Küche_3}/>
+                <Photo props={photos.Haus__Kueche__Küche_5}/>
                 <Photo props={photos.Haus__Zimmer_DG__Kammer_Dachgeschoss_1}/>
             </Grid>
             <Grid>
@@ -104,7 +104,7 @@ export default function Home() {
                         Garten</Link>.</p>
                 </Card>
                 <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter}/>
-                <Photo props={photos.Garten__Terrasse_1}/>
+                <Photo props={photos.Garten__Terrasse_3}/>
                 <Photo props={photos.Haus__Gastraum__Blick_auf_die_Terasse}/>
                 {/* <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} /> */}
                 <Photo props={photos.Ansichten__Das_Haus_von_oben_3}/>

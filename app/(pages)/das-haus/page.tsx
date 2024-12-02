@@ -50,7 +50,7 @@ export default function Home() {
                     <p>In der komplett ausge&shy;stat&shy;teten <b>Küche</b> kann für viele Personen gekocht wer&shy;den.</p>
                     <p>Es gibt einen großen Induktionsherd, zwei Back&shy;öfen, einen Kühl&shy;schrank, eine Spülmaschine sowie eine Kaffema&shy;schine.</p>
                 </Card>
-                <Photo props={photos.Haus__Kueche__Küche_3} />
+                <Photo props={photos.Haus__Kueche__Küche_5} />
                 <Photo props={photos.Haus__Kueche__Kueche_1} />
                 <Photo props={photos.Haus__Kueche__Kueche_4} />
                 <Photo props={photos.Haus__Kueche__Backoefen_1} />
