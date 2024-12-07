@@ -97,6 +97,13 @@ export default function Home() {
             <Photo props={photos.Haus__Bad_2__Bad_2_7}/>
             <Photo props={photos.Haus__Bad_2__Bad_2_5}/>
         </Grid>
+        <p>Im Eingangsbereich gib es einen Wäscheraum mit zwei Waschmaschinen und einem Trockner.</p>
+        <Grid>
+            <Photo props={photos.Haus__Eingang__Eingang_1}/>
+            <Photo props={photos.Haus__Waesche__Waescheraum_1}/>
+            <Photo props={photos.Haus__Waesche__Waescheraum_2}/>
+        </Grid>
+
         <Grid>
             <Card width={900} height={1000} backgroundCyan={true}>
                 <p>Über eine breite Treppe glangt man in das <b>Dachge&shy;schoss</b>.</p>
