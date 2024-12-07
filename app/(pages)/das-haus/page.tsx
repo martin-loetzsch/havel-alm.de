@@ -57,8 +57,8 @@ export default function Home() {
                     Spülmaschine sowie eine Kaffema&shy;schine.</p>
             </Card>
             <Photo props={photos.Haus__Kueche__Kueche_6}/>
-            <Photo props={photos.Haus__Kueche__Kueche_1}/>
-            <Photo props={photos.Haus__Kueche__Kueche_4}/>
+            <Photo props={photos.Haus__Kueche__Kueche_7}/>
+            <Photo props={photos.Haus__Kueche__Kueche_8}/>
             <Photo props={photos.Haus__Kueche__Backoefen_1}/>
             <Photo props={photos.Haus__Kueche__Geschirr_1}/>
             <Photo props={photos.Haus__Kueche__Geschirr_2}/>
