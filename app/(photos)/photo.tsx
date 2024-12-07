@@ -12,6 +12,7 @@ export type PhotoComponentProps = {
     quality?: number,
     priority?: boolean,
     className?: string,
+    blackFont?: boolean,
     linkToPhotoPage?: boolean,
     printSrcPathDuringBuild?: boolean
 }
@@ -24,6 +25,7 @@ export const Photo: FunctionComponent<PhotoComponentProps> = (
         quality = 75,
         priority = false,
         className = '',
+        blackFont = false,
         linkToPhotoPage = true,
         printSrcPathDuringBuild = true
     }): JSX.Element => {
@@ -61,7 +63,7 @@ export const Photo: FunctionComponent<PhotoComponentProps> = (
         >
             {image}
             <div className={styles.children + ' ' + className}>
-                {children ? children : <small className='color-cyan'>{props.title}</small>}
+                {children ? children : <small className={blackFont ? '' : 'color-cyan'}>{props.title}</small>}
             </div>
         </div>
     )

@@ -40,11 +40,11 @@ export default function Home() {
                         Kratzeburg, einem
                         idyllischen Dorf inmitten vom Müritz-Nationalpark.</p>
                 </Card>
-                <Photo props={photos.Ansichten__Das_Haus_vom_Garten_aus}/>
+                <Photo props={photos.Ansichten__Das_Haus_vom_Garten_aus} blackFont={true}/>
 
-                <Photo props={photos.Ansichten__Blick_von_Osten}/>
+                <Photo props={photos.Ansichten__Blick_von_Osten} blackFont={true}/>
                 <Photo props={photos.Ansichten__Havel_Alm_Schild}>{" "}</Photo>
-                <Photo props={photos.Ansichten__Blick_von_der_Strasse}/>
+                <Photo props={photos.Ansichten__Blick_von_der_Strasse} blackFont={true}/>
             </Grid>
 
             <Grid>
