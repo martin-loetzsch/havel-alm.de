@@ -69,20 +69,20 @@ export default function Home() {
                 <p>Neben dem Eingang liegt das 12m² große <b>Zimmer 1</b>.</p>
                 <p>Vom 200x180 cm großen Doppelbett hat man einen Blick auf die Weide hinter dem Grundstück.</p>
             </Card>
-            <Photo props={photos.Haus__Zimmer_1__Zimmer_1_1}/>
-            <Photo props={photos.Haus__Zimmer_1__Zimmer_1_2}/>
             <Photo props={photos.Haus__Zimmer_1__Zimmer_1_3}/>
+            <Photo props={photos.Haus__Zimmer_1__Zimmer_1_5}/>
+            <Photo props={photos.Haus__Zimmer_1__Zimmer_1_4}/>
         </Grid>
 
         <Grid>
-            <Card width={1400} height={1000} backgroundCyan={true}>
+            <Card width={1500} height={1000} backgroundCyan={true}>
                 <p>In der hinteren Ecke des Hauses gibt es ein 8m² grosses <b>Arbeits&shy;zimmer</b> mit einem Sofa.
                 </p>
-                <p>Hier könnte im Notfall auch geschlafen werden (Achtung: Fenster zur Strasse).</p>
             </Card>
-            <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_3}/>
-            <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_1}/>
-            <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_2}/>
+            <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_5}/>
+            <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_4}/>
+            {/*<Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_6}/>*/}
+            {/*<Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_7}/>*/}
         </Grid>
         <p>Im Erdgeschoss gibt es zwei <b>Bäder</b>, eines davon mit Dusche und eins mit einer Badewanne.</p>
         <Grid>
