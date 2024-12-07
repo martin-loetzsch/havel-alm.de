@@ -104,16 +104,13 @@ export default function Home() {
             <Photo props={photos.Haus__Waesche__Waescheraum_2}/>
         </Grid>
 
+        <p>Über eine Treppe gelangt man in das <b>Dachge&shy;schoss</b>.</p>
         <Grid>
-            <Card width={900} height={1000} backgroundCyan={true}>
-                <p>Über eine breite Treppe glangt man in das <b>Dachge&shy;schoss</b>.</p>
-            </Card>
-            <Photo props={photos.Haus__Treppe__Treppe_1}/>
-            <Photo props={photos.Haus__Treppe__Treppe_2}/>
+            <Photo props={photos.Haus__Treppe__Treppe_4}/>
+            <Photo props={photos.Haus__Treppe__Treppe_5}/>
             <Photo props={photos.Haus__Treppe__Treppe_3}/>
-
-            <Photo props={photos.Haus__Flur_DG__Flur__Dachgeschoss_1}/>
-            <Photo props={photos.Haus__Flur_DG__Flur_DG_2}/>
+            <Photo props={photos.Haus__Flur_DG__Flur_Dachgeschoss_3}/>
+            <Photo props={photos.Haus__Flur_DG__Flur_Dachgeschoss_4}/>
 
         </Grid>
         <Image src={grundrissDG} alt={'Havel Alm Kratzeburg Grundriss Dachgeschoss'}
@@ -122,29 +119,30 @@ export default function Home() {
 
         <p>Im Dachgeschoss gibt es <b>5</b> nahezu identische Kammern (<b>Zimmer 2 bis 6</b>). Jedes der Zimmer hat
             ein Doppelbett (200x140cm) sowie ein Hochbett (200x70cm) für Kinder.</p>
-        <p><b>Achtung!</b> Die Doppelbetten ist nur von einer Seite zugänglich, d.h. darin über&shy;nachtende
+        <p><b>Achtung!</b> Die Doppelbetten sind nur von einer Seite zugänglich, d.h. darin über&shy;nachtende
             Personen sollten sich gut kennen.</p>
         <Grid>
             <Photo props={photos.Haus__Zimmer_DG__Kammer_Dachgeschoss_1}/>
-            <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_2}/>
-            <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_3}/>
-            <Photo props={photos.Haus__Zimmer_DG__Zimmer_DG_4}/>
+            <Photo props={photos.Haus__Zimmer_DG__Kammer_Dachgeschoss_2}/>
+            <Photo props={photos.Haus__Zimmer_DG__Kammer_Dachgeschoss_3}/>
+            <Photo props={photos.Haus__Zimmer_DG__Kammer_Dachgeschoss_4}/>
+            <Photo props={photos.Haus__Zimmer_DG__Hochbett}/>
         </Grid>
         <Grid>
             <Card width={500} height={1000}>
-                <p>Im Obergeschoss befindet sich auch ein drittes Bad mit Dusche.</p>
+                <p>Im Oberge&shy;schoss befindet sich auch ein drittes Bad mit Dusche.</p>
             </Card>
-            <Photo props={photos.Haus__Bad_3__Bad_3_2}/>
-            <Photo props={photos.Haus__Bad_3__Bad_3_1}/>
-            <Photo props={photos.Haus__Bad_3__Bad_3_3}/>
+            <Photo props={photos.Haus__Bad_3__Bad_3_4}/>
+            <Photo props={photos.Haus__Bad_3__Bad_3_5}/>
+            <Photo props={photos.Haus__Bad_3__Bad_3_6}/>
         </Grid>
         <Grid>
-            <Card width={2000} height={1000}>
+            <Card width={700} height={1000}>
                 <p>Auf den Flächen vor den Kammern gibt es weitere Gelegenheiten zum Arbeiten, Lesen usw.</p>
             </Card>
-            <Photo props={photos.Haus__Flur_DG__Flur_DG_3}/>
-            <Photo props={photos.Haus__Flur_DG__Flur_DG_4}/>
-
+            <Photo props={photos.Haus__Flur_DG__Tisch_Dachgeschoss_1}/>
+            <Photo props={photos.Haus__Flur_DG__Tisch_Dachgeschoss_2}/>
+            <Photo props={photos.Haus__Flur_DG__Flur_Dachgeschoss_1}/>
         </Grid>
         <Nav verticalOffsetInVWs={20}/>
     </>)
