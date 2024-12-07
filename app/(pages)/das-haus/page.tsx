@@ -22,7 +22,8 @@ export default function Home() {
         </Photo>
         <Grid>
             <Card width={1500} height={2000}>
-                <p>Im <b>Erdgeschoss</b> des Hauses befin&shy;det sich ein 60m² großer Gast&shy;raum mit Blick auf eine Weide,
+                <p>Im <b>Erdgeschoss</b> des Hauses befin&shy;det sich ein 60m² großer Gast&shy;raum mit Blick auf eine
+                    Weide,
                     die Küche, ein Arbeits&shy;zimmer, zwei Bäder sowie ein 12m² großes Doppelzimmer.</p>
             </Card>
             <Photo props={photos.Haus__Gastraum__Gastraum_1} priority={true}/>
@@ -81,14 +82,20 @@ export default function Home() {
             </Card>
             <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_5}/>
             <Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_4}/>
-            {/*<Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_6}/>*/}
-            {/*<Photo props={photos.Haus__Arbeitszimmer__Arbeitszimmer_7}/>*/}
         </Grid>
-        <p>Im Erdgeschoss gibt es zwei <b>Bäder</b>, eines davon mit Dusche und eins mit einer Badewanne.</p>
         <Grid>
-            <Photo props={photos.Haus__Bad_2__Bad_2_1}/>
-            <Photo props={photos.Haus__Bad_2__Bad_2_2}/>
-            <Photo props={photos.Haus__Bad_2__Bad_2_3}/>
+            <Card width={1000} height={1000}>
+                <p>Im Erdgeschoss gibt es zwei Bäder. <strong>Bad 1</strong> hat eine ebenerdige Dusche und ist damit
+                    von Rollstuhlfahrern benutzbar (Unser Haus ist aber nicht barierrefrei nach DIN).</p>
+                <p><strong>Bad 2</strong> hat eine Badewanne.</p>
+            </Card>
+            <Photo props={photos.Haus__Bad_1__Bad_1_1}/>
+        </Grid>
+        <Grid>
+            <Photo props={photos.Haus__Bad_1__Bad_1_2}/>
+            <Photo props={photos.Haus__Bad_2__Bad_2_4}/>
+            <Photo props={photos.Haus__Bad_2__Bad_2_7}/>
+            <Photo props={photos.Haus__Bad_2__Bad_2_5}/>
         </Grid>
         <Grid>
             <Card width={900} height={1000} backgroundCyan={true}>
