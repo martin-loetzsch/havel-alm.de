@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <>
 
-            <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} priority={true} linkToPhotoPage={false}>
+            <Photo props={photos.Garten__Blick_von_der_Terasse} priority={true} linkToPhotoPage={false}>
                 <h1 className="color-cyan">{title}</h1>
             </Photo>
             <Grid>
@@ -33,22 +33,25 @@ export default function Home() {
                 <Photo props={photos.Ansichten__Das_Haus_von_oben_4} />
             </Grid>
             <Grid>
-                <Card width={800} height={600}>
+                <Card width={700} height={1000}>
                     <p>Auf der von der Strasse ab&shy;gewandten Seite ist eine ca. 100m² gro&shy;ße Terrasse.</p>
                 </Card>
+                <Photo props={photos.Garten__Terrasse_5} />
+            </Grid>
+            <Grid>
+                <Photo props={photos.Garten__Terasse_am_Morgen} />
                 <Photo props={photos.Garten__Terrasse_3} />
                 <Photo props={photos.Garten__Terrasse_4} />
             </Grid>
             <Grid>
-                <Card width={1000} height={400} backgroundCyan={true}>
+                <Card width={850} height={1000} backgroundCyan={true}>
                     <p>Von der Terrasse habt ihr zu jeder Jahreszeit einen wunderschönen Blick auf einen Sumpf und dahinter einige Weiden.</p>
                 </Card>
-                <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
+                <Photo props={photos.Garten__Schafe_auf_der_Weide_hinter_dem_Grundstueck} />
 
                 <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_1} />
-                <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_2} />
-                <Photo props={photos.Garten__Schafe_auf_der_Weide_hinter_dem_Grundstueck} />
                 <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_3} />
+                <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter} />
 
             </Grid>
             <Grid>
@@ -73,15 +76,14 @@ export default function Home() {
                     <p>In drei Hochbeeten wachsen Salat, Tomaten, Bohnen, Mangold, Gewürze und mehr.</p>
                     <p>Bedient euch sehr gerne daraus wenn wir nicht da sind.</p>
                 </Card>
-                <Photo props={photos.Garten__Hochbeet_1} />
             </Grid>
             <Grid>
                 <Photo props={photos.Garten__Hochbeet_2} />
-                <Photo props={photos.Garten__Hochbeet_3} />
-                <Photo props={photos.Garten__Hochbeet_5} />
-                <Photo props={photos.Garten__Hochbeet_4} />
+                <Photo props={photos.Garten__Hochbeet_8} />
                 <Photo props={photos.Garten__Hochbeet_6} />
+                <Photo props={photos.Garten__Hochbeet_5} />
                 <Photo props={photos.Garten__Hochbeet_7} />
+                <Photo props={photos.Ansichten__Ostseite} />
             </Grid>
 
 
