@@ -103,31 +103,34 @@ export default function Home() {
                     <p><Link prefetch={false} href='/rund-um-das-haus'>Hier findet ihr mehr Eindrücke von unserem
                         Garten</Link>.</p>
                 </Card>
-                <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter}/>
+                <Photo props={photos.Garten__Schafe_auf_der_Weide_hinter_dem_Grundstueck}/>
+                <Photo props={photos.Garten__Hochbeet_8}/>
                 <Photo props={photos.Garten__Terrasse_3}/>
-                <Photo props={photos.Haus__Gastraum__Blick_auf_die_Terasse}/>
-                {/* <Photo props={photos.Garten__Blick_aus_dem_Garten_nach_Norden_4} /> */}
                 <Photo props={photos.Ansichten__Das_Haus_von_oben_3}/>
+                <Photo props={photos.Haus__Gastraum__Blick_auf_die_Terasse}/>
+                <Photo props={photos.Garten__Blick_vom_Grundstueck_im_Winter}/>
             </Grid>
             <Grid>
-                <Card width={400} height={1000} backgroundCyan={true}>
+                <Card width={600} height={1000} backgroundCyan={true}>
                     <p style={{backgroundColor: 'white'}}>Wir vermie&shy;ten keine ein&shy;zel&shy;nen Zimmer, sondern
                         nur das ganze Haus und die&shy;ses für min&shy;des&shy;tens zwei Nächte.</p>
-                    <p>Alle Infos dazu findet ihr auf <Link href={{pathname: '/preise-und-buchung'}}
-                                                            prefetch={false}>un&shy;ser&shy;er Seite zu Preisen und
+                    <p><Link href={{pathname: '/preise-und-buchung'}}
+                             prefetch={false}>Alle Infos dazu findet ihr auf un&shy;ser&shy;er Seite zu Preisen und
                         Buch&shy;ung</Link>.</p>
                 </Card>
                 <Photo props={photos.Haus__Zimmer_DG__Kammer_Dachgeschoss_1}/>
             </Grid>
             <Grid>
-                <Card width={1950} height={1000} backgroundCyan={true}>
-                    <p style={{backgroundColor: 'white'}}>Kratzeburg ist ein idyllisches Dorf inmitten vom
-                        Müritz-Nationalpark. Es ist umgeben von klaren Seen und dichten Wäldern und bietet unzählige
+                <Card width={1200} height={1000} backgroundCyan={true}>
+                    <p style={{backgroundColor: 'white'}}>Kratzeburg ist umgeben von klaren Seen und dichten Wäldern und
+                        bietet unzählige
                         Möglichkeiten zum Wandern, Radfah&shy;ren und Paddeln. </p>
                     <p><Link prefetch={false} href="/kratzeburg">Lest hier mehr über die Umgebung der Havel Alm</Link>.
                     </p>
                 </Card>
                 <Photo props={photos.Kratzeburg__Wanderweg_Richtung_Pieverstorf}/>
+            </Grid>
+            <Grid>
                 <Photo props={photos.Kratzeburg__Radweg_zwischen_Liepen_und_Klein_Vielen_1}/>
                 <Photo props={photos.Kratzeburg__Paddeln_auf_der_Havel_kurz_vor_Blankenfoerde}/>
             </Grid>
