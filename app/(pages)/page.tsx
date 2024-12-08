@@ -38,7 +38,7 @@ export default function Home() {
                 <Card width={1420} height={1000}>
                     <p>Die Havel Alm ist eine zum Ferien&shy;haus um&shy;ge&shy;baute ehe&shy;malige Scheu&shy;ne in
                         Kratzeburg, einem
-                        idyllischen Dorf inmitten vom Müritz-Nationalpark.</p>
+                        idyllischen Dorf inmitten des Müritz-Nationalparks.</p>
                 </Card>
                 <Photo props={photos.Ansichten__Das_Haus_vom_Garten_aus} blackFont={true}/>
 
