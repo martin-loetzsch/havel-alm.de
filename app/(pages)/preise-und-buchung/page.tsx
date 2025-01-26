@@ -85,8 +85,8 @@ export default function Home() {
                     dann leider nicht mehr erstatten können).</p>
                 <p>Bei der Buchung über Portale gelten die dort hinterlegten Stornierungs&shy;bedingungen.</p>
             </div>
-            <p>Wenn ihr uns eine Anfrage schickt schreibt bitte ein paar Sätze zu eurer Gruppe, damit wir wissen, wem
-                wir unser Haus anvertrauen.</p>
+            <p>Wenn ihr uns eine Anfrage schickt. schreibt bitte ein paar Sätze zu eurer Gruppe. Wir möchten wir wissen,
+                wem wir unser Haus anvertrauen.</p>
             <Photo props={photos.Kratzeburg__Der_zugefrorene_Kaebelicksee}><></>
             </Photo>
 
