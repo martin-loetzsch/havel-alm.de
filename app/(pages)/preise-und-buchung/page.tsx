@@ -31,7 +31,7 @@ export default function Home() {
             <p className='background-cyan'>Wir vermieten unser Haus an Gruppen von bis zu 12 Personen plus 5 Kinder. Die
                 Mindestmietdauer ist 2 Nächte, in der Hauptsaison und an Feiertagen 4 Nächte. Haustiere sind nicht
                 erlaubt.</p>
-            <p>Dies sind unser verfügbaren Zeiträume (rot = belegt):</p>
+            <p>Dies sind unsere verfügbaren Zeiträume (rot = belegt):</p>
             <iframe
                 src={'https://www.bookingmood.com/airbnb-embed?listing=907993973485938482&theme=Default&language=de-DE'}
                 height={'280px'}
