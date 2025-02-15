@@ -117,7 +117,7 @@ export default function Home() {
                unoptimized style={{width: '100%', height: 'auto'}}
         />
 
-        <p>Im Dachgeschoss gibt es <b>5</b> nahezu identische Kammern (<b>Zimmer 2 bis 6</b>). Jedes der Zimmer hat
+        <p id={'kammern-dachgeschoss'}>Im Dachgeschoss gibt es <b>5</b> nahezu identische Kammern (<b>Zimmer 2 bis 6</b>). Jedes der Zimmer hat
             ein Doppelbett (200x140cm) sowie ein Hochbett (200x70cm) für Kinder.</p>
         <p><b>Achtung!</b> Die Doppelbetten sind nur von einer Seite zugänglich, d.h. darin über&shy;nachtende
             Personen sollten sich gut kennen.</p>
