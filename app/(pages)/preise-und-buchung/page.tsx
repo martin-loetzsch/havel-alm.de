@@ -31,11 +31,16 @@ export default function Home() {
             <p className='background-cyan'>Wir vermieten unser Haus an Gruppen von bis zu 12 Personen plus 5 Kinder. Die
                 Mindestmietdauer ist 2 Nächte, in der Hauptsaison und an Feiertagen 4 Nächte. Haustiere sind nicht
                 erlaubt.</p>
+            <p>Dies sind unser verfügbaren Zeiträume (rot = belegt):</p>
+            <iframe
+                src={'https://www.bookingmood.com/airbnb-embed?listing=907993973485938482&theme=Default&language=de-DE'}
+                height={'280px'}
+                scrolling='no'
+                style={{overflow: 'hidden'}}/>
             <p>Ihr könnt die Havel Alm über <a
-                href="https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5361182">FeWo-Direkt</a> oder <a
-                href="https://www.airbnb.de/rooms/907993973485938482">AirBnB</a> buchen (dort seht ihr auch unsere
-                Verfügbarkeiten).</p>
-            <p>Oder ihr schreibt uns eine Email an <a href="mailto:info@havel-alm.de">info@havel-alm.de</a>, dann gelten
+                href="https://www.airbnb.de/rooms/907993973485938482">AirBnB</a> oder <a
+                href="https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5361182">FeWo-Direkt</a> buchen. Oder ihr
+                schreibt uns eine Email an <a href="mailto:info@havel-alm.de">info@havel-alm.de</a>, dann gelten
                 diese Preise:</p>
             <Grid>
                 <Card width={1000} height={heightPricingTable} backgroundCyan={true}>
