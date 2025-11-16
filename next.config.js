@@ -3,4 +3,7 @@ const nextConfig = {
   experimental: {
     typedRoutes: true,
   },
+  images: {
+    minimumCacheTTL: 60 * 60 * 24 * 60,
+  },
 }
