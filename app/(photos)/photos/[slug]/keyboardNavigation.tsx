@@ -1,7 +1,7 @@
 'use client'
 
 import {useRouter} from "next/navigation";
-import {useEffect, FunctionComponent} from "react";
+import React, {useEffect, FunctionComponent} from "react";
 
 
 type KeyboardNavigationProps = {
@@ -13,7 +13,7 @@ export const KeyboardNavigation: FunctionComponent<KeyboardNavigationProps> = (
     {
         linkOnLeftArrow,
         linkOnRightArrow
-    }): JSX.Element =>{
+    }): React.JSX.Element =>{
 
     const router = useRouter();
 

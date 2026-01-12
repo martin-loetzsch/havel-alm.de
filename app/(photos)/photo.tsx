@@ -1,7 +1,7 @@
 import styles from './photo.module.scss'
 
 import Image from "next/image"
-import {FunctionComponent} from 'react'
+import React, {FunctionComponent} from 'react'
 import {PhotoProps} from './processedPhotos'
 import Link from "next/link";
 
@@ -28,7 +28,7 @@ export const Photo: FunctionComponent<PhotoComponentProps> = (
         blackFont = false,
         linkToPhotoPage = true,
         printSrcPathDuringBuild = true
-    }): JSX.Element => {
+    }): React.JSX.Element => {
 
     let image = <Image
         className={styles.image}

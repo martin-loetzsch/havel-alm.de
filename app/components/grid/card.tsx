@@ -1,6 +1,6 @@
 import styles from './card.module.scss'
 
-import { FunctionComponent, ReactNode } from 'react'
+import React, { FunctionComponent, ReactNode } from 'react'
 
 type CardProps = {
     width: number,
@@ -16,7 +16,7 @@ const Card: FunctionComponent<CardProps> = ({
     keepAspectRatioOnMobile=false,
     backgroundCyan=false,
     children
-}): JSX.Element => {
+}): React.JSX.Element => {
     return (
         <div data-width={width} 
             data-height={height} 

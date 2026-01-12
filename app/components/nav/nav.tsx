@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styles from './nav.module.scss'
 
 import { usePathname } from 'next/navigation'
-import { FunctionComponent, useEffect, useState } from 'react'
+import React, { FunctionComponent, useEffect, useState } from 'react'
 import useWindowWidth from '../../lib/useWindowWidth'
 
 
@@ -27,7 +27,7 @@ type NavProps = {
     customEntries?: { [url: string]: string }
 }
 
-const Nav: FunctionComponent<NavProps> = ({ verticalOffsetInVWs, customEntries }): JSX.Element => {
+const Nav: FunctionComponent<NavProps> = ({ verticalOffsetInVWs, customEntries }): React.JSX.Element => {
     const [isOpen, setIsOpen] = useState(false)
     const [scrollY, setScrollY] = useState(0);
 

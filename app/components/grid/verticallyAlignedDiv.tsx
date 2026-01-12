@@ -5,7 +5,7 @@
 'use client'
 
 
-import { FunctionComponent, ReactElement } from 'react'
+import React, { FunctionComponent, ReactElement } from 'react'
 
 import useWindowWidth from '../../lib/useWindowWidth'
 import styles from './verticallyAlignedDiv.module.scss'
@@ -15,7 +15,7 @@ type VerticallyAlignedDivProps = {
     percentageOfViewWidth: number
 }
 
-const VerticallyAlignedDiv: FunctionComponent<VerticallyAlignedDivProps> = ({ percentageOfViewWidth, children }): JSX.Element => {
+const VerticallyAlignedDiv: FunctionComponent<VerticallyAlignedDivProps> = ({ percentageOfViewWidth, children }): React.JSX.Element => {
     const windowWidth = useWindowWidth()
 
     if (!windowWidth) {

@@ -1,11 +1,11 @@
 'use client'
 
 import { usePathname } from 'next/navigation';
-import { FunctionComponent, useEffect, useState } from 'react';
+import React, { FunctionComponent, useEffect, useState } from 'react';
 const sessionId = crypto.randomUUID()
 var hitCount = 0
 
-const TrackingClient: FunctionComponent = (): JSX.Element => {
+const TrackingClient: FunctionComponent = (): React.JSX.Element => {
     const pathname = usePathname()
 
 

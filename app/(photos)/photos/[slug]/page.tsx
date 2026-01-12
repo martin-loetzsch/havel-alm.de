@@ -13,7 +13,7 @@ type PageParams = {
 };
 
 type PageProps = {
-    params: PageParams;
+    params: Promise<PageParams>;
 };
 
 export async function generateStaticParams(): Promise<PageParams[]> {
@@ -24,7 +24,8 @@ export async function generateStaticParams(): Promise<PageParams[]> {
 
 // Dynamic metadata
 export async function generateMetadata({params}: PageProps): Promise<Metadata> {
-    const photo = photosBySlug[decodeURI(params.slug)]
+    const { slug } = await params
+    const photo = photosBySlug[decodeURI(slug)]
     if (!photo) {
         return {}
     }
@@ -67,8 +68,9 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
 }
 
 
-export default function Page({params}: PageProps) {
-    const photo = photosBySlug[decodeURI(params.slug)]
+export default async function Page({params}: PageProps) {
+    const { slug } = await params
+    const photo = photosBySlug[decodeURI(slug)]
 
     if (!photo) {
         notFound()

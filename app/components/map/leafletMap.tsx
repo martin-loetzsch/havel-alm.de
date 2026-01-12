@@ -1,5 +1,6 @@
-import React from 'react';
-import { useMemo } from "react";
+'use client'
+
+import React, { useMemo } from 'react';
 import dynamic from 'next/dynamic';
 
 type LeafletMapProps = {

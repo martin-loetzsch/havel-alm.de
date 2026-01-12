@@ -1,4 +1,4 @@
-@import "@/app/css/vars.scss";
+@use "@/app/css/vars.scss" as *;
 
 @keyframes fadeIn {
   0% { opacity: 0; }

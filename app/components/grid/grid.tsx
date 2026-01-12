@@ -2,18 +2,18 @@
 
 import styles from './grid.module.scss'
 
-import { ReactElement, FunctionComponent } from 'react'
+import React, { ReactElement, FunctionComponent, ReactNode } from 'react'
 import { calcWidth, computeRowsLayout, GridItem } from './reactPhotoAlbum/rowsLayout'
 
 import useWindowWidth from '../../lib/useWindowWidth'
 
 
 type GridProps = {
-    children: ReactElement| ReactElement[],
+    children: ReactNode,
     spacing?: number
 }
 
-const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
+const Grid: FunctionComponent<GridProps> = ({ children }): React.JSX.Element => {
     const windowWidth = useWindowWidth()
 
     if (children == undefined) {
@@ -21,9 +21,14 @@ const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
         return <></>
     }
 
-    children = Array.isArray(children) ? children : [children]
+    const childElements = React.Children.toArray(children).filter((child): child is ReactElement<any> => React.isValidElement(child))
 
-    const gridItems: Array<GridItem> = children.map((child) => {
+    if (childElements.length === 0) {
+        console.warn('Warning: no valid React elements passed to <Grid>')
+        return <></>
+    }
+
+    const gridItems: Array<GridItem> = childElements.map((child) => {
         const width = child.props['data-width']
         const height = child.props['data-height']
         const keepAspectRatioOnMobile = child.props['data-keep-aspect-ratio-on-mobile']
@@ -44,7 +49,7 @@ const Grid: FunctionComponent<GridProps> = ({ children }): JSX.Element => {
         // return grid elements as they are on the server side (so that images can be loaded as early as possible
         return (
             <div className={styles.container}>
-                {children}
+                {childElements}
             </div>)
     } else {
         const targetRowHeight = windowWidth / 6.0
