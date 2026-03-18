@@ -39,7 +39,7 @@ export default function Home() {
                 style={{overflow: 'hidden'}}/>
             <p>Ihr könnt die Havel Alm über <a
                 href="https://www.airbnb.de/rooms/907993973485938482">AirBnB</a> oder <a
-                href="https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5361182">FeWo-Direkt</a> buchen. Oder ihr
+                href="https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p5759869">FeWo-Direkt</a> buchen. Oder ihr
                 schreibt uns eine Email an <a href="mailto:info@havel-alm.de">info@havel-alm.de</a>, dann gelten
                 diese Preise:</p>
             <Grid>
@@ -90,7 +90,7 @@ export default function Home() {
                     dann leider nicht mehr erstatten können).</p>
                 <p>Bei der Buchung über Portale gelten die dort hinterlegten Stornierungs&shy;bedingungen.</p>
             </div>
-            <p>Wenn ihr uns eine Anfrage schickt. schreibt bitte ein paar Sätze zu eurer Gruppe. Wir möchten wir wissen,
+            <p>Wenn ihr uns eine Anfrage schickt, schreibt bitte ein paar Sätze zu eurer Gruppe. Wir möchten wissen,
                 wem wir unser Haus anvertrauen.</p>
             <Photo props={photos.Kratzeburg__Der_zugefrorene_Kaebelicksee}><></>
             </Photo>
