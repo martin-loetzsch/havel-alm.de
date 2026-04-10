@@ -76,8 +76,8 @@ export default function Home() {
                 </Card>
                 <Card width={350} height={heightPricingTable} backgroundCyan={false}>
                     <small>&sup1;September bis Mai</small>
-                    <small>&sup2;Juni bis August</small>
-                    <small>&sup3;Ostern, Himmel&shy;fahrt, Pfingsten, Weihnachten, Neu&shy;jahr</small>
+                    <small>&sup2;Juli bis August</small>
+                    <small>&sup3;Ostern, 1. Mai, Himmel&shy;fahrt, Pfingsten, 3. Oktober, Weih&shy;nachten, Neu&shy;jahr</small>
                 </Card>
             </Grid>
             <p>Zum Übernachtungspreis kommt eine <strong>Endreinigungs&shy;ge&shy;bühr</strong> von 300€ hinzu.</p>
